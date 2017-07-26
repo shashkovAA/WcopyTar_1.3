@@ -28,7 +28,7 @@ public class SftpClient {
 		
     public void runConnect() {
     	
-    	Debug.log.info("Start SFTP Client.");
+    	Debug.log.debug("Start SFTP Client.");
     	
     	JSch jsch = new JSch();
   
@@ -38,7 +38,7 @@ public class SftpClient {
             session.setPassword(sftpPass);
             
             session.connect();
-            Debug.log.info("Connected to "+ sftpIp + ".");
+            Debug.log.debug("Connected to "+ sftpIp + ".");
             isSftpServerAvailable = true;
             isCredentialsCorrect = true;
 
@@ -82,7 +82,7 @@ public class SftpClient {
         	}
         
         }
-        Debug.log.info("Stop SFTP Client.");
+        Debug.log.debug("Stop SFTP Client.");
     }
     
     public  void setSftpIp(String sftpIp){

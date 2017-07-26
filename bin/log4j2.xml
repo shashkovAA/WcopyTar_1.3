@@ -2,13 +2,13 @@
 <Configuration packages="Objects">
  <Appenders>
  	
- 	<!-- <RollingFile name="File" append="true" fileName="${sys:logFileName}.txt"  filePattern = "${sys:logFileName}-%i.txt" >
+ 	 <RollingFile name="File" append="true" fileName="${sys:logFileName}.txt"  filePattern = "${sys:logFileName}-%i.txt" >
  		<PatternLayout pattern="%d{dd/MM/yy HH:mm:ss:SSS} %-5p [%t] %C{2} (%F:%L) - %m%n"/>
  		<Policies>
            	<SizeBasedTriggeringPolicy size="${sys:logFileSize}"/>
       	</Policies>
       	<DefaultRolloverStrategy max="${sys:logFileCount}"/>
- 	</RollingFile> -->
+ 	</RollingFile>
  	
  	<!-- <TextAreaAppender name="ConsoleTabLogger">
             <PatternLayout pattern="%d{dd/MM/yy HH:mm:ss:SSS} %-5p [%t] [%file -> %method : %line] - %msg%n"/>
@@ -24,10 +24,10 @@
  
  <Loggers>
 	
-	<Logger name="Objects.Debug" level="info" additivity="false">
+	<Logger name="Objects.Debug" level="debug" additivity="false">
 	
- 		<!-- <AppenderRef ref="File" level="${sys:logFileLevel}"/> -->
- 		<AppenderRef ref="STDOUT" level="info"/>
+ 		<AppenderRef ref="File" level="${sys:logFileLevel}"/> 
+ 		<AppenderRef ref="STDOUT" level="${sys:logLevelConsole}"/>
  		<!-- <AppenderRef ref ="ConsoleTabLogger" level="${sys:logLevelAppConsole}"/> -->
  		
  	</Logger>

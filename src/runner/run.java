@@ -1,6 +1,8 @@
 package runner;
 
 
+import java.io.File;
+import java.nio.file.Path;
 import java.time.LocalTime;
 import java.util.Properties;
 import java.util.Scanner;
@@ -15,16 +17,21 @@ import Objects.ZipArchive;;
 
 public class run {
 	
-	private static String settingsFileName;
+//	private static String settingsFileName;
 	private LocalTime time;
 			
 	@SuppressWarnings("static-access")
 	public static void main(String[] args) throws InterruptedException
 	{
-		Debug.initDebugLog();
-		Debug.log.info("Programm is started.");
+		;
 		
-		settingsFileName = "settings.xml";
+		String currentPath =  new File("").getAbsolutePath();	
+		String settingsFileName = currentPath + "\\config\\settings.xml";
+		String logSettingsFileName = currentPath + "\\config\\logging.xml";
+		
+		Debug.initDebugLog(logSettingsFileName);
+		
+		
 		Property property = new Property();
 		property = getUserSettingsToPropertyObjFromFile(settingsFileName);
 				
@@ -50,6 +57,7 @@ public class run {
 		timer.schedule(task, 10000, 30000);
 		timer.cancel();*/
 		
+		Debug.log.info("Programm is started.");
 	
 	do {
 		Debug.log.info("Checking time for work...");

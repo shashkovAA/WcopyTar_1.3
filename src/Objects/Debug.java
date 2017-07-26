@@ -1,56 +1,36 @@
 package Objects;
 
+import java.io.File;
 import java.util.Iterator;
+import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import runner.UserProperties;
 
 //import objects.GlobalVars;
 
 public class Debug {
     public static Logger log;
 
-    // ************************************************************************************************************
-    // ===
-    public static void initDebugLog(String logFilePath) {
+    public static void initDebugLog(String logSettingsFilePath) {
+    
+    Properties userProperties = UserProperties.getPropertiesFromXML(logSettingsFilePath);
 
-/*
-	System.setProperty("logFileName", logFilePath);
-	System.setProperty("logFileLevel", "info");
-	System.setProperty("logFileSize", "1 Mb");
-	System.setProperty("logFileCount", "5");
-	System.setProperty("logLevelConsole", "debug");
-	System.setProperty("logLevelAppConsole", "fatal");
+    String currentPath =  new File("").getAbsolutePath();
+    System.setProperty("logFileName", currentPath + "\\logs\\debug");
+	System.setProperty("logFileLevel", userProperties.getProperty("logFileLevel"));
+	System.setProperty("logFileSize", userProperties.getProperty("logFileSize"));
+	System.setProperty("logFileCount", userProperties.getProperty("logFileCount"));
+	System.setProperty("logLevelConsole", userProperties.getProperty("logLevelConsole"));
 
-	Iterator it = Main.loggingUserProperties.keySet().iterator();
-
-	while (it.hasNext()) {
-	    String key = it.next().toString();
-
-	    if (key.equals(GlobalVars.logFileLevel))
-		System.setProperty("logFileLevel", Main.loggingUserProperties.getProperty(key));
-
-	    if (key.equals(GlobalVars.logFileSize))
-		System.setProperty("logFileSize", Main.loggingUserProperties.getProperty(key));
-
-	    if (key.equals(GlobalVars.logFileCount))
-		System.setProperty("logFileCount", Main.loggingUserProperties.getProperty(key));
-
-	    if (key.equals(GlobalVars.logLevelConsole))
-		System.setProperty("logLevelConsole", Main.loggingUserProperties.getProperty(key));
-
-	    if (key.equals(GlobalVars.logLevelAppConsole)) {
-		System.setProperty("logLevelAppConsole", Main.loggingUserProperties.getProperty(key));
-	    }
-	}
-
-	reconfigure();*/
+	reconfigure();
 
 	log = LogManager.getLogger(Debug.class.getName());
     }
     
     public static void initDebugLog() {
-    	//System.setProperty("logLevelConsole", "debug");
     	log = LogManager.getLogger(Debug.class.getName());
     }
 

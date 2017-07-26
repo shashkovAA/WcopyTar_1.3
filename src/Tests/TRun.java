@@ -2,6 +2,7 @@ package Tests;
 
 import static org.junit.Assert.assertEquals;
 
+import java.io.File;
 import java.time.LocalTime;
 import java.util.Properties;
 
@@ -59,7 +60,7 @@ public class TRun
 	@Test
 	public void testGetUserSettings()
 	{	
-		run.getUserSettingsToPropertyObjFromFile("settings.xml");
+		run.getUserSettingsToPropertyObjFromFile(new File("").getAbsolutePath() + "\\config\\settings.xml");
 	}
 	
 		
