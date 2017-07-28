@@ -30,22 +30,22 @@ public class MyCalendar {
     }
 	
 	public static String getCurrentDayDateTimeNow() {
-    	LocalDateTime now = LocalDateTime.now();
+    	now = LocalDateTime.now();
     	return now.format(getDateTimeFormat());
     }
     
     public static String getCurrentTimeNow() {
-    	LocalDateTime now = LocalDateTime.now();
+    	now = LocalDateTime.now();
     	return now.format(getTimeFormat());
     }
     
     public static String getCurrentTimeNowCustomFormat(String format) {
-    	LocalDateTime now = LocalDateTime.now();
+    	now = LocalDateTime.now();
     	return now.format(getTimeFormatCustom(format));
     }
     
     public static String getCurrentDateCustomFormat(String format) {
-    	LocalDateTime now = LocalDateTime.now();
+    	now = LocalDateTime.now();
     	return now.format(getDateFormatCustom(format));
     }
     
