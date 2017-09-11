@@ -57,11 +57,5 @@ public class TRun
 		System.out.println(diffInMilli);
 	}
 	
-	@Test
-	public void testGetUserSettings()
-	{	
-		run.getUserSettingsToPropertyObjFromFile(new File("").getAbsolutePath() + "\\config\\settings.xml");
-	}
-	
 		
 }

@@ -42,7 +42,7 @@ public class TZipArchive
 	@Test
 	public void testMoveFileToArchive()
 	{
-		assertEquals(true, zip.moveFileToArchive());
+		assertEquals(true, zip.moveFilesToArchive());
 	}
 
 }

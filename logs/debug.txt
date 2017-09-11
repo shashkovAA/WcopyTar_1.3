@@ -83,3 +83,1146 @@
 26/07/17 23:14:15:369 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170726.zip
 26/07/17 23:14:15:690 INFO  [main] Objects.ZipArchive (ZipArchive.java:80) - The file MTA_trace_26072017_23_14_15.mta was added in archive G:\\copy\\test_20170726.zip
 26/07/17 23:14:15:755 INFO  [main] runner.run (run.java:69) - Waiting 02 min 00 sec
+28/07/17 22:59:10:898 DEBUG [main] runner.run (run.java:89) - SFTP address from settings file: 127.0.0.1
+28/07/17 22:59:10:910 DEBUG [main] runner.run (run.java:92) - SFTP port from settings file: 22
+28/07/17 22:59:10:910 DEBUG [main] runner.run (run.java:95) - SFTP login from settings file: wawa
+28/07/17 22:59:10:911 DEBUG [main] runner.run (run.java:98) - SFTP password from settings file: password
+28/07/17 22:59:10:911 DEBUG [main] runner.run (run.java:101) - Source file path from settings file: /
+28/07/17 22:59:10:911 DEBUG [main] runner.run (run.java:104) - Source file name from settings file: MTA_trace.mta
+28/07/17 22:59:10:911 DEBUG [main] runner.run (run.java:107) - Destination file path from settings file: G:\\copy\\
+28/07/17 22:59:10:911 DEBUG [main] runner.run (run.java:110) - Destination filename from settings file: MTA_trace.mta
+28/07/17 22:59:11:607 DEBUG [main] runner.run (run.java:113) - Begin work time from settings file: 00:00:00
+28/07/17 22:59:11:608 DEBUG [main] runner.run (run.java:116) - End work time from settings file: 23:40:00
+28/07/17 22:59:11:608 DEBUG [main] runner.run (run.java:119) - Interval time from settings file: 120
+28/07/17 22:59:11:609 DEBUG [main] runner.run (run.java:122) - Zip archive name from settings file: G:\\copy\\test.zip
+28/07/17 22:59:11:718 INFO  [main] runner.run (run.java:60) - Programm is started.
+28/07/17 22:59:11:719 INFO  [main] runner.run (run.java:63) - Checking time for work...
+28/07/17 22:59:11:720 INFO  [main] runner.run (run.java:66) - It's work time!
+28/07/17 22:59:11:720 DEBUG [main] Objects.SftpClient (SftpClient.java:31) - Start SFTP Client.
+28/07/17 22:59:13:740 DEBUG [main] Objects.SftpClient (SftpClient.java:41) - Connected to 127.0.0.1.
+28/07/17 22:59:15:305 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file MTA_trace.mta is successfully!
+28/07/17 22:59:15:313 DEBUG [main] Objects.SftpClient (SftpClient.java:85) - Stop SFTP Client.
+28/07/17 22:59:15:314 INFO  [main] Objects.ZipArchive (ZipArchive.java:47) - Archive file is not exist. File G:\\copy\\test_20170728.zip is created.
+28/07/17 22:59:15:317 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170728.zip
+28/07/17 22:59:15:719 INFO  [main] Objects.ZipArchive (ZipArchive.java:80) - The file MTA_trace_28072017_22_59_15.mta was added in archive G:\\copy\\test_20170728.zip
+28/07/17 22:59:15:741 INFO  [main] runner.run (run.java:69) - Waiting 02 min 00 sec
+28/07/17 23:02:45:076 DEBUG [main] runner.run (run.java:89) - SFTP address from settings file: 127.0.0.1
+28/07/17 23:02:45:081 DEBUG [main] runner.run (run.java:92) - SFTP port from settings file: 22
+28/07/17 23:02:45:081 DEBUG [main] runner.run (run.java:95) - SFTP login from settings file: wawa
+28/07/17 23:02:45:081 DEBUG [main] runner.run (run.java:98) - SFTP password from settings file: password
+28/07/17 23:02:45:082 DEBUG [main] runner.run (run.java:101) - Source file path from settings file: /
+28/07/17 23:02:45:082 DEBUG [main] runner.run (run.java:104) - Source file name from settings file: null
+28/07/17 23:02:45:083 DEBUG [main] runner.run (run.java:107) - Destination file path from settings file: G:\\copy\\
+28/07/17 23:02:45:083 DEBUG [main] runner.run (run.java:110) - Destination filename from settings file: MTA_trace.mta
+28/07/17 23:02:45:258 DEBUG [main] runner.run (run.java:113) - Begin work time from settings file: 00:00:00
+28/07/17 23:02:45:259 DEBUG [main] runner.run (run.java:116) - End work time from settings file: 23:40:00
+28/07/17 23:02:45:259 DEBUG [main] runner.run (run.java:119) - Interval time from settings file: 120
+28/07/17 23:02:45:261 DEBUG [main] runner.run (run.java:122) - Zip archive name from settings file: G:\\copy\\test.zip
+28/07/17 23:02:45:271 INFO  [main] runner.run (run.java:60) - Programm is started.
+28/07/17 23:02:45:272 INFO  [main] runner.run (run.java:63) - Checking time for work...
+28/07/17 23:02:45:274 INFO  [main] runner.run (run.java:66) - It's work time!
+28/07/17 23:02:45:274 DEBUG [main] Objects.SftpClient (SftpClient.java:31) - Start SFTP Client.
+28/07/17 23:02:46:925 DEBUG [main] Objects.SftpClient (SftpClient.java:41) - Connected to 127.0.0.1.
+28/07/17 23:02:47:006 ERROR [main] Objects.SftpClient (SftpClient.java:63) - File download failed!
+28/07/17 23:02:47:007 ERROR [main] Objects.SftpClient (SftpClient.java:64) - 
+28/07/17 23:02:47:021 INFO  [main] Objects.SftpClient (SftpClient.java:75) - Disconnected from 127.0.0.1.
+28/07/17 23:02:47:021 DEBUG [main] Objects.SftpClient (SftpClient.java:85) - Stop SFTP Client.
+28/07/17 23:02:47:022 DEBUG [main] Objects.ZipArchive (ZipArchive.java:50) - Archive file G:\\copy\\test_20170728.zip is already exist!
+28/07/17 23:02:47:023 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170728.zip
+28/07/17 23:02:47:084 ERROR [main] Objects.ZipArchive (ZipArchive.java:84) - Файл G:\copy\MTA_trace.mta не найден по указанному пути.
+28/07/17 23:02:47:085 INFO  [main] runner.run (run.java:69) - Waiting 02 min 00 sec
+28/07/17 23:03:42:421 DEBUG [main] runner.run (run.java:89) - SFTP address from settings file: 127.0.0.1
+28/07/17 23:03:42:425 DEBUG [main] runner.run (run.java:92) - SFTP port from settings file: 22
+28/07/17 23:03:42:425 DEBUG [main] runner.run (run.java:95) - SFTP login from settings file: wawa
+28/07/17 23:03:42:425 DEBUG [main] runner.run (run.java:98) - SFTP password from settings file: password
+28/07/17 23:03:42:426 DEBUG [main] runner.run (run.java:101) - Source file path from settings file: /
+28/07/17 23:03:42:426 DEBUG [main] runner.run (run.java:104) - Source file name from settings file: null
+28/07/17 23:03:42:426 DEBUG [main] runner.run (run.java:107) - Destination file path from settings file: G:\\copy\\
+28/07/17 23:03:42:428 DEBUG [main] runner.run (run.java:110) - Destination filename from settings file: MTA_trace.mta
+28/07/17 23:03:42:549 DEBUG [main] runner.run (run.java:113) - Begin work time from settings file: 00:00:00
+28/07/17 23:03:42:549 DEBUG [main] runner.run (run.java:116) - End work time from settings file: 23:40:00
+28/07/17 23:03:42:550 DEBUG [main] runner.run (run.java:119) - Interval time from settings file: 120
+28/07/17 23:03:42:551 DEBUG [main] runner.run (run.java:122) - Zip archive name from settings file: G:\\copy\\test.zip
+28/07/17 23:03:42:558 INFO  [main] runner.run (run.java:60) - Programm is started.
+28/07/17 23:03:42:559 INFO  [main] runner.run (run.java:63) - Checking time for work...
+28/07/17 23:03:42:560 INFO  [main] runner.run (run.java:66) - It's work time!
+28/07/17 23:03:42:561 DEBUG [main] Objects.SftpClient (SftpClient.java:31) - Start SFTP Client.
+28/07/17 23:03:43:644 DEBUG [main] Objects.SftpClient (SftpClient.java:41) - Connected to 127.0.0.1.
+28/07/17 23:03:43:748 ERROR [main] Objects.SftpClient (SftpClient.java:63) - File download failed!
+28/07/17 23:03:43:748 ERROR [main] Objects.SftpClient (SftpClient.java:64) - 
+28/07/17 23:03:43:760 INFO  [main] Objects.SftpClient (SftpClient.java:75) - Disconnected from 127.0.0.1.
+28/07/17 23:03:43:761 DEBUG [main] Objects.SftpClient (SftpClient.java:85) - Stop SFTP Client.
+28/07/17 23:03:43:762 DEBUG [main] Objects.ZipArchive (ZipArchive.java:50) - Archive file G:\\copy\\test_20170728.zip is already exist!
+28/07/17 23:03:43:763 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170728.zip
+28/07/17 23:03:43:827 ERROR [main] Objects.ZipArchive (ZipArchive.java:84) - Файл G:\copy\MTA_trace.mta не найден по указанному пути.
+28/07/17 23:03:43:829 INFO  [main] runner.run (run.java:69) - Waiting 02 min 00 sec
+28/07/17 23:05:08:472 DEBUG [main] runner.run (run.java:89) - SFTP address from settings file: 127.0.0.1
+28/07/17 23:05:08:476 DEBUG [main] runner.run (run.java:92) - SFTP port from settings file: 22
+28/07/17 23:05:08:477 DEBUG [main] runner.run (run.java:95) - SFTP login from settings file: wawa
+28/07/17 23:05:08:478 DEBUG [main] runner.run (run.java:98) - SFTP password from settings file: password
+28/07/17 23:05:08:478 DEBUG [main] runner.run (run.java:101) - Source file path from settings file: /
+28/07/17 23:05:08:478 DEBUG [main] runner.run (run.java:104) - Source file name from settings file: MTA_trace.mta
+28/07/17 23:05:08:478 DEBUG [main] runner.run (run.java:107) - Destination file path from settings file: G:\\copy\\
+28/07/17 23:05:08:479 DEBUG [main] runner.run (run.java:110) - Destination filename from settings file: MTA_trace.mta
+28/07/17 23:05:08:605 DEBUG [main] runner.run (run.java:113) - Begin work time from settings file: 00:00:00
+28/07/17 23:05:08:605 DEBUG [main] runner.run (run.java:116) - End work time from settings file: 23:40:00
+28/07/17 23:05:08:606 DEBUG [main] runner.run (run.java:119) - Interval time from settings file: 120
+28/07/17 23:05:08:606 DEBUG [main] runner.run (run.java:122) - Zip archive name from settings file: G:\\copy\\test.zip
+28/07/17 23:05:08:614 INFO  [main] runner.run (run.java:60) - Programm is started.
+28/07/17 23:05:08:615 INFO  [main] runner.run (run.java:63) - Checking time for work...
+28/07/17 23:05:08:617 INFO  [main] runner.run (run.java:66) - It's work time!
+28/07/17 23:05:08:617 DEBUG [main] Objects.SftpClient (SftpClient.java:31) - Start SFTP Client.
+28/07/17 23:05:09:600 DEBUG [main] Objects.SftpClient (SftpClient.java:41) - Connected to 127.0.0.1.
+28/07/17 23:05:10:252 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file MTA_trace.mta is successfully!
+28/07/17 23:05:10:277 DEBUG [main] Objects.SftpClient (SftpClient.java:85) - Stop SFTP Client.
+28/07/17 23:05:10:278 DEBUG [main] Objects.ZipArchive (ZipArchive.java:50) - Archive file G:\\copy\\test_20170728.zip is already exist!
+28/07/17 23:05:10:281 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170728.zip
+28/07/17 23:05:10:599 INFO  [main] Objects.ZipArchive (ZipArchive.java:80) - The file MTA_trace_28072017_23_05_10.mta was added in archive G:\\copy\\test_20170728.zip
+28/07/17 23:05:10:634 INFO  [main] runner.run (run.java:69) - Waiting 02 min 00 sec
+28/07/17 23:32:15:767 DEBUG [main] runner.run (run.java:89) - SFTP address from settings file: 127.0.0.1
+28/07/17 23:32:15:771 DEBUG [main] runner.run (run.java:92) - SFTP port from settings file: 22
+28/07/17 23:32:15:772 DEBUG [main] runner.run (run.java:95) - SFTP login from settings file: wawa
+28/07/17 23:32:15:772 DEBUG [main] runner.run (run.java:98) - SFTP password from settings file: password
+28/07/17 23:32:15:772 DEBUG [main] runner.run (run.java:101) - Source file path from settings file: /
+28/07/17 23:32:15:772 DEBUG [main] runner.run (run.java:104) - Source file name from settings file: MTA_trace.mta
+28/07/17 23:32:15:773 DEBUG [main] runner.run (run.java:107) - Destination file path from settings file: G:\\copy\\
+28/07/17 23:32:15:773 DEBUG [main] runner.run (run.java:110) - Destination filename from settings file: MTA_trace.mta
+28/07/17 23:32:15:905 DEBUG [main] runner.run (run.java:113) - Begin work time from settings file: 23:00:00
+28/07/17 23:32:15:906 DEBUG [main] runner.run (run.java:116) - End work time from settings file: 01:40:00
+28/07/17 23:32:15:907 DEBUG [main] runner.run (run.java:119) - Interval time from settings file: 120
+28/07/17 23:32:15:907 DEBUG [main] runner.run (run.java:122) - Zip archive name from settings file: G:\\copy\\test.zip
+28/07/17 23:32:15:916 INFO  [main] runner.run (run.java:60) - Programm is started.
+28/07/17 23:32:15:916 INFO  [main] runner.run (run.java:63) - Checking time for work...
+28/07/17 23:32:15:918 INFO  [main] runner.run (run.java:66) - It's work time!
+28/07/17 23:32:15:918 DEBUG [main] Objects.SftpClient (SftpClient.java:31) - Start SFTP Client.
+28/07/17 23:32:17:173 DEBUG [main] Objects.SftpClient (SftpClient.java:41) - Connected to 127.0.0.1.
+28/07/17 23:32:18:177 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file MTA_trace.mta is successfully!
+28/07/17 23:32:18:192 DEBUG [main] Objects.SftpClient (SftpClient.java:85) - Stop SFTP Client.
+28/07/17 23:32:18:197 DEBUG [main] Objects.ZipArchive (ZipArchive.java:50) - Archive file G:\\copy\\test_20170728.zip is already exist!
+28/07/17 23:32:18:198 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170728.zip
+28/07/17 23:32:25:476 DEBUG [main] runner.run (run.java:89) - SFTP address from settings file: 127.0.0.1
+28/07/17 23:32:25:479 DEBUG [main] runner.run (run.java:92) - SFTP port from settings file: 22
+28/07/17 23:32:25:480 DEBUG [main] runner.run (run.java:95) - SFTP login from settings file: wawa
+28/07/17 23:32:25:480 DEBUG [main] runner.run (run.java:98) - SFTP password from settings file: password
+28/07/17 23:32:25:480 DEBUG [main] runner.run (run.java:101) - Source file path from settings file: /
+28/07/17 23:32:25:481 DEBUG [main] runner.run (run.java:104) - Source file name from settings file: MTA_trace.mta
+28/07/17 23:32:25:481 DEBUG [main] runner.run (run.java:107) - Destination file path from settings file: G:\\copy\\
+28/07/17 23:32:25:481 DEBUG [main] runner.run (run.java:110) - Destination filename from settings file: MTA_trace.mta
+28/07/17 23:32:25:611 DEBUG [main] runner.run (run.java:113) - Begin work time from settings file: 23:00:00
+28/07/17 23:32:25:612 DEBUG [main] runner.run (run.java:116) - End work time from settings file: 01:40:00
+28/07/17 23:32:25:612 DEBUG [main] runner.run (run.java:119) - Interval time from settings file: 120
+28/07/17 23:32:25:613 DEBUG [main] runner.run (run.java:122) - Zip archive name from settings file: G:\\copy\\test.zip
+28/07/17 23:32:25:621 INFO  [main] runner.run (run.java:60) - Programm is started.
+28/07/17 23:32:25:621 INFO  [main] runner.run (run.java:63) - Checking time for work...
+28/07/17 23:32:25:623 INFO  [main] runner.run (run.java:66) - It's work time!
+28/07/17 23:32:25:624 DEBUG [main] Objects.SftpClient (SftpClient.java:31) - Start SFTP Client.
+28/07/17 23:32:26:595 DEBUG [main] Objects.SftpClient (SftpClient.java:41) - Connected to 127.0.0.1.
+28/07/17 23:32:27:125 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file MTA_trace.mta is successfully!
+28/07/17 23:32:27:133 DEBUG [main] Objects.SftpClient (SftpClient.java:85) - Stop SFTP Client.
+28/07/17 23:32:27:134 DEBUG [main] Objects.ZipArchive (ZipArchive.java:50) - Archive file G:\\copy\\test_20170728.zip is already exist!
+28/07/17 23:32:27:135 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170728.zip
+28/07/17 23:32:27:322 INFO  [main] Objects.ZipArchive (ZipArchive.java:80) - The file MTA_trace_28072017_23_32_27.mta was added in archive G:\\copy\\test_20170728.zip
+28/07/17 23:32:27:346 INFO  [main] runner.run (run.java:69) - Waiting 02 min 00 sec
+02/08/17 21:31:54:977 INFO  [main] runner.run (run.java:31) - Programm is started.
+02/08/17 21:31:55:006 DEBUG [main] runner.run (run.java:87) - SFTP address from settings file: 127.0.0.1
+02/08/17 21:31:55:007 DEBUG [main] runner.run (run.java:90) - SFTP port from settings file: 22
+02/08/17 21:31:55:007 DEBUG [main] runner.run (run.java:93) - SFTP login from settings file: wawa
+02/08/17 21:31:55:007 DEBUG [main] runner.run (run.java:96) - SFTP password from settings file: password
+02/08/17 21:31:55:007 DEBUG [main] runner.run (run.java:99) - Source file path from settings file: /
+02/08/17 21:31:55:008 DEBUG [main] runner.run (run.java:102) - Source file name from settings file: MTA_trace.mta
+02/08/17 21:31:55:008 DEBUG [main] runner.run (run.java:105) - Destination file path from settings file: G:\\copy\\
+02/08/17 21:31:55:008 DEBUG [main] runner.run (run.java:108) - Destination filename from settings file: MTA_trace.mta
+02/08/17 21:31:55:514 DEBUG [main] runner.run (run.java:111) - Begin work time from settings file: 23:00:00
+02/08/17 21:31:55:515 DEBUG [main] runner.run (run.java:114) - End work time from settings file: 01:40:00
+02/08/17 21:31:55:516 DEBUG [main] runner.run (run.java:117) - Interval time from settings file: 120
+02/08/17 21:31:55:516 DEBUG [main] runner.run (run.java:120) - Zip archive name from settings file: G:\\copy\\test.zip
+02/08/17 21:31:55:520 INFO  [main] runner.run (run.java:61) - Checking time for work...
+02/08/17 21:31:55:531 INFO  [main] runner.run (run.java:71) - It's NOT work time.
+02/08/17 21:31:55:532 INFO  [main] runner.run (run.java:73) - Waiting 01 h 28 min 05 sec
+04/09/17 23:20:11:764 INFO  [main] runner.run (run.java:32) - Programm is started.
+04/09/17 23:20:11:774 INFO  [main] runner.run (run.java:89) - Number of files: 1
+04/09/17 23:20:11:775 INFO  [main] runner.run (run.java:94) - Source filename 0 : null
+04/09/17 23:20:11:776 DEBUG [main] runner.run (run.java:100) - SFTP address from settings file: 127.0.0.1
+04/09/17 23:20:11:777 DEBUG [main] runner.run (run.java:103) - SFTP port from settings file: 22
+04/09/17 23:20:11:777 DEBUG [main] runner.run (run.java:106) - SFTP login from settings file: wawa
+04/09/17 23:20:11:777 DEBUG [main] runner.run (run.java:109) - SFTP password from settings file: password
+04/09/17 23:20:11:777 DEBUG [main] runner.run (run.java:112) - Source file path from settings file: 1
+04/09/17 23:20:11:778 DEBUG [main] runner.run (run.java:118) - Destination file path from settings file: G:\\copy\\
+04/09/17 23:20:11:778 DEBUG [main] runner.run (run.java:121) - Destination filename from settings file: MTA_trace.mta
+04/09/17 23:20:11:921 DEBUG [main] runner.run (run.java:124) - Begin work time from settings file: 23:00:00
+04/09/17 23:20:11:922 DEBUG [main] runner.run (run.java:127) - End work time from settings file: 01:40:00
+04/09/17 23:20:11:922 DEBUG [main] runner.run (run.java:130) - Interval time from settings file: 120
+04/09/17 23:20:11:922 DEBUG [main] runner.run (run.java:133) - Zip archive name from settings file: G:\\copy\\test.zip
+04/09/17 23:20:11:926 INFO  [main] runner.run (run.java:62) - Checking time for work...
+04/09/17 23:20:11:931 INFO  [main] runner.run (run.java:65) - It's work time!
+04/09/17 23:20:11:932 DEBUG [main] Objects.SftpClient (SftpClient.java:32) - Start SFTP Client.
+04/09/17 23:20:13:679 DEBUG [main] Objects.SftpClient (SftpClient.java:42) - Connected to 127.0.0.1.
+04/09/17 23:20:14:838 ERROR [main] Objects.SftpClient (SftpClient.java:64) - File download failed!
+04/09/17 23:20:14:839 ERROR [main] Objects.SftpClient (SftpClient.java:65) - 
+04/09/17 23:20:14:845 INFO  [main] Objects.SftpClient (SftpClient.java:76) - Disconnected from 127.0.0.1.
+04/09/17 23:20:14:845 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+04/09/17 23:20:14:847 INFO  [main] Objects.ZipArchive (ZipArchive.java:47) - Archive file is not exist. File G:\\copy\\test_20170904.zip is created.
+04/09/17 23:20:14:848 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170904.zip
+04/09/17 23:20:15:243 ERROR [main] Objects.ZipArchive (ZipArchive.java:84) - Файл G:\copy\MTA_trace.mta не найден по указанному пути.
+04/09/17 23:20:15:245 INFO  [main] runner.run (run.java:68) - Waiting 02 min 00 sec
+04/09/17 23:26:17:289 INFO  [main] runner.run (run.java:32) - Programm is started.
+04/09/17 23:26:17:307 ERROR [main] Objects.Property (Property.java:77) - Error format number of source files!
+04/09/17 23:29:33:055 INFO  [main] runner.run (run.java:32) - Programm is started.
+04/09/17 23:29:33:065 INFO  [main] runner.run (run.java:89) - Number of files: 1
+04/09/17 23:30:44:493 INFO  [main] runner.run (run.java:32) - Programm is started.
+04/09/17 23:30:44:504 INFO  [main] runner.run (run.java:89) - Number of files: 1
+04/09/17 23:31:15:370 INFO  [main] runner.run (run.java:32) - Programm is started.
+04/09/17 23:31:15:382 INFO  [main] runner.run (run.java:89) - Number of files: 1
+04/09/17 23:32:39:647 INFO  [main] runner.run (run.java:32) - Programm is started.
+04/09/17 23:32:39:657 INFO  [main] runner.run (run.java:89) - Number of files: 1
+04/09/17 23:32:39:658 INFO  [main] runner.run (run.java:94) - Source filename 01 : null
+04/09/17 23:32:39:659 INFO  [main] runner.run (run.java:94) - Source filename 11 : null
+04/09/17 23:32:39:660 DEBUG [main] runner.run (run.java:100) - SFTP address from settings file: 127.0.0.1
+04/09/17 23:32:39:661 DEBUG [main] runner.run (run.java:103) - SFTP port from settings file: 22
+04/09/17 23:32:39:661 DEBUG [main] runner.run (run.java:106) - SFTP login from settings file: wawa
+04/09/17 23:32:39:661 DEBUG [main] runner.run (run.java:109) - SFTP password from settings file: password
+04/09/17 23:32:39:662 DEBUG [main] runner.run (run.java:112) - Source file path from settings file: 1
+04/09/17 23:32:39:662 DEBUG [main] runner.run (run.java:118) - Destination file path from settings file: G:\\copy\\
+04/09/17 23:32:39:662 DEBUG [main] runner.run (run.java:121) - Destination filename from settings file: MTA_trace.mta
+04/09/17 23:32:39:785 DEBUG [main] runner.run (run.java:124) - Begin work time from settings file: 23:00:00
+04/09/17 23:32:39:785 DEBUG [main] runner.run (run.java:127) - End work time from settings file: 01:40:00
+04/09/17 23:32:39:786 DEBUG [main] runner.run (run.java:130) - Interval time from settings file: 120
+04/09/17 23:32:39:786 DEBUG [main] runner.run (run.java:133) - Zip archive name from settings file: G:\\copy\\test.zip
+04/09/17 23:32:39:790 INFO  [main] runner.run (run.java:62) - Checking time for work...
+04/09/17 23:32:39:795 INFO  [main] runner.run (run.java:65) - It's work time!
+04/09/17 23:32:39:796 DEBUG [main] Objects.SftpClient (SftpClient.java:32) - Start SFTP Client.
+04/09/17 23:32:40:809 DEBUG [main] Objects.SftpClient (SftpClient.java:42) - Connected to 127.0.0.1.
+04/09/17 23:32:40:875 ERROR [main] Objects.SftpClient (SftpClient.java:64) - File download failed!
+04/09/17 23:32:40:876 ERROR [main] Objects.SftpClient (SftpClient.java:65) - 
+04/09/17 23:32:40:892 INFO  [main] Objects.SftpClient (SftpClient.java:76) - Disconnected from 127.0.0.1.
+04/09/17 23:32:40:893 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+04/09/17 23:32:40:901 DEBUG [main] Objects.ZipArchive (ZipArchive.java:50) - Archive file G:\\copy\\test_20170904.zip is already exist!
+04/09/17 23:32:40:902 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170904.zip
+04/09/17 23:32:40:959 ERROR [main] Objects.ZipArchive (ZipArchive.java:84) - Файл G:\copy\MTA_trace.mta не найден по указанному пути.
+04/09/17 23:32:40:968 INFO  [main] runner.run (run.java:68) - Waiting 02 min 00 sec
+04/09/17 23:33:05:473 INFO  [main] runner.run (run.java:32) - Programm is started.
+04/09/17 23:33:05:490 INFO  [main] runner.run (run.java:89) - Number of files: 1
+04/09/17 23:33:05:491 INFO  [main] runner.run (run.java:94) - Source filename 01 : null
+04/09/17 23:33:05:493 DEBUG [main] runner.run (run.java:100) - SFTP address from settings file: 127.0.0.1
+04/09/17 23:33:05:493 DEBUG [main] runner.run (run.java:103) - SFTP port from settings file: 22
+04/09/17 23:33:05:493 DEBUG [main] runner.run (run.java:106) - SFTP login from settings file: wawa
+04/09/17 23:33:05:494 DEBUG [main] runner.run (run.java:109) - SFTP password from settings file: password
+04/09/17 23:33:05:494 DEBUG [main] runner.run (run.java:112) - Source file path from settings file: 1
+04/09/17 23:33:05:494 DEBUG [main] runner.run (run.java:118) - Destination file path from settings file: G:\\copy\\
+04/09/17 23:33:05:495 DEBUG [main] runner.run (run.java:121) - Destination filename from settings file: MTA_trace.mta
+04/09/17 23:33:05:629 DEBUG [main] runner.run (run.java:124) - Begin work time from settings file: 23:00:00
+04/09/17 23:33:05:630 DEBUG [main] runner.run (run.java:127) - End work time from settings file: 01:40:00
+04/09/17 23:33:05:630 DEBUG [main] runner.run (run.java:130) - Interval time from settings file: 120
+04/09/17 23:33:05:630 DEBUG [main] runner.run (run.java:133) - Zip archive name from settings file: G:\\copy\\test.zip
+04/09/17 23:33:05:635 INFO  [main] runner.run (run.java:62) - Checking time for work...
+04/09/17 23:33:05:641 INFO  [main] runner.run (run.java:65) - It's work time!
+04/09/17 23:33:05:642 DEBUG [main] Objects.SftpClient (SftpClient.java:32) - Start SFTP Client.
+04/09/17 23:33:06:676 DEBUG [main] Objects.SftpClient (SftpClient.java:42) - Connected to 127.0.0.1.
+04/09/17 23:33:06:749 ERROR [main] Objects.SftpClient (SftpClient.java:64) - File download failed!
+04/09/17 23:33:06:749 ERROR [main] Objects.SftpClient (SftpClient.java:65) - 
+04/09/17 23:33:06:759 INFO  [main] Objects.SftpClient (SftpClient.java:76) - Disconnected from 127.0.0.1.
+04/09/17 23:33:06:759 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+04/09/17 23:33:06:762 DEBUG [main] Objects.ZipArchive (ZipArchive.java:50) - Archive file G:\\copy\\test_20170904.zip is already exist!
+04/09/17 23:33:06:763 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170904.zip
+04/09/17 23:33:06:819 ERROR [main] Objects.ZipArchive (ZipArchive.java:84) - Файл G:\copy\MTA_trace.mta не найден по указанному пути.
+04/09/17 23:33:06:829 INFO  [main] runner.run (run.java:68) - Waiting 02 min 00 sec
+04/09/17 23:34:15:499 INFO  [main] runner.run (run.java:32) - Programm is started.
+04/09/17 23:34:15:516 INFO  [main] runner.run (run.java:89) - Number of files: 1
+04/09/17 23:34:15:517 INFO  [main] runner.run (run.java:94) - Source filename0 : /MTA_trace.mta
+04/09/17 23:34:15:518 DEBUG [main] runner.run (run.java:100) - SFTP address from settings file: 127.0.0.1
+04/09/17 23:34:15:519 DEBUG [main] runner.run (run.java:103) - SFTP port from settings file: 22
+04/09/17 23:34:15:519 DEBUG [main] runner.run (run.java:106) - SFTP login from settings file: wawa
+04/09/17 23:34:15:519 DEBUG [main] runner.run (run.java:109) - SFTP password from settings file: password
+04/09/17 23:34:15:519 DEBUG [main] runner.run (run.java:112) - Source file path from settings file: 1
+04/09/17 23:34:15:520 DEBUG [main] runner.run (run.java:118) - Destination file path from settings file: G:\\copy\\
+04/09/17 23:34:15:520 DEBUG [main] runner.run (run.java:121) - Destination filename from settings file: MTA_trace.mta
+04/09/17 23:34:15:648 DEBUG [main] runner.run (run.java:124) - Begin work time from settings file: 23:00:00
+04/09/17 23:34:15:649 DEBUG [main] runner.run (run.java:127) - End work time from settings file: 01:40:00
+04/09/17 23:34:15:649 DEBUG [main] runner.run (run.java:130) - Interval time from settings file: 120
+04/09/17 23:34:15:649 DEBUG [main] runner.run (run.java:133) - Zip archive name from settings file: G:\\copy\\test.zip
+04/09/17 23:34:15:654 INFO  [main] runner.run (run.java:62) - Checking time for work...
+04/09/17 23:34:15:659 INFO  [main] runner.run (run.java:65) - It's work time!
+04/09/17 23:34:15:659 DEBUG [main] Objects.SftpClient (SftpClient.java:32) - Start SFTP Client.
+04/09/17 23:34:16:743 DEBUG [main] Objects.SftpClient (SftpClient.java:42) - Connected to 127.0.0.1.
+04/09/17 23:34:17:648 INFO  [main] Objects.SftpClient (SftpClient.java:53) - Download file /MTA_trace.mta is successfully!
+04/09/17 23:34:17:655 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+04/09/17 23:34:17:657 DEBUG [main] Objects.ZipArchive (ZipArchive.java:50) - Archive file G:\\copy\\test_20170904.zip is already exist!
+04/09/17 23:34:17:657 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170904.zip
+04/09/17 23:34:17:953 INFO  [main] Objects.ZipArchive (ZipArchive.java:80) - The file MTA_trace_04092017_23_34_17.mta was added in archive G:\\copy\\test_20170904.zip
+04/09/17 23:34:17:993 INFO  [main] runner.run (run.java:68) - Waiting 02 min 00 sec
+04/09/17 23:35:06:834 INFO  [main] runner.run (run.java:65) - It's work time!
+04/09/17 23:35:06:835 DEBUG [main] Objects.SftpClient (SftpClient.java:32) - Start SFTP Client.
+04/09/17 23:35:07:053 DEBUG [main] Objects.SftpClient (SftpClient.java:42) - Connected to 127.0.0.1.
+04/09/17 23:35:07:084 ERROR [main] Objects.SftpClient (SftpClient.java:64) - File download failed!
+04/09/17 23:35:07:085 ERROR [main] Objects.SftpClient (SftpClient.java:65) - 
+04/09/17 23:35:07:089 INFO  [main] Objects.SftpClient (SftpClient.java:76) - Disconnected from 127.0.0.1.
+04/09/17 23:35:07:090 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+04/09/17 23:35:07:090 DEBUG [main] Objects.ZipArchive (ZipArchive.java:50) - Archive file G:\\copy\\test_20170904.zip is already exist!
+04/09/17 23:35:07:091 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170904.zip
+04/09/17 23:35:07:096 ERROR [main] Objects.ZipArchive (ZipArchive.java:84) - Файл G:\copy\MTA_trace.mta не найден по указанному пути.
+04/09/17 23:35:07:099 INFO  [main] runner.run (run.java:68) - Waiting 02 min 00 sec
+04/09/17 23:35:34:129 INFO  [main] runner.run (run.java:32) - Programm is started.
+04/09/17 23:35:34:140 INFO  [main] runner.run (run.java:89) - Number of files: 1
+04/09/17 23:36:17:996 INFO  [main] runner.run (run.java:65) - It's work time!
+04/09/17 23:36:17:997 DEBUG [main] Objects.SftpClient (SftpClient.java:32) - Start SFTP Client.
+04/09/17 23:36:18:294 DEBUG [main] Objects.SftpClient (SftpClient.java:42) - Connected to 127.0.0.1.
+04/09/17 23:36:18:993 INFO  [main] Objects.SftpClient (SftpClient.java:53) - Download file /MTA_trace.mta is successfully!
+04/09/17 23:36:19:002 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+04/09/17 23:36:19:003 DEBUG [main] Objects.ZipArchive (ZipArchive.java:50) - Archive file G:\\copy\\test_20170904.zip is already exist!
+04/09/17 23:36:19:003 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170904.zip
+04/09/17 23:36:19:212 INFO  [main] Objects.ZipArchive (ZipArchive.java:80) - The file MTA_trace_04092017_23_36_19.mta was added in archive G:\\copy\\test_20170904.zip
+04/09/17 23:36:19:248 INFO  [main] runner.run (run.java:68) - Waiting 02 min 00 sec
+04/09/17 23:37:18:402 INFO  [main] runner.run (run.java:32) - Programm is started.
+04/09/17 23:37:18:424 INFO  [main] runner.run (run.java:89) - Number of files: 1
+04/09/17 23:37:18:425 INFO  [main] runner.run (run.java:94) - Source filename0 : /MTA_trace.mta
+04/09/17 23:37:18:426 DEBUG [main] runner.run (run.java:100) - SFTP address from settings file: 127.0.0.1
+04/09/17 23:37:18:427 DEBUG [main] runner.run (run.java:103) - SFTP port from settings file: 22
+04/09/17 23:37:18:427 DEBUG [main] runner.run (run.java:106) - SFTP login from settings file: wawa
+04/09/17 23:37:18:428 DEBUG [main] runner.run (run.java:109) - SFTP password from settings file: password
+04/09/17 23:37:18:428 DEBUG [main] runner.run (run.java:112) - Source file path from settings file: 1
+04/09/17 23:37:18:428 DEBUG [main] runner.run (run.java:118) - Destination file path from settings file: G:\\copy\\
+04/09/17 23:37:18:428 DEBUG [main] runner.run (run.java:121) - Destination filename from settings file: MTA_trace.mta
+04/09/17 23:37:18:562 DEBUG [main] runner.run (run.java:124) - Begin work time from settings file: 23:00:00
+04/09/17 23:37:18:563 DEBUG [main] runner.run (run.java:127) - End work time from settings file: 01:40:00
+04/09/17 23:37:18:563 DEBUG [main] runner.run (run.java:130) - Interval time from settings file: 120
+04/09/17 23:37:18:564 DEBUG [main] runner.run (run.java:133) - Zip archive name from settings file: G:\\copy\\test.zip
+04/09/17 23:37:18:567 INFO  [main] runner.run (run.java:62) - Checking time for work...
+04/09/17 23:37:18:573 INFO  [main] runner.run (run.java:65) - It's work time!
+04/09/17 23:37:18:573 DEBUG [main] Objects.SftpClient (SftpClient.java:32) - Start SFTP Client.
+04/09/17 23:37:19:623 DEBUG [main] Objects.SftpClient (SftpClient.java:42) - Connected to 127.0.0.1.
+04/09/17 23:37:20:450 INFO  [main] Objects.SftpClient (SftpClient.java:53) - Download file /MTA_trace.mta is successfully!
+04/09/17 23:37:20:458 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+04/09/17 23:37:20:459 DEBUG [main] Objects.ZipArchive (ZipArchive.java:50) - Archive file G:\\copy\\test_20170904.zip is already exist!
+04/09/17 23:37:20:460 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170904.zip
+04/09/17 23:37:20:730 INFO  [main] Objects.ZipArchive (ZipArchive.java:80) - The file MTA_trace_04092017_23_37_20.mta was added in archive G:\\copy\\test_20170904.zip
+04/09/17 23:37:20:776 INFO  [main] runner.run (run.java:68) - Waiting 02 min 00 sec
+04/09/17 23:37:38:596 INFO  [main] runner.run (run.java:32) - Programm is started.
+04/09/17 23:37:38:610 INFO  [main] runner.run (run.java:89) - Number of files: 1
+04/09/17 23:37:38:611 INFO  [main] runner.run (run.java:94) - Source filename1 : /MTA_trace.mta
+04/09/17 23:37:38:612 DEBUG [main] runner.run (run.java:100) - SFTP address from settings file: 127.0.0.1
+04/09/17 23:37:38:612 DEBUG [main] runner.run (run.java:103) - SFTP port from settings file: 22
+04/09/17 23:37:38:613 DEBUG [main] runner.run (run.java:106) - SFTP login from settings file: wawa
+04/09/17 23:37:38:613 DEBUG [main] runner.run (run.java:109) - SFTP password from settings file: password
+04/09/17 23:37:38:613 DEBUG [main] runner.run (run.java:112) - Source file path from settings file: 1
+04/09/17 23:37:38:614 DEBUG [main] runner.run (run.java:118) - Destination file path from settings file: G:\\copy\\
+04/09/17 23:37:38:614 DEBUG [main] runner.run (run.java:121) - Destination filename from settings file: MTA_trace.mta
+04/09/17 23:37:38:765 DEBUG [main] runner.run (run.java:124) - Begin work time from settings file: 23:00:00
+04/09/17 23:37:38:766 DEBUG [main] runner.run (run.java:127) - End work time from settings file: 01:40:00
+04/09/17 23:37:38:766 DEBUG [main] runner.run (run.java:130) - Interval time from settings file: 120
+04/09/17 23:37:38:766 DEBUG [main] runner.run (run.java:133) - Zip archive name from settings file: G:\\copy\\test.zip
+04/09/17 23:37:38:770 INFO  [main] runner.run (run.java:62) - Checking time for work...
+04/09/17 23:37:38:775 INFO  [main] runner.run (run.java:65) - It's work time!
+04/09/17 23:37:38:776 DEBUG [main] Objects.SftpClient (SftpClient.java:32) - Start SFTP Client.
+04/09/17 23:37:39:837 DEBUG [main] Objects.SftpClient (SftpClient.java:42) - Connected to 127.0.0.1.
+04/09/17 23:37:40:642 INFO  [main] Objects.SftpClient (SftpClient.java:53) - Download file /MTA_trace.mta is successfully!
+04/09/17 23:37:40:649 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+04/09/17 23:37:40:650 DEBUG [main] Objects.ZipArchive (ZipArchive.java:50) - Archive file G:\\copy\\test_20170904.zip is already exist!
+04/09/17 23:37:40:651 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170904.zip
+04/09/17 23:37:40:913 INFO  [main] Objects.ZipArchive (ZipArchive.java:80) - The file MTA_trace_04092017_23_37_40.mta was added in archive G:\\copy\\test_20170904.zip
+04/09/17 23:37:40:959 INFO  [main] runner.run (run.java:68) - Waiting 02 min 00 sec
+04/09/17 23:37:53:092 INFO  [main] runner.run (run.java:32) - Programm is started.
+04/09/17 23:37:53:102 INFO  [main] runner.run (run.java:89) - Number of files: 1
+04/09/17 23:37:53:103 INFO  [main] runner.run (run.java:94) - Source filename01 : /MTA_trace.mta
+04/09/17 23:37:53:105 DEBUG [main] runner.run (run.java:100) - SFTP address from settings file: 127.0.0.1
+04/09/17 23:37:53:105 DEBUG [main] runner.run (run.java:103) - SFTP port from settings file: 22
+04/09/17 23:37:53:106 DEBUG [main] runner.run (run.java:106) - SFTP login from settings file: wawa
+04/09/17 23:37:53:106 DEBUG [main] runner.run (run.java:109) - SFTP password from settings file: password
+04/09/17 23:37:53:106 DEBUG [main] runner.run (run.java:112) - Source file path from settings file: 1
+04/09/17 23:37:53:106 DEBUG [main] runner.run (run.java:118) - Destination file path from settings file: G:\\copy\\
+04/09/17 23:37:53:107 DEBUG [main] runner.run (run.java:121) - Destination filename from settings file: MTA_trace.mta
+04/09/17 23:37:53:236 DEBUG [main] runner.run (run.java:124) - Begin work time from settings file: 23:00:00
+04/09/17 23:37:53:237 DEBUG [main] runner.run (run.java:127) - End work time from settings file: 01:40:00
+04/09/17 23:37:53:237 DEBUG [main] runner.run (run.java:130) - Interval time from settings file: 120
+04/09/17 23:37:53:238 DEBUG [main] runner.run (run.java:133) - Zip archive name from settings file: G:\\copy\\test.zip
+04/09/17 23:37:53:241 INFO  [main] runner.run (run.java:62) - Checking time for work...
+04/09/17 23:37:53:248 INFO  [main] runner.run (run.java:65) - It's work time!
+04/09/17 23:37:53:248 DEBUG [main] Objects.SftpClient (SftpClient.java:32) - Start SFTP Client.
+04/09/17 23:37:54:260 DEBUG [main] Objects.SftpClient (SftpClient.java:42) - Connected to 127.0.0.1.
+04/09/17 23:37:54:991 INFO  [main] Objects.SftpClient (SftpClient.java:53) - Download file /MTA_trace.mta is successfully!
+04/09/17 23:37:55:009 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+04/09/17 23:37:55:017 DEBUG [main] Objects.ZipArchive (ZipArchive.java:50) - Archive file G:\\copy\\test_20170904.zip is already exist!
+04/09/17 23:37:55:017 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170904.zip
+04/09/17 23:37:55:282 INFO  [main] Objects.ZipArchive (ZipArchive.java:80) - The file MTA_trace_04092017_23_37_55.mta was added in archive G:\\copy\\test_20170904.zip
+04/09/17 23:37:55:335 INFO  [main] runner.run (run.java:68) - Waiting 02 min 00 sec
+04/09/17 23:38:23:430 INFO  [main] runner.run (run.java:32) - Programm is started.
+04/09/17 23:38:23:446 INFO  [main] runner.run (run.java:89) - Number of files: 1
+04/09/17 23:38:23:446 INFO  [main] runner.run (run.java:94) - Source filename1 : /MTA_trace.mta
+04/09/17 23:38:23:448 DEBUG [main] runner.run (run.java:100) - SFTP address from settings file: 127.0.0.1
+04/09/17 23:38:23:448 DEBUG [main] runner.run (run.java:103) - SFTP port from settings file: 22
+04/09/17 23:38:23:448 DEBUG [main] runner.run (run.java:106) - SFTP login from settings file: wawa
+04/09/17 23:38:23:449 DEBUG [main] runner.run (run.java:109) - SFTP password from settings file: password
+04/09/17 23:38:23:449 DEBUG [main] runner.run (run.java:112) - Source file path from settings file: 1
+04/09/17 23:38:23:449 DEBUG [main] runner.run (run.java:118) - Destination file path from settings file: G:\\copy\\
+04/09/17 23:38:23:449 DEBUG [main] runner.run (run.java:121) - Destination filename from settings file: MTA_trace.mta
+04/09/17 23:38:23:578 DEBUG [main] runner.run (run.java:124) - Begin work time from settings file: 23:00:00
+04/09/17 23:38:23:578 DEBUG [main] runner.run (run.java:127) - End work time from settings file: 01:40:00
+04/09/17 23:38:23:579 DEBUG [main] runner.run (run.java:130) - Interval time from settings file: 120
+04/09/17 23:38:23:579 DEBUG [main] runner.run (run.java:133) - Zip archive name from settings file: G:\\copy\\test.zip
+04/09/17 23:38:23:583 INFO  [main] runner.run (run.java:62) - Checking time for work...
+04/09/17 23:38:23:588 INFO  [main] runner.run (run.java:65) - It's work time!
+04/09/17 23:38:23:589 DEBUG [main] Objects.SftpClient (SftpClient.java:32) - Start SFTP Client.
+04/09/17 23:38:24:635 DEBUG [main] Objects.SftpClient (SftpClient.java:42) - Connected to 127.0.0.1.
+04/09/17 23:38:25:472 INFO  [main] Objects.SftpClient (SftpClient.java:53) - Download file /MTA_trace.mta is successfully!
+04/09/17 23:38:25:485 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+04/09/17 23:38:25:486 DEBUG [main] Objects.ZipArchive (ZipArchive.java:50) - Archive file G:\\copy\\test_20170904.zip is already exist!
+04/09/17 23:38:25:487 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170904.zip
+04/09/17 23:38:25:813 INFO  [main] Objects.ZipArchive (ZipArchive.java:80) - The file MTA_trace_04092017_23_38_25.mta was added in archive G:\\copy\\test_20170904.zip
+04/09/17 23:38:25:882 INFO  [main] runner.run (run.java:68) - Waiting 02 min 00 sec
+07/09/17 21:49:16:474 INFO  [main] runner.run (run.java:32) - Programm is started.
+07/09/17 21:49:16:498 INFO  [main] runner.run (run.java:89) - Number of files: 1
+07/09/17 21:49:16:498 INFO  [main] runner.run (run.java:94) - Source filename1 : /MTA_trace.mta
+07/09/17 21:49:16:499 DEBUG [main] runner.run (run.java:100) - SFTP address from settings file: 127.0.0.1
+07/09/17 21:49:16:500 DEBUG [main] runner.run (run.java:103) - SFTP port from settings file: 22
+07/09/17 21:49:16:500 DEBUG [main] runner.run (run.java:106) - SFTP login from settings file: wawa
+07/09/17 21:49:16:500 DEBUG [main] runner.run (run.java:109) - SFTP password from settings file: password
+07/09/17 21:49:16:500 DEBUG [main] runner.run (run.java:112) - Source file path from settings file: 1
+07/09/17 21:49:16:501 DEBUG [main] runner.run (run.java:118) - Destination file path from settings file: G:\\copy\\
+07/09/17 21:49:16:501 DEBUG [main] runner.run (run.java:121) - Destination filename from settings file: MTA_trace.mta
+07/09/17 21:49:16:879 DEBUG [main] runner.run (run.java:124) - Begin work time from settings file: 23:00:00
+07/09/17 21:49:16:879 DEBUG [main] runner.run (run.java:127) - End work time from settings file: 01:40:00
+07/09/17 21:49:16:880 DEBUG [main] runner.run (run.java:130) - Interval time from settings file: 120
+07/09/17 21:49:16:880 DEBUG [main] runner.run (run.java:133) - Zip archive name from settings file: G:\\copy\\test.zip
+07/09/17 21:49:16:886 INFO  [main] runner.run (run.java:62) - Checking time for work...
+07/09/17 21:49:16:895 INFO  [main] runner.run (run.java:72) - It's NOT work time.
+07/09/17 21:49:16:897 INFO  [main] runner.run (run.java:74) - Waiting 01 h 10 min 44 sec
+07/09/17 22:07:03:282 INFO  [main] runner.run (run.java:32) - Programm is started.
+07/09/17 22:07:03:293 INFO  [main] Objects.Property (Property.java:179) - Number of files: 1
+07/09/17 22:07:03:294 INFO  [main] Objects.Property (Property.java:184) - Source filename1 : null
+07/09/17 22:07:03:296 DEBUG [main] Objects.Property (Property.java:190) - SFTP address from settings file: 127.0.0.1
+07/09/17 22:07:03:296 DEBUG [main] Objects.Property (Property.java:193) - SFTP port from settings file: 22
+07/09/17 22:07:03:296 DEBUG [main] Objects.Property (Property.java:196) - SFTP login from settings file: wawa
+07/09/17 22:07:03:297 DEBUG [main] Objects.Property (Property.java:199) - SFTP password from settings file: password
+07/09/17 22:07:03:297 DEBUG [main] Objects.Property (Property.java:202) - Source file path from settings file: 1
+07/09/17 22:07:03:297 DEBUG [main] Objects.Property (Property.java:208) - Destination file path from settings file: G:\\copy\\
+07/09/17 22:07:03:297 DEBUG [main] Objects.Property (Property.java:211) - Destination filename from settings file: MTA_trace.mta
+07/09/17 22:07:03:449 DEBUG [main] Objects.Property (Property.java:214) - Begin work time from settings file: 23:00:00
+07/09/17 22:07:03:450 DEBUG [main] Objects.Property (Property.java:217) - End work time from settings file: 01:40:00
+07/09/17 22:07:03:450 DEBUG [main] Objects.Property (Property.java:220) - Interval time from settings file: 120
+07/09/17 22:07:03:451 DEBUG [main] Objects.Property (Property.java:223) - Zip archive name from settings file: G:\\copy\\test.zip
+07/09/17 22:19:44:824 INFO  [main] runner.run (run.java:32) - Programm is started.
+07/09/17 22:19:44:834 INFO  [main] Objects.Property (Property.java:32) - Number of files: 1
+07/09/17 22:19:44:834 INFO  [main] Objects.Property (Property.java:37) - Source filename1 : null
+07/09/17 22:19:44:836 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+07/09/17 22:19:44:836 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+07/09/17 22:19:44:837 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+07/09/17 22:19:44:837 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+07/09/17 22:19:44:838 DEBUG [main] Objects.Property (Property.java:54) - Source file path from settings file: 1
+07/09/17 22:19:44:838 DEBUG [main] Objects.Property (Property.java:59) - Destination file path from settings file: G:\\copy\\
+07/09/17 22:19:44:838 DEBUG [main] Objects.Property (Property.java:62) - Destination filename from settings file: MTA_trace.mta
+07/09/17 22:19:44:981 DEBUG [main] Objects.Property (Property.java:65) - Begin work time from settings file: 23:00:00
+07/09/17 22:19:44:982 DEBUG [main] Objects.Property (Property.java:68) - End work time from settings file: 01:40:00
+07/09/17 22:19:44:982 DEBUG [main] Objects.Property (Property.java:71) - Interval time from settings file: 120
+07/09/17 22:19:44:983 DEBUG [main] Objects.Property (Property.java:74) - Zip archive name from settings file: G:\\copy\\test.zip
+07/09/17 22:19:44:987 INFO  [main] runner.run (run.java:62) - Checking time for work...
+07/09/17 22:19:44:992 INFO  [main] runner.run (run.java:72) - It's NOT work time.
+07/09/17 22:19:44:994 INFO  [main] runner.run (run.java:74) - Waiting 40 min 16 sec
+07/09/17 22:24:32:208 INFO  [main] runner.run (run.java:23) - Programm is started.
+07/09/17 22:24:32:217 INFO  [main] Objects.Property (Property.java:32) - Number of files: 3
+07/09/17 22:24:32:218 INFO  [main] Objects.Property (Property.java:37) - Source filename1 : null
+07/09/17 22:24:32:218 INFO  [main] Objects.Property (Property.java:37) - Source filename2 : /MTA_trace.mta
+07/09/17 22:24:32:219 INFO  [main] Objects.Property (Property.java:37) - Source filename3 : /MTA_trace.mta2
+07/09/17 22:24:32:220 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+07/09/17 22:24:32:220 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+07/09/17 22:24:32:224 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+07/09/17 22:24:32:224 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+07/09/17 22:24:32:225 DEBUG [main] Objects.Property (Property.java:54) - Source file path from settings file: 3
+07/09/17 22:24:32:225 DEBUG [main] Objects.Property (Property.java:59) - Destination file path from settings file: G:\\copy\\
+07/09/17 22:24:32:225 DEBUG [main] Objects.Property (Property.java:62) - Destination filename from settings file: MTA_trace.mta
+07/09/17 22:24:32:353 DEBUG [main] Objects.Property (Property.java:65) - Begin work time from settings file: 23:00:00
+07/09/17 22:24:32:359 DEBUG [main] Objects.Property (Property.java:68) - End work time from settings file: 01:40:00
+07/09/17 22:24:32:359 DEBUG [main] Objects.Property (Property.java:71) - Interval time from settings file: 120
+07/09/17 22:24:32:359 DEBUG [main] Objects.Property (Property.java:74) - Zip archive name from settings file: G:\\copy\\test.zip
+07/09/17 22:24:32:363 INFO  [main] runner.run (run.java:36) - Checking time for work...
+07/09/17 22:24:32:369 INFO  [main] runner.run (run.java:46) - It's NOT work time.
+07/09/17 22:24:32:371 INFO  [main] runner.run (run.java:48) - Waiting 35 min 28 sec
+07/09/17 22:26:49:108 INFO  [main] runner.run (run.java:23) - Programm is started.
+07/09/17 22:26:49:118 INFO  [main] Objects.Property (Property.java:32) - Number of files: 3
+07/09/17 22:26:49:119 INFO  [main] Objects.Property (Property.java:37) - Source filename1 : null
+07/09/17 22:26:49:120 INFO  [main] Objects.Property (Property.java:37) - Source filename2 : null
+07/09/17 22:26:49:120 INFO  [main] Objects.Property (Property.java:37) - Source filename3 : null
+07/09/17 22:26:49:122 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+07/09/17 22:26:49:122 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+07/09/17 22:26:49:123 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+07/09/17 22:26:49:123 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+07/09/17 22:26:49:123 DEBUG [main] Objects.Property (Property.java:54) - Source file path from settings file: 3
+07/09/17 22:26:49:123 DEBUG [main] Objects.Property (Property.java:59) - Destination file path from settings file: G:\\copy\\
+07/09/17 22:26:49:124 DEBUG [main] Objects.Property (Property.java:62) - Destination filename from settings file: MTA_trace.mta
+07/09/17 22:26:49:255 DEBUG [main] Objects.Property (Property.java:65) - Begin work time from settings file: 23:00:00
+07/09/17 22:26:49:255 DEBUG [main] Objects.Property (Property.java:68) - End work time from settings file: 01:40:00
+07/09/17 22:26:49:256 DEBUG [main] Objects.Property (Property.java:71) - Interval time from settings file: 120
+07/09/17 22:26:49:256 DEBUG [main] Objects.Property (Property.java:74) - Zip archive name from settings file: G:\\copy\\test.zip
+07/09/17 22:26:49:260 INFO  [main] runner.run (run.java:36) - Checking time for work...
+07/09/17 22:26:49:266 INFO  [main] runner.run (run.java:46) - It's NOT work time.
+07/09/17 22:26:49:267 INFO  [main] runner.run (run.java:48) - Waiting 33 min 11 sec
+07/09/17 22:27:39:637 INFO  [main] runner.run (run.java:23) - Programm is started.
+07/09/17 22:27:39:647 INFO  [main] Objects.Property (Property.java:32) - Number of files: 3
+07/09/17 22:27:39:648 INFO  [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+07/09/17 22:27:39:648 INFO  [main] Objects.Property (Property.java:37) - Source filename2 : /MTA_trace.mta2
+07/09/17 22:27:39:649 INFO  [main] Objects.Property (Property.java:37) - Source filename3 : /MTA_trace.mta3
+07/09/17 22:27:39:650 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+07/09/17 22:27:39:650 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+07/09/17 22:27:39:650 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+07/09/17 22:27:39:651 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+07/09/17 22:27:39:651 DEBUG [main] Objects.Property (Property.java:54) - Source file path from settings file: 3
+07/09/17 22:27:39:651 DEBUG [main] Objects.Property (Property.java:59) - Destination file path from settings file: G:\\copy\\
+07/09/17 22:27:39:652 DEBUG [main] Objects.Property (Property.java:62) - Destination filename from settings file: MTA_trace.mta
+07/09/17 22:27:39:795 DEBUG [main] Objects.Property (Property.java:65) - Begin work time from settings file: 23:00:00
+07/09/17 22:27:39:795 DEBUG [main] Objects.Property (Property.java:68) - End work time from settings file: 01:40:00
+07/09/17 22:27:39:796 DEBUG [main] Objects.Property (Property.java:71) - Interval time from settings file: 120
+07/09/17 22:27:39:796 DEBUG [main] Objects.Property (Property.java:74) - Zip archive name from settings file: G:\\copy\\test.zip
+07/09/17 22:27:39:800 INFO  [main] runner.run (run.java:36) - Checking time for work...
+07/09/17 22:27:39:806 INFO  [main] runner.run (run.java:46) - It's NOT work time.
+07/09/17 22:27:39:807 INFO  [main] runner.run (run.java:48) - Waiting 32 min 21 sec
+07/09/17 23:10:44:262 INFO  [main] runner.run (run.java:23) - Programm is started.
+07/09/17 23:10:44:272 INFO  [main] Objects.Property (Property.java:32) - Number of files: 1
+07/09/17 23:10:44:272 INFO  [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+07/09/17 23:10:44:274 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+07/09/17 23:10:44:274 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+07/09/17 23:10:44:274 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+07/09/17 23:10:44:275 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+07/09/17 23:10:44:275 DEBUG [main] Objects.Property (Property.java:54) - Source file path from settings file: 1
+07/09/17 23:10:44:275 DEBUG [main] Objects.Property (Property.java:59) - Destination file path from settings file: G:\\copy\\
+07/09/17 23:10:44:275 DEBUG [main] Objects.Property (Property.java:62) - Destination filename from settings file: MTA_trace.mta
+07/09/17 23:10:44:433 DEBUG [main] Objects.Property (Property.java:65) - Begin work time from settings file: 23:00:00
+07/09/17 23:10:44:434 DEBUG [main] Objects.Property (Property.java:68) - End work time from settings file: 01:40:00
+07/09/17 23:10:44:434 DEBUG [main] Objects.Property (Property.java:71) - Interval time from settings file: 120
+07/09/17 23:10:44:435 DEBUG [main] Objects.Property (Property.java:74) - Zip archive name from settings file: G:\\copy\\test.zip
+07/09/17 23:10:44:439 INFO  [main] runner.run (run.java:36) - Checking time for work...
+07/09/17 23:10:44:444 INFO  [main] runner.run (run.java:39) - It's work time!
+07/09/17 23:10:44:445 DEBUG [main] Objects.SftpClient (SftpClient.java:32) - Start SFTP Client.
+07/09/17 23:10:45:515 ERROR [main] Objects.SftpClient (SftpClient.java:62) - Sftp server refused connection!
+07/09/17 23:10:45:519 ERROR [main] Objects.SftpClient (SftpClient.java:80) - Sftp server is not available.
+07/09/17 23:10:45:520 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+07/09/17 23:10:45:973 INFO  [main] Objects.ZipArchive (ZipArchive.java:47) - Archive file is not exist. File G:\\copy\\test_20170907.zip is created.
+07/09/17 23:10:45:974 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170907.zip
+07/09/17 23:10:46:127 ERROR [main] Objects.ZipArchive (ZipArchive.java:84) - Файл G:\copy\MTA_trace.mta не найден по указанному пути.
+07/09/17 23:10:46:129 INFO  [main] runner.run (run.java:42) - Waiting 02 min 00 sec
+07/09/17 23:11:37:119 INFO  [main] runner.run (run.java:23) - Programm is started.
+07/09/17 23:11:37:128 INFO  [main] Objects.Property (Property.java:32) - Number of files: 1
+07/09/17 23:11:37:129 INFO  [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+07/09/17 23:11:37:130 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+07/09/17 23:11:37:130 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+07/09/17 23:11:37:131 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+07/09/17 23:11:37:131 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+07/09/17 23:11:37:131 DEBUG [main] Objects.Property (Property.java:54) - Source file path from settings file: 1
+07/09/17 23:11:37:131 DEBUG [main] Objects.Property (Property.java:59) - Destination file path from settings file: G:\\copy\\
+07/09/17 23:11:37:132 DEBUG [main] Objects.Property (Property.java:62) - Destination filename from settings file: MTA_trace.mta
+07/09/17 23:11:37:262 DEBUG [main] Objects.Property (Property.java:65) - Begin work time from settings file: 23:00:00
+07/09/17 23:11:37:262 DEBUG [main] Objects.Property (Property.java:68) - End work time from settings file: 01:40:00
+07/09/17 23:11:37:263 DEBUG [main] Objects.Property (Property.java:71) - Interval time from settings file: 120
+07/09/17 23:11:37:263 DEBUG [main] Objects.Property (Property.java:74) - Zip archive name from settings file: G:\\copy\\test.zip
+07/09/17 23:11:37:267 INFO  [main] runner.run (run.java:36) - Checking time for work...
+07/09/17 23:11:37:273 INFO  [main] runner.run (run.java:39) - It's work time!
+07/09/17 23:11:37:273 DEBUG [main] Objects.SftpClient (SftpClient.java:32) - Start SFTP Client.
+07/09/17 23:11:38:999 DEBUG [main] Objects.SftpClient (SftpClient.java:42) - Connected to 127.0.0.1.
+07/09/17 23:11:40:604 INFO  [main] Objects.SftpClient (SftpClient.java:53) - Download file /MTA_trace.mta is successfully!
+07/09/17 23:11:40:614 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+07/09/17 23:11:40:615 DEBUG [main] Objects.ZipArchive (ZipArchive.java:50) - Archive file G:\\copy\\test_20170907.zip is already exist!
+07/09/17 23:11:40:616 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170907.zip
+07/09/17 23:11:40:672 ERROR [main] Objects.ZipArchive (ZipArchive.java:84) - Файл G:\copy\MTA_trace.mta не найден по указанному пути.
+07/09/17 23:11:40:675 INFO  [main] runner.run (run.java:42) - Waiting 02 min 00 sec
+07/09/17 23:13:41:653 INFO  [main] runner.run (run.java:23) - Programm is started.
+07/09/17 23:13:41:670 INFO  [main] Objects.Property (Property.java:32) - Number of files: 1
+07/09/17 23:13:41:670 INFO  [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+07/09/17 23:13:41:672 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+07/09/17 23:13:41:672 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+07/09/17 23:13:41:673 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+07/09/17 23:13:41:673 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+07/09/17 23:13:41:673 DEBUG [main] Objects.Property (Property.java:54) - Source file path from settings file: 1
+07/09/17 23:13:41:673 DEBUG [main] Objects.Property (Property.java:59) - Destination file path from settings file: G:\\copy\\
+07/09/17 23:13:41:674 DEBUG [main] Objects.Property (Property.java:62) - Destination filename from settings file: MTA_trace.mta
+07/09/17 23:13:41:805 DEBUG [main] Objects.Property (Property.java:65) - Begin work time from settings file: 23:00:00
+07/09/17 23:13:41:806 DEBUG [main] Objects.Property (Property.java:68) - End work time from settings file: 01:40:00
+07/09/17 23:13:41:806 DEBUG [main] Objects.Property (Property.java:71) - Interval time from settings file: 120
+07/09/17 23:13:41:807 DEBUG [main] Objects.Property (Property.java:74) - Zip archive name from settings file: G:\\copy\\test.zip
+07/09/17 23:14:39:531 INFO  [main] runner.run (run.java:23) - Programm is started.
+07/09/17 23:14:39:542 INFO  [main] Objects.Property (Property.java:32) - Number of files: 1
+07/09/17 23:14:39:542 INFO  [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+07/09/17 23:14:39:544 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+07/09/17 23:14:39:544 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+07/09/17 23:14:39:545 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+07/09/17 23:14:39:545 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+07/09/17 23:14:39:545 DEBUG [main] Objects.Property (Property.java:54) - Source file path from settings file: 1
+07/09/17 23:14:39:545 DEBUG [main] Objects.Property (Property.java:59) - Destination file path from settings file: G:\\copy\\
+07/09/17 23:14:39:546 DEBUG [main] Objects.Property (Property.java:62) - Destination filename from settings file: MTA_trace.mta
+07/09/17 23:14:39:675 DEBUG [main] Objects.Property (Property.java:65) - Begin work time from settings file: 23:00:00
+07/09/17 23:14:39:675 DEBUG [main] Objects.Property (Property.java:68) - End work time from settings file: 01:40:00
+07/09/17 23:14:39:676 DEBUG [main] Objects.Property (Property.java:71) - Interval time from settings file: 120
+07/09/17 23:14:39:676 DEBUG [main] Objects.Property (Property.java:74) - Zip archive name from settings file: G:\\copy\\test.zip
+07/09/17 23:14:39:680 INFO  [main] runner.run (run.java:36) - Checking time for work...
+07/09/17 23:14:39:685 INFO  [main] runner.run (run.java:39) - It's work time!
+07/09/17 23:14:39:686 DEBUG [main] Objects.SftpClient (SftpClient.java:32) - Start SFTP Client.
+07/09/17 23:14:40:728 DEBUG [main] Objects.SftpClient (SftpClient.java:42) - Connected to 127.0.0.1.
+07/09/17 23:14:41:758 INFO  [main] Objects.SftpClient (SftpClient.java:53) - Download file /MTA_trace.mta is successfully!
+07/09/17 23:14:41:765 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+07/09/17 23:14:41:768 DEBUG [main] Objects.ZipArchive (ZipArchive.java:50) - Archive file G:\\copy\\test_20170907.zip is already exist!
+07/09/17 23:14:41:769 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170907.zip
+07/09/17 23:14:42:082 INFO  [main] Objects.ZipArchive (ZipArchive.java:80) - The file MTA_trace_07092017_23_14_41.mta was added in archive G:\\copy\\test_20170907.zip
+07/09/17 23:14:42:129 INFO  [main] runner.run (run.java:42) - Waiting 02 min 00 sec
+08/09/17 22:37:29:744 INFO  [main] runner.run (run.java:23) - Programm is started.
+08/09/17 22:37:29:762 INFO  [main] Objects.Property (Property.java:32) - Number of files: 1
+08/09/17 22:37:29:762 INFO  [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+08/09/17 22:37:29:763 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+08/09/17 22:37:29:764 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+08/09/17 22:37:29:764 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+08/09/17 22:37:29:764 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+08/09/17 22:37:29:765 DEBUG [main] Objects.Property (Property.java:54) - Source file path from settings file: 1
+08/09/17 22:37:29:765 DEBUG [main] Objects.Property (Property.java:59) - Destination file path from settings file: G:\\copy\\
+08/09/17 22:37:29:765 DEBUG [main] Objects.Property (Property.java:62) - Destination filename from settings file: MTA_trace.mta
+08/09/17 22:37:29:906 DEBUG [main] Objects.Property (Property.java:65) - Begin work time from settings file: 23:00:00
+08/09/17 22:37:29:907 DEBUG [main] Objects.Property (Property.java:68) - End work time from settings file: 01:40:00
+08/09/17 22:37:29:908 DEBUG [main] Objects.Property (Property.java:71) - Interval time from settings file: 120
+08/09/17 22:37:29:908 DEBUG [main] Objects.Property (Property.java:74) - Zip archive name from settings file: G:\\copy\\test.zip
+08/09/17 22:37:29:912 INFO  [main] runner.run (run.java:36) - Checking time for work...
+08/09/17 22:37:29:917 INFO  [main] runner.run (run.java:46) - It's NOT work time.
+08/09/17 22:37:29:918 INFO  [main] runner.run (run.java:48) - Waiting 22 min 31 sec
+08/09/17 22:50:28:779 INFO  [main] runner.run (run.java:23) - Programm is started.
+08/09/17 22:50:28:796 INFO  [main] Objects.Property (Property.java:31) - Number of files: 1
+08/09/17 22:50:28:796 INFO  [main] Objects.Property (Property.java:36) - Source filename1 : /MTA_trace.mta
+08/09/17 22:50:28:798 DEBUG [main] Objects.Property (Property.java:41) - SFTP address from settings file: 127.0.0.1
+08/09/17 22:50:28:798 DEBUG [main] Objects.Property (Property.java:44) - SFTP port from settings file: 22
+08/09/17 22:50:28:799 DEBUG [main] Objects.Property (Property.java:47) - SFTP login from settings file: wawa
+08/09/17 22:50:28:799 DEBUG [main] Objects.Property (Property.java:50) - SFTP password from settings file: password
+08/09/17 22:50:28:799 DEBUG [main] Objects.Property (Property.java:53) - Source file path from settings file: 1
+08/09/17 22:50:28:799 DEBUG [main] Objects.Property (Property.java:58) - Destination file path from settings file: G:\\copy\\
+08/09/17 22:50:28:968 DEBUG [main] Objects.Property (Property.java:64) - Begin work time from settings file: 23:00:00
+08/09/17 22:50:28:969 DEBUG [main] Objects.Property (Property.java:67) - End work time from settings file: 01:40:00
+08/09/17 22:50:28:969 DEBUG [main] Objects.Property (Property.java:70) - Interval time from settings file: 120
+08/09/17 22:50:28:969 DEBUG [main] Objects.Property (Property.java:73) - Zip archive name from settings file: G:\\copy\\test.zip
+08/09/17 22:54:13:628 INFO  [main] runner.run (run.java:23) - Programm is started.
+08/09/17 22:54:13:644 INFO  [main] Objects.Property (Property.java:31) - Number of files: 3
+08/09/17 22:54:13:646 INFO  [main] Objects.Property (Property.java:36) - Source filename1 : /MTA_trace.mta
+08/09/17 22:54:13:649 INFO  [main] Objects.Property (Property.java:36) - Source filename2 : /MTA_trace.mta2
+08/09/17 22:54:13:650 INFO  [main] Objects.Property (Property.java:36) - Source filename3 : /MTA_trace.mta3
+08/09/17 22:54:13:653 DEBUG [main] Objects.Property (Property.java:41) - SFTP address from settings file: 127.0.0.1
+08/09/17 22:54:13:654 DEBUG [main] Objects.Property (Property.java:44) - SFTP port from settings file: 22
+08/09/17 22:54:13:654 DEBUG [main] Objects.Property (Property.java:47) - SFTP login from settings file: wawa
+08/09/17 22:54:13:654 DEBUG [main] Objects.Property (Property.java:50) - SFTP password from settings file: password
+08/09/17 22:54:13:654 DEBUG [main] Objects.Property (Property.java:53) - Source file path from settings file: 3
+08/09/17 22:54:13:655 DEBUG [main] Objects.Property (Property.java:58) - Destination file path from settings file: G:\\copy\\
+08/09/17 22:54:13:857 DEBUG [main] Objects.Property (Property.java:64) - Begin work time from settings file: 23:00:00
+08/09/17 22:54:13:858 DEBUG [main] Objects.Property (Property.java:67) - End work time from settings file: 01:40:00
+08/09/17 22:54:13:858 DEBUG [main] Objects.Property (Property.java:70) - Interval time from settings file: 120
+08/09/17 22:54:13:859 DEBUG [main] Objects.Property (Property.java:73) - Zip archive name from settings file: G:\\copy\\test.zip
+08/09/17 22:54:13:862 INFO  [main] runner.run (run.java:36) - Checking time for work...
+08/09/17 22:54:13:867 INFO  [main] runner.run (run.java:46) - It's NOT work time.
+08/09/17 22:54:13:870 INFO  [main] runner.run (run.java:48) - Waiting 05 min 47 sec
+08/09/17 22:54:50:117 INFO  [main] runner.run (run.java:23) - Programm is started.
+08/09/17 22:54:50:134 INFO  [main] Objects.Property (Property.java:31) - Number of files: 3
+08/09/17 22:54:50:134 INFO  [main] Objects.Property (Property.java:36) - Source filename1 : /MTA_trace.mta
+08/09/17 22:54:50:135 INFO  [main] Objects.Property (Property.java:36) - Source filename2 : /MTA_trace.mta2
+08/09/17 22:54:50:135 INFO  [main] Objects.Property (Property.java:36) - Source filename3 : /MTA_trace.mta3
+08/09/17 22:54:50:137 DEBUG [main] Objects.Property (Property.java:41) - SFTP address from settings file: 127.0.0.1
+08/09/17 22:54:50:137 DEBUG [main] Objects.Property (Property.java:44) - SFTP port from settings file: 22
+08/09/17 22:54:50:137 DEBUG [main] Objects.Property (Property.java:47) - SFTP login from settings file: wawa
+08/09/17 22:54:50:138 DEBUG [main] Objects.Property (Property.java:50) - SFTP password from settings file: password
+08/09/17 22:54:50:138 DEBUG [main] Objects.Property (Property.java:53) - Source file path from settings file: 3
+08/09/17 22:54:50:138 DEBUG [main] Objects.Property (Property.java:58) - Destination file path from settings file: G:\\copy\\
+08/09/17 22:54:50:273 DEBUG [main] Objects.Property (Property.java:64) - Begin work time from settings file: 22:00:00
+08/09/17 22:54:50:274 DEBUG [main] Objects.Property (Property.java:67) - End work time from settings file: 01:40:00
+08/09/17 22:54:50:275 DEBUG [main] Objects.Property (Property.java:70) - Interval time from settings file: 120
+08/09/17 22:54:50:275 DEBUG [main] Objects.Property (Property.java:73) - Zip archive name from settings file: G:\\copy\\test.zip
+08/09/17 22:54:50:280 INFO  [main] runner.run (run.java:36) - Checking time for work...
+08/09/17 22:54:50:285 INFO  [main] runner.run (run.java:39) - It's work time!
+08/09/17 22:54:50:286 DEBUG [main] Objects.SftpClient (SftpClient.java:32) - Start SFTP Client.
+08/09/17 22:54:51:332 ERROR [main] Objects.SftpClient (SftpClient.java:63) - Sftp server refused connection!
+08/09/17 22:54:51:336 ERROR [main] Objects.SftpClient (SftpClient.java:81) - Sftp server is not available.
+08/09/17 22:54:51:338 DEBUG [main] Objects.SftpClient (SftpClient.java:87) - Stop SFTP Client.
+08/09/17 22:54:51:338 INFO  [main] runner.run (run.java:42) - Waiting 02 min 00 sec
+08/09/17 22:55:23:139 INFO  [main] runner.run (run.java:23) - Programm is started.
+08/09/17 22:55:23:157 INFO  [main] Objects.Property (Property.java:31) - Number of files: 3
+08/09/17 22:55:23:158 INFO  [main] Objects.Property (Property.java:36) - Source filename1 : /MTA_trace.mta
+08/09/17 22:55:23:158 INFO  [main] Objects.Property (Property.java:36) - Source filename2 : /MTA_trace.mta2
+08/09/17 22:55:23:159 INFO  [main] Objects.Property (Property.java:36) - Source filename3 : /MTA_trace.mta3
+08/09/17 22:55:23:160 DEBUG [main] Objects.Property (Property.java:41) - SFTP address from settings file: 127.0.0.1
+08/09/17 22:55:23:160 DEBUG [main] Objects.Property (Property.java:44) - SFTP port from settings file: 22
+08/09/17 22:55:23:161 DEBUG [main] Objects.Property (Property.java:47) - SFTP login from settings file: wawa
+08/09/17 22:55:23:161 DEBUG [main] Objects.Property (Property.java:50) - SFTP password from settings file: password
+08/09/17 22:55:23:161 DEBUG [main] Objects.Property (Property.java:53) - Source file path from settings file: 3
+08/09/17 22:55:23:162 DEBUG [main] Objects.Property (Property.java:58) - Destination file path from settings file: G:\\copy\\
+08/09/17 22:55:23:288 DEBUG [main] Objects.Property (Property.java:64) - Begin work time from settings file: 22:00:00
+08/09/17 22:55:23:288 DEBUG [main] Objects.Property (Property.java:67) - End work time from settings file: 01:40:00
+08/09/17 22:55:23:289 DEBUG [main] Objects.Property (Property.java:70) - Interval time from settings file: 120
+08/09/17 22:55:23:289 DEBUG [main] Objects.Property (Property.java:73) - Zip archive name from settings file: G:\\copy\\test.zip
+08/09/17 22:55:23:292 INFO  [main] runner.run (run.java:36) - Checking time for work...
+08/09/17 22:55:23:298 INFO  [main] runner.run (run.java:39) - It's work time!
+08/09/17 22:55:23:299 DEBUG [main] Objects.SftpClient (SftpClient.java:32) - Start SFTP Client.
+08/09/17 22:55:24:863 DEBUG [main] Objects.SftpClient (SftpClient.java:42) - Connected to 127.0.0.1.
+08/09/17 22:55:29:113 INFO  [main] Objects.SftpClient (SftpClient.java:54) - Download file /MTA_trace.mta is successfully!
+08/09/17 22:55:29:135 DEBUG [main] Objects.SftpClient (SftpClient.java:87) - Stop SFTP Client.
+08/09/17 22:55:29:144 INFO  [main] runner.run (run.java:42) - Waiting 02 min 00 sec
+08/09/17 22:57:29:144 INFO  [main] runner.run (run.java:39) - It's work time!
+08/09/17 22:57:29:145 DEBUG [main] Objects.SftpClient (SftpClient.java:32) - Start SFTP Client.
+08/09/17 22:57:29:405 DEBUG [main] Objects.SftpClient (SftpClient.java:42) - Connected to 127.0.0.1.
+08/09/17 22:57:31:570 INFO  [main] Objects.SftpClient (SftpClient.java:54) - Download file /MTA_trace.mta is successfully!
+08/09/17 22:57:31:571 DEBUG [main] Objects.SftpClient (SftpClient.java:87) - Stop SFTP Client.
+08/09/17 22:57:31:572 INFO  [main] runner.run (run.java:42) - Waiting 02 min 00 sec
+08/09/17 22:59:49:345 INFO  [main] runner.run (run.java:23) - Programm is started.
+08/09/17 22:59:49:357 INFO  [main] Objects.Property (Property.java:31) - Number of files: 3
+08/09/17 22:59:49:358 INFO  [main] Objects.Property (Property.java:36) - Source filename1 : /MTA_trace.mta
+08/09/17 22:59:49:358 INFO  [main] Objects.Property (Property.java:36) - Source filename2 : /MTA_trace.mta2
+08/09/17 22:59:49:359 INFO  [main] Objects.Property (Property.java:36) - Source filename3 : /MTA_trace.mta3
+08/09/17 22:59:49:361 DEBUG [main] Objects.Property (Property.java:41) - SFTP address from settings file: 127.0.0.1
+08/09/17 22:59:49:361 DEBUG [main] Objects.Property (Property.java:44) - SFTP port from settings file: 22
+08/09/17 22:59:49:361 DEBUG [main] Objects.Property (Property.java:47) - SFTP login from settings file: wawa
+08/09/17 22:59:49:362 DEBUG [main] Objects.Property (Property.java:50) - SFTP password from settings file: password
+08/09/17 22:59:49:362 DEBUG [main] Objects.Property (Property.java:53) - Source file path from settings file: 3
+08/09/17 22:59:49:362 DEBUG [main] Objects.Property (Property.java:58) - Destination file path from settings file: G:\\copy\\
+08/09/17 22:59:49:500 DEBUG [main] Objects.Property (Property.java:64) - Begin work time from settings file: 22:00:00
+08/09/17 22:59:49:501 DEBUG [main] Objects.Property (Property.java:67) - End work time from settings file: 01:40:00
+08/09/17 22:59:49:501 DEBUG [main] Objects.Property (Property.java:70) - Interval time from settings file: 120
+08/09/17 22:59:49:501 DEBUG [main] Objects.Property (Property.java:73) - Zip archive name from settings file: G:\\copy\\test.zip
+08/09/17 22:59:49:505 INFO  [main] runner.run (run.java:36) - Checking time for work...
+08/09/17 22:59:49:510 INFO  [main] runner.run (run.java:39) - It's work time!
+08/09/17 22:59:49:511 DEBUG [main] Objects.SftpClient (SftpClient.java:31) - Start SFTP Client.
+08/09/17 22:59:50:588 DEBUG [main] Objects.SftpClient (SftpClient.java:41) - Connected to 127.0.0.1.
+08/09/17 22:59:51:450 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta is successfully!
+08/09/17 22:59:51:974 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta2 is successfully!
+08/09/17 22:59:52:731 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta3 is successfully!
+08/09/17 22:59:52:742 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+08/09/17 22:59:52:743 INFO  [main] runner.run (run.java:42) - Waiting 02 min 00 sec
+08/09/17 23:40:13:901 INFO  [main] runner.run (run.java:23) - Programm is started.
+08/09/17 23:40:13:923 INFO  [main] Objects.Property (Property.java:31) - Number of files: 1
+08/09/17 23:40:13:924 INFO  [main] Objects.Property (Property.java:36) - Source filename1 : /MTA_trace.mta
+08/09/17 23:40:13:925 DEBUG [main] Objects.Property (Property.java:41) - SFTP address from settings file: 127.0.0.1
+08/09/17 23:40:13:925 DEBUG [main] Objects.Property (Property.java:44) - SFTP port from settings file: 22
+08/09/17 23:40:13:926 DEBUG [main] Objects.Property (Property.java:47) - SFTP login from settings file: wawa
+08/09/17 23:40:13:926 DEBUG [main] Objects.Property (Property.java:50) - SFTP password from settings file: password
+08/09/17 23:40:13:926 DEBUG [main] Objects.Property (Property.java:53) - Source file path from settings file: 1
+08/09/17 23:40:13:926 DEBUG [main] Objects.Property (Property.java:58) - Destination file path from settings file: G:\\copy\\
+08/09/17 23:40:14:086 DEBUG [main] Objects.Property (Property.java:64) - Begin work time from settings file: 22:00:00
+08/09/17 23:40:14:087 DEBUG [main] Objects.Property (Property.java:67) - End work time from settings file: 01:40:00
+08/09/17 23:40:14:087 DEBUG [main] Objects.Property (Property.java:70) - Interval time from settings file: 120
+08/09/17 23:40:14:087 DEBUG [main] Objects.Property (Property.java:73) - Zip archive name from settings file: G:\\copy\\test.zip
+08/09/17 23:40:14:093 INFO  [main] runner.run (run.java:36) - Checking time for work...
+08/09/17 23:40:14:101 INFO  [main] runner.run (run.java:39) - It's work time!
+08/09/17 23:40:14:101 DEBUG [main] Objects.SftpClient (SftpClient.java:31) - Start SFTP Client.
+08/09/17 23:40:15:243 DEBUG [main] Objects.SftpClient (SftpClient.java:41) - Connected to 127.0.0.1.
+08/09/17 23:40:16:234 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta is successfully!
+08/09/17 23:40:16:245 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+08/09/17 23:40:16:245 INFO  [main] runner.run (run.java:42) - Waiting 02 min 00 sec
+08/09/17 23:40:46:262 INFO  [main] runner.run (run.java:23) - Programm is started.
+08/09/17 23:40:46:291 INFO  [main] Objects.Property (Property.java:31) - Number of files: 1
+08/09/17 23:40:46:292 INFO  [main] Objects.Property (Property.java:36) - Source filename1 : /MTA_trace.mta
+08/09/17 23:40:46:294 DEBUG [main] Objects.Property (Property.java:41) - SFTP address from settings file: 127.0.0.1
+08/09/17 23:40:46:295 DEBUG [main] Objects.Property (Property.java:44) - SFTP port from settings file: 22
+08/09/17 23:40:46:295 DEBUG [main] Objects.Property (Property.java:47) - SFTP login from settings file: wawa
+08/09/17 23:40:46:296 DEBUG [main] Objects.Property (Property.java:50) - SFTP password from settings file: password
+08/09/17 23:40:46:296 DEBUG [main] Objects.Property (Property.java:53) - Source file path from settings file: 1
+08/09/17 23:40:46:296 DEBUG [main] Objects.Property (Property.java:58) - Destination file path from settings file: G:\\copy\\
+08/09/17 23:40:46:433 DEBUG [main] Objects.Property (Property.java:64) - Begin work time from settings file: 22:00:00
+08/09/17 23:40:46:434 DEBUG [main] Objects.Property (Property.java:67) - End work time from settings file: 01:40:00
+08/09/17 23:40:46:434 DEBUG [main] Objects.Property (Property.java:70) - Interval time from settings file: 120
+08/09/17 23:40:46:435 DEBUG [main] Objects.Property (Property.java:73) - Zip archive name from settings file: G:\\copy\\test.zip
+08/09/17 23:40:46:439 INFO  [main] runner.run (run.java:36) - Checking time for work...
+08/09/17 23:40:46:444 INFO  [main] runner.run (run.java:39) - It's work time!
+08/09/17 23:40:46:445 DEBUG [main] Objects.SftpClient (SftpClient.java:31) - Start SFTP Client.
+08/09/17 23:40:47:462 DEBUG [main] Objects.SftpClient (SftpClient.java:41) - Connected to 127.0.0.1.
+08/09/17 23:40:48:271 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta is successfully!
+08/09/17 23:40:48:283 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+08/09/17 23:40:48:285 INFO  [main] Objects.ZipArchive (ZipArchive.java:48) - Archive file is not exist. File G:\\copy\\test_20170908.zip is created.
+08/09/17 23:40:48:295 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170908.zip
+08/09/17 23:40:48:890 INFO  [main] Objects.ZipArchive (ZipArchive.java:86) - The file MTA_trace_08092017_234048.mta was added in archive G:\\copy\\test_20170908.zip
+08/09/17 23:40:48:918 INFO  [main] runner.run (run.java:42) - Waiting 02 min 00 sec
+08/09/17 23:42:13:709 INFO  [main] runner.run (run.java:23) - Programm is started.
+08/09/17 23:42:13:719 INFO  [main] Objects.Property (Property.java:31) - Number of files: 3
+08/09/17 23:42:13:720 INFO  [main] Objects.Property (Property.java:36) - Source filename1 : /MTA_trace.mta
+08/09/17 23:42:13:720 INFO  [main] Objects.Property (Property.java:36) - Source filename2 : /MTA_trace.mta2
+08/09/17 23:42:13:721 INFO  [main] Objects.Property (Property.java:36) - Source filename3 : /MTA_trace.mta3
+08/09/17 23:42:13:722 DEBUG [main] Objects.Property (Property.java:41) - SFTP address from settings file: 127.0.0.1
+08/09/17 23:42:13:723 DEBUG [main] Objects.Property (Property.java:44) - SFTP port from settings file: 22
+08/09/17 23:42:13:723 DEBUG [main] Objects.Property (Property.java:47) - SFTP login from settings file: wawa
+08/09/17 23:42:13:723 DEBUG [main] Objects.Property (Property.java:50) - SFTP password from settings file: password
+08/09/17 23:42:13:723 DEBUG [main] Objects.Property (Property.java:53) - Source file path from settings file: 3
+08/09/17 23:42:13:724 DEBUG [main] Objects.Property (Property.java:58) - Destination file path from settings file: G:\\copy\\
+08/09/17 23:42:13:874 DEBUG [main] Objects.Property (Property.java:64) - Begin work time from settings file: 22:00:00
+08/09/17 23:42:13:874 DEBUG [main] Objects.Property (Property.java:67) - End work time from settings file: 01:40:00
+08/09/17 23:42:13:875 DEBUG [main] Objects.Property (Property.java:70) - Interval time from settings file: 120
+08/09/17 23:42:13:875 DEBUG [main] Objects.Property (Property.java:73) - Zip archive name from settings file: G:\\copy\\test.zip
+08/09/17 23:42:13:879 INFO  [main] runner.run (run.java:36) - Checking time for work...
+08/09/17 23:42:13:884 INFO  [main] runner.run (run.java:39) - It's work time!
+08/09/17 23:42:13:885 DEBUG [main] Objects.SftpClient (SftpClient.java:31) - Start SFTP Client.
+08/09/17 23:42:14:943 DEBUG [main] Objects.SftpClient (SftpClient.java:41) - Connected to 127.0.0.1.
+08/09/17 23:42:15:821 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta is successfully!
+08/09/17 23:42:16:282 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta2 is successfully!
+08/09/17 23:42:16:886 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta3 is successfully!
+08/09/17 23:42:16:901 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+08/09/17 23:42:16:904 DEBUG [main] Objects.ZipArchive (ZipArchive.java:51) - Archive file G:\\copy\\test_20170908.zip is already exist!
+08/09/17 23:42:16:904 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170908.zip
+08/09/17 23:42:17:234 INFO  [main] Objects.ZipArchive (ZipArchive.java:86) - The file MTA_trace_20170908_234217.mta was added in archive G:\\copy\\test_20170908.zip
+08/09/17 23:42:17:371 INFO  [main] Objects.ZipArchive (ZipArchive.java:86) - The file MTA_trace_20170908_234217.mta2 was added in archive G:\\copy\\test_20170908.zip
+08/09/17 23:42:17:497 INFO  [main] Objects.ZipArchive (ZipArchive.java:86) - The file MTA_trace_20170908_234217.mta3 was added in archive G:\\copy\\test_20170908.zip
+08/09/17 23:42:17:719 INFO  [main] runner.run (run.java:42) - Waiting 02 min 00 sec
+08/09/17 23:44:17:720 INFO  [main] runner.run (run.java:39) - It's work time!
+08/09/17 23:44:17:721 DEBUG [main] Objects.SftpClient (SftpClient.java:31) - Start SFTP Client.
+08/09/17 23:44:17:929 DEBUG [main] Objects.SftpClient (SftpClient.java:41) - Connected to 127.0.0.1.
+08/09/17 23:44:18:602 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta is successfully!
+08/09/17 23:44:19:260 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta2 is successfully!
+08/09/17 23:44:19:883 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta3 is successfully!
+08/09/17 23:44:19:908 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+08/09/17 23:44:19:909 DEBUG [main] Objects.ZipArchive (ZipArchive.java:51) - Archive file G:\\copy\\test_20170908.zip is already exist!
+08/09/17 23:44:19:909 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170908.zip
+08/09/17 23:44:20:148 INFO  [main] Objects.ZipArchive (ZipArchive.java:86) - The file MTA_trace_20170908_234419.mta was added in archive G:\\copy\\test_20170908.zip
+08/09/17 23:44:20:391 INFO  [main] Objects.ZipArchive (ZipArchive.java:86) - The file MTA_trace_20170908_234420.mta2 was added in archive G:\\copy\\test_20170908.zip
+08/09/17 23:44:20:613 INFO  [main] Objects.ZipArchive (ZipArchive.java:86) - The file MTA_trace_20170908_234420.mta3 was added in archive G:\\copy\\test_20170908.zip
+08/09/17 23:44:20:653 INFO  [main] runner.run (run.java:42) - Waiting 02 min 00 sec
+09/09/17 00:06:43:513 INFO  [main] runner.run (run.java:23) - Programm is started.
+09/09/17 00:06:43:524 INFO  [main] Objects.Property (Property.java:32) - Number of files: 3
+09/09/17 00:06:43:525 INFO  [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+09/09/17 00:06:43:525 INFO  [main] Objects.Property (Property.java:37) - Source filename2 : /MTA_trace.mta2
+09/09/17 00:06:43:526 INFO  [main] Objects.Property (Property.java:37) - Source filename3 : /MTA_trace.mta3
+09/09/17 00:06:43:527 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+09/09/17 00:06:43:527 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+09/09/17 00:06:43:528 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+09/09/17 00:06:43:528 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+09/09/17 00:06:43:528 DEBUG [main] Objects.Property (Property.java:54) - Source file path from settings file: 3
+09/09/17 00:06:43:528 DEBUG [main] Objects.Property (Property.java:59) - Destination file path from settings file: G:\\copy\\
+09/09/17 00:06:43:665 DEBUG [main] Objects.Property (Property.java:62) - Begin work time from settings file: 22:00:00
+09/09/17 00:06:43:666 DEBUG [main] Objects.Property (Property.java:65) - End work time from settings file: 01:40:00
+09/09/17 00:06:43:666 DEBUG [main] Objects.Property (Property.java:68) - Interval time from settings file: 120
+09/09/17 00:06:43:667 DEBUG [main] Objects.Property (Property.java:71) - Zip archive name from settings file: G:\\copy\\test.zip
+09/09/17 00:06:43:667 DEBUG [main] Objects.Property (Property.java:74) - Enaling add file(s) to archive is false
+09/09/17 00:06:43:671 INFO  [main] runner.run (run.java:36) - Checking time for work...
+09/09/17 00:06:43:676 INFO  [main] runner.run (run.java:39) - It's work time!
+09/09/17 00:06:43:676 DEBUG [main] Objects.SftpClient (SftpClient.java:31) - Start SFTP Client.
+09/09/17 00:06:44:854 DEBUG [main] Objects.SftpClient (SftpClient.java:41) - Connected to 127.0.0.1.
+09/09/17 00:06:45:793 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta is successfully!
+09/09/17 00:06:46:469 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta2 is successfully!
+09/09/17 00:06:47:168 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta3 is successfully!
+09/09/17 00:06:47:188 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+09/09/17 00:06:47:189 INFO  [main] runner.run (run.java:42) - Waiting 02 min 00 sec
+09/09/17 00:08:47:190 INFO  [main] runner.run (run.java:39) - It's work time!
+09/09/17 00:08:47:191 DEBUG [main] Objects.SftpClient (SftpClient.java:31) - Start SFTP Client.
+09/09/17 00:08:47:478 DEBUG [main] Objects.SftpClient (SftpClient.java:41) - Connected to 127.0.0.1.
+09/09/17 00:08:48:459 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta is successfully!
+09/09/17 00:08:49:114 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta2 is successfully!
+09/09/17 00:08:49:625 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta3 is successfully!
+09/09/17 00:08:49:627 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+09/09/17 00:08:49:628 INFO  [main] runner.run (run.java:42) - Waiting 02 min 00 sec
+09/09/17 00:09:24:436 INFO  [main] runner.run (run.java:23) - Programm is started.
+09/09/17 00:09:24:446 INFO  [main] Objects.Property (Property.java:32) - Number of files: 3
+09/09/17 00:09:24:447 INFO  [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+09/09/17 00:09:24:448 INFO  [main] Objects.Property (Property.java:37) - Source filename2 : /MTA_trace.mta2
+09/09/17 00:09:24:448 INFO  [main] Objects.Property (Property.java:37) - Source filename3 : /MTA_trace.mta3
+09/09/17 00:09:24:450 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+09/09/17 00:09:24:450 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+09/09/17 00:09:24:450 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+09/09/17 00:09:24:451 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+09/09/17 00:09:24:451 DEBUG [main] Objects.Property (Property.java:54) - Source file path from settings file: 3
+09/09/17 00:09:24:451 DEBUG [main] Objects.Property (Property.java:59) - Destination file path from settings file: G:\\copy\\
+09/09/17 00:09:24:590 DEBUG [main] Objects.Property (Property.java:62) - Begin work time from settings file: 22:00:00
+09/09/17 00:09:24:590 DEBUG [main] Objects.Property (Property.java:65) - End work time from settings file: 01:40:00
+09/09/17 00:09:24:591 DEBUG [main] Objects.Property (Property.java:68) - Interval time from settings file: 120
+09/09/17 00:09:24:591 DEBUG [main] Objects.Property (Property.java:71) - Zip archive name from settings file: G:\\copy\\test.zip
+09/09/17 00:09:24:592 DEBUG [main] Objects.Property (Property.java:74) - Enaling add file(s) to archive is false
+09/09/17 00:09:24:596 INFO  [main] runner.run (run.java:36) - Checking time for work...
+09/09/17 00:09:24:601 INFO  [main] runner.run (run.java:39) - It's work time!
+09/09/17 00:09:24:602 DEBUG [main] Objects.SftpClient (SftpClient.java:31) - Start SFTP Client.
+09/09/17 00:09:25:764 DEBUG [main] Objects.SftpClient (SftpClient.java:41) - Connected to 127.0.0.1.
+09/09/17 00:09:26:586 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta is successfully!
+09/09/17 00:09:27:259 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta2 is successfully!
+09/09/17 00:09:28:068 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta3 is successfully!
+09/09/17 00:09:28:079 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+09/09/17 00:09:28:080 INFO  [main] runner.run (run.java:43) - Waiting 02 min 00 sec
+09/09/17 00:10:12:522 INFO  [main] runner.run (run.java:23) - Programm is started.
+09/09/17 00:10:12:532 INFO  [main] Objects.Property (Property.java:32) - Number of files: 3
+09/09/17 00:10:12:533 INFO  [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+09/09/17 00:10:12:533 INFO  [main] Objects.Property (Property.java:37) - Source filename2 : /MTA_trace.mta2
+09/09/17 00:10:12:534 INFO  [main] Objects.Property (Property.java:37) - Source filename3 : /MTA_trace.mta3
+09/09/17 00:10:12:535 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+09/09/17 00:10:12:536 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+09/09/17 00:10:12:536 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+09/09/17 00:10:12:536 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+09/09/17 00:10:12:536 DEBUG [main] Objects.Property (Property.java:54) - Source file path from settings file: 3
+09/09/17 00:10:12:537 DEBUG [main] Objects.Property (Property.java:59) - Destination file path from settings file: G:\\copy\\
+09/09/17 00:10:12:669 DEBUG [main] Objects.Property (Property.java:62) - Begin work time from settings file: 22:00:00
+09/09/17 00:10:12:670 DEBUG [main] Objects.Property (Property.java:65) - End work time from settings file: 01:40:00
+09/09/17 00:10:12:670 DEBUG [main] Objects.Property (Property.java:68) - Interval time from settings file: 120
+09/09/17 00:10:12:670 DEBUG [main] Objects.Property (Property.java:71) - Zip archive name from settings file: G:\\copy\\test.zip
+09/09/17 00:10:12:671 DEBUG [main] Objects.Property (Property.java:74) - Enaling add file(s) to archive is true
+09/09/17 00:10:12:674 INFO  [main] runner.run (run.java:36) - Checking time for work...
+09/09/17 00:10:12:681 INFO  [main] runner.run (run.java:39) - It's work time!
+09/09/17 00:10:12:681 DEBUG [main] Objects.SftpClient (SftpClient.java:31) - Start SFTP Client.
+09/09/17 00:10:13:766 DEBUG [main] Objects.SftpClient (SftpClient.java:41) - Connected to 127.0.0.1.
+09/09/17 00:10:14:559 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta is successfully!
+09/09/17 00:10:15:349 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta2 is successfully!
+09/09/17 00:10:16:339 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta3 is successfully!
+09/09/17 00:10:16:361 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+09/09/17 00:10:16:362 INFO  [main] Objects.ZipArchive (ZipArchive.java:47) - Archive file is not exist. File G:\\copy\\test_20170909.zip is created.
+09/09/17 00:10:16:363 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170909.zip
+09/09/17 00:10:16:845 INFO  [main] Objects.ZipArchive (ZipArchive.java:85) - The file MTA_trace_20170909_001016.mta was added in archive G:\\copy\\test_20170909.zip
+09/09/17 00:10:17:049 INFO  [main] Objects.ZipArchive (ZipArchive.java:85) - The file MTA_trace_20170909_001016.mta2 was added in archive G:\\copy\\test_20170909.zip
+09/09/17 00:10:17:281 INFO  [main] Objects.ZipArchive (ZipArchive.java:85) - The file MTA_trace_20170909_001017.mta3 was added in archive G:\\copy\\test_20170909.zip
+09/09/17 00:10:17:404 INFO  [main] runner.run (run.java:43) - Waiting 02 min 00 sec
+09/09/17 00:10:57:630 INFO  [main] runner.run (run.java:23) - Programm is started.
+09/09/17 00:10:57:654 INFO  [main] Objects.Property (Property.java:32) - Number of files: 3
+09/09/17 00:10:57:655 INFO  [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+09/09/17 00:10:57:656 INFO  [main] Objects.Property (Property.java:37) - Source filename2 : /MTA_trace.mta2
+09/09/17 00:10:57:656 INFO  [main] Objects.Property (Property.java:37) - Source filename3 : /MTA_trace.mta3
+09/09/17 00:10:57:657 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+09/09/17 00:10:57:658 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+09/09/17 00:10:57:658 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+09/09/17 00:10:57:659 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+09/09/17 00:10:57:659 DEBUG [main] Objects.Property (Property.java:54) - Source file path from settings file: 3
+09/09/17 00:10:57:659 DEBUG [main] Objects.Property (Property.java:59) - Destination file path from settings file: G:\\copy\\
+09/09/17 00:10:57:797 DEBUG [main] Objects.Property (Property.java:62) - Begin work time from settings file: 22:00:00
+09/09/17 00:10:57:798 DEBUG [main] Objects.Property (Property.java:65) - End work time from settings file: 01:40:00
+09/09/17 00:10:57:799 DEBUG [main] Objects.Property (Property.java:68) - Interval time from settings file: 120
+09/09/17 00:10:57:799 DEBUG [main] Objects.Property (Property.java:71) - Zip archive name from settings file: G:\\copy\\test.zip
+09/09/17 00:10:57:799 DEBUG [main] Objects.Property (Property.java:74) - Enaling add file(s) to archive is tue
+09/09/17 00:10:57:805 INFO  [main] runner.run (run.java:36) - Checking time for work...
+09/09/17 00:10:57:810 INFO  [main] runner.run (run.java:39) - It's work time!
+09/09/17 00:10:57:810 DEBUG [main] Objects.SftpClient (SftpClient.java:31) - Start SFTP Client.
+09/09/17 00:10:58:865 DEBUG [main] Objects.SftpClient (SftpClient.java:41) - Connected to 127.0.0.1.
+09/09/17 00:10:59:675 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta is successfully!
+09/09/17 00:11:00:188 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta2 is successfully!
+09/09/17 00:11:00:829 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta3 is successfully!
+09/09/17 00:11:00:844 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+09/09/17 00:11:00:845 INFO  [main] runner.run (run.java:43) - Waiting 02 min 00 sec
+09/09/17 00:12:03:465 INFO  [main] runner.run (run.java:23) - Programm is started.
+09/09/17 00:12:03:475 INFO  [main] Objects.Property (Property.java:32) - Number of files: 3
+09/09/17 00:12:03:475 INFO  [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+09/09/17 00:12:03:476 INFO  [main] Objects.Property (Property.java:37) - Source filename2 : /MTA_trace.mta2
+09/09/17 00:12:03:476 INFO  [main] Objects.Property (Property.java:37) - Source filename3 : /MTA_trace.mta3
+09/09/17 00:12:03:478 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+09/09/17 00:12:03:478 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+09/09/17 00:12:03:478 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+09/09/17 00:12:03:479 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+09/09/17 00:12:03:479 DEBUG [main] Objects.Property (Property.java:54) - Source file path from settings file: 3
+09/09/17 00:12:03:479 DEBUG [main] Objects.Property (Property.java:59) - Destination file path from settings file: G:\\copy\\
+09/09/17 00:12:03:607 DEBUG [main] Objects.Property (Property.java:62) - Begin work time from settings file: 22:00:00
+09/09/17 00:12:03:607 DEBUG [main] Objects.Property (Property.java:65) - End work time from settings file: 01:40:00
+09/09/17 00:12:03:608 DEBUG [main] Objects.Property (Property.java:68) - Interval time from settings file: 120
+09/09/17 00:12:03:608 DEBUG [main] Objects.Property (Property.java:71) - Zip archive name from settings file: G:\\copy\\test.zip
+09/09/17 00:12:03:609 DEBUG [main] Objects.Property (Property.java:74) - Enaling add file(s) to archive is true
+09/09/17 00:12:03:613 INFO  [main] runner.run (run.java:36) - Checking time for work...
+09/09/17 00:12:03:618 INFO  [main] runner.run (run.java:39) - It's work time!
+09/09/17 00:12:03:618 DEBUG [main] Objects.SftpClient (SftpClient.java:31) - Start SFTP Client.
+09/09/17 00:12:04:629 DEBUG [main] Objects.SftpClient (SftpClient.java:41) - Connected to 127.0.0.1.
+09/09/17 00:12:05:679 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta is successfully!
+09/09/17 00:12:06:381 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta2 is successfully!
+09/09/17 00:12:07:165 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta3 is successfully!
+09/09/17 00:12:07:179 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+09/09/17 00:12:07:181 DEBUG [main] Objects.ZipArchive (ZipArchive.java:50) - Archive file G:\\copy\\test_20170909.zip is already exist!
+09/09/17 00:12:07:181 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170909.zip
+09/09/17 00:12:07:632 INFO  [main] Objects.ZipArchive (ZipArchive.java:85) - The file MTA_trace_20170909_001207.mta was added in archive G:\\copy\\test_20170909.zip
+09/09/17 00:12:07:882 INFO  [main] Objects.ZipArchive (ZipArchive.java:85) - The file MTA_trace_20170909_001207.mta2 was added in archive G:\\copy\\test_20170909.zip
+09/09/17 00:12:08:085 INFO  [main] Objects.ZipArchive (ZipArchive.java:85) - The file MTA_trace_20170909_001207.mta3 was added in archive G:\\copy\\test_20170909.zip
+09/09/17 00:12:08:136 INFO  [main] runner.run (run.java:43) - Waiting 02 min 00 sec
+09/09/17 00:14:08:137 INFO  [main] runner.run (run.java:39) - It's work time!
+09/09/17 00:14:08:138 DEBUG [main] Objects.SftpClient (SftpClient.java:31) - Start SFTP Client.
+09/09/17 00:14:08:406 DEBUG [main] Objects.SftpClient (SftpClient.java:41) - Connected to 127.0.0.1.
+09/09/17 00:14:09:110 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta is successfully!
+09/09/17 00:14:09:819 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta2 is successfully!
+09/09/17 00:14:10:570 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta3 is successfully!
+09/09/17 00:14:10:572 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+09/09/17 00:14:10:577 DEBUG [main] Objects.ZipArchive (ZipArchive.java:50) - Archive file G:\\copy\\test_20170909.zip is already exist!
+09/09/17 00:14:10:577 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170909.zip
+09/09/17 00:14:10:826 INFO  [main] Objects.ZipArchive (ZipArchive.java:85) - The file MTA_trace_20170909_001410.mta was added in archive G:\\copy\\test_20170909.zip
+09/09/17 00:14:11:147 INFO  [main] Objects.ZipArchive (ZipArchive.java:85) - The file MTA_trace_20170909_001410.mta2 was added in archive G:\\copy\\test_20170909.zip
+09/09/17 00:14:11:378 INFO  [main] Objects.ZipArchive (ZipArchive.java:85) - The file MTA_trace_20170909_001411.mta3 was added in archive G:\\copy\\test_20170909.zip
+09/09/17 00:14:11:433 INFO  [main] runner.run (run.java:43) - Waiting 02 min 00 sec
+09/09/17 00:38:09:266 INFO  [main] runner.run (run.java:23) - Programm is started.
+09/09/17 00:38:09:277 INFO  [main] Objects.Property (Property.java:32) - Number of files: 3
+09/09/17 00:38:09:278 INFO  [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+09/09/17 00:38:09:278 INFO  [main] Objects.Property (Property.java:37) - Source filename2 : /MTA_trace.mta2
+09/09/17 00:38:09:278 INFO  [main] Objects.Property (Property.java:37) - Source filename3 : /MTA_trace.mta3
+09/09/17 00:38:09:280 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+09/09/17 00:38:09:280 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+09/09/17 00:38:09:281 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+09/09/17 00:38:09:281 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+09/09/17 00:38:09:281 DEBUG [main] Objects.Property (Property.java:56) - Destination file path from settings file: G:\\copy\\
+09/09/17 00:38:09:410 DEBUG [main] Objects.Property (Property.java:59) - Begin work time from settings file: 22:00:00
+09/09/17 00:38:09:411 DEBUG [main] Objects.Property (Property.java:62) - End work time from settings file: 01:40:00
+09/09/17 00:38:09:412 DEBUG [main] Objects.Property (Property.java:65) - Interval time from settings file: 120
+09/09/17 00:38:09:412 DEBUG [main] Objects.Property (Property.java:68) - Zip archive name from settings file: G:\\copy\\test.zip
+09/09/17 00:38:09:412 ERROR [main] Objects.Property (Property.java:213) - Not correct value for Enable Archiving!
+09/09/17 00:38:09:413 DEBUG [main] Objects.Property (Property.java:71) - Enabling add file(s) to archive is tue
+09/09/17 00:38:09:418 INFO  [main] runner.run (run.java:36) - Checking time for work...
+09/09/17 00:38:09:423 INFO  [main] runner.run (run.java:39) - It's work time!
+09/09/17 00:38:09:424 DEBUG [main] Objects.SftpClient (SftpClient.java:31) - Start SFTP Client.
+09/09/17 00:38:10:557 DEBUG [main] Objects.SftpClient (SftpClient.java:41) - Connected to 127.0.0.1.
+09/09/17 00:38:11:336 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta is successfully!
+09/09/17 00:38:11:898 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta2 is successfully!
+09/09/17 00:38:12:654 INFO  [main] Objects.SftpClient (SftpClient.java:52) - Download file /MTA_trace.mta3 is successfully!
+09/09/17 00:38:12:663 DEBUG [main] Objects.SftpClient (SftpClient.java:86) - Stop SFTP Client.
+09/09/17 00:38:12:670 INFO  [main] runner.run (run.java:43) - Waiting 02 min 00 sec
+09/09/17 16:57:48:320 INFO  [main] Objects.Property (Property.java:32) - Number of files: 3
+09/09/17 16:57:48:324 INFO  [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+09/09/17 16:57:48:325 INFO  [main] Objects.Property (Property.java:37) - Source filename2 : /MTA_trace.mta2
+09/09/17 16:57:48:325 INFO  [main] Objects.Property (Property.java:37) - Source filename3 : /MTA_trace.mta3
+09/09/17 16:57:48:327 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+09/09/17 16:57:48:328 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+09/09/17 16:57:48:328 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+09/09/17 16:57:48:329 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+09/09/17 16:57:48:329 DEBUG [main] Objects.Property (Property.java:56) - Destination file path from settings file: G:\\copy\\
+09/09/17 16:57:48:454 DEBUG [main] Objects.Property (Property.java:59) - Begin work time from settings file: 22:00:00
+09/09/17 16:57:48:454 DEBUG [main] Objects.Property (Property.java:62) - End work time from settings file: 01:40:00
+09/09/17 16:57:48:455 DEBUG [main] Objects.Property (Property.java:65) - Interval time from settings file: 120
+09/09/17 16:57:48:455 DEBUG [main] Objects.Property (Property.java:68) - Zip archive name from settings file: G:\\copy\\test.zip
+09/09/17 16:57:48:455 DEBUG [main] Objects.Property (Property.java:71) - Enabling add file(s) to archive is true
+09/09/17 16:57:49:693 INFO  [main] Objects.SftpClient (SftpClient.java:111) - -rw-rw----   1             Натуся@Kamchatka None@Kamchatka    5361842 2017-05-26  17:57 MTA_trace.mta
+09/09/17 16:57:49:705 INFO  [main] Objects.SftpClient (SftpClient.java:111) - -rw-rw----   1             Натуся@Kamchatka None@Kamchatka    5361842 2017-05-26  17:57 MTA_trace.mta2
+09/09/17 16:57:49:705 INFO  [main] Objects.SftpClient (SftpClient.java:111) - -rw-rw----   1             Натуся@Kamchatka None@Kamchatka    5361842 2017-05-26  17:57 MTA_trace.mta3
+09/09/17 16:57:49:706 INFO  [main] Objects.SftpClient (SftpClient.java:111) - -rw-rw----   1 BvSsh_VirtualUsers@Kamchatka None@Kamchatka     340961 2015-11-16  22:24 mtt.xlsx
+09/09/17 16:57:49:707 INFO  [main] Objects.SftpClient (SftpClient.java:111) - drwxrwx---   1             Натуся@Kamchatka None@Kamchatka          0 2017-07-12  22:36 tmp
+09/09/17 16:57:49:707 INFO  [main] Objects.SftpClient (SftpClient.java:111) - -rw-rw----   1             Натуся@Kamchatka None@Kamchatka   33974512 2015-07-15  19:31 video.avi
+09/09/17 16:57:49:708 INFO  [main] Objects.SftpClient (SftpClient.java:111) - -rw-rw----   1             Натуся@Kamchatka None@Kamchatka        461 2017-07-08  17:17 zipfstest.zip
+09/09/17 16:57:49:708 INFO  [main] Objects.SftpClient (SftpClient.java:111) - drwxrwx---   1             Натуся@Kamchatka None@Kamchatka          0 2017-07-08  16:40 Новая папка
+09/09/17 16:57:49:721 INFO  [main] Objects.SftpClient (SftpClient.java:117) - Exit code: 0
+09/09/17 17:08:23:289 INFO  [main] Objects.Property (Property.java:32) - Number of files: 3
+09/09/17 17:08:23:294 INFO  [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+09/09/17 17:08:23:295 INFO  [main] Objects.Property (Property.java:37) - Source filename2 : /MTA_trace.mta2
+09/09/17 17:08:23:295 INFO  [main] Objects.Property (Property.java:37) - Source filename3 : /MTA_trace.mta3
+09/09/17 17:08:23:297 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+09/09/17 17:08:23:297 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+09/09/17 17:08:23:298 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+09/09/17 17:08:23:298 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+09/09/17 17:08:23:298 DEBUG [main] Objects.Property (Property.java:56) - Destination file path from settings file: G:\\copy\\
+09/09/17 17:08:23:429 DEBUG [main] Objects.Property (Property.java:59) - Begin work time from settings file: 22:00:00
+09/09/17 17:08:23:430 DEBUG [main] Objects.Property (Property.java:62) - End work time from settings file: 01:40:00
+09/09/17 17:08:23:430 DEBUG [main] Objects.Property (Property.java:65) - Interval time from settings file: 120
+09/09/17 17:08:23:430 DEBUG [main] Objects.Property (Property.java:68) - Zip archive name from settings file: G:\\copy\\test.zip
+09/09/17 17:08:23:431 DEBUG [main] Objects.Property (Property.java:71) - Enabling add file(s) to archive is true
+09/09/17 17:08:24:603 INFO  [main] Objects.SftpClient (SftpClient.java:117) - Exit code: 2
+09/09/17 17:09:20:268 INFO  [main] Objects.Property (Property.java:32) - Number of files: 3
+09/09/17 17:09:20:272 INFO  [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+09/09/17 17:09:20:273 INFO  [main] Objects.Property (Property.java:37) - Source filename2 : /MTA_trace.mta2
+09/09/17 17:09:20:274 INFO  [main] Objects.Property (Property.java:37) - Source filename3 : /MTA_trace.mta3
+09/09/17 17:09:20:275 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+09/09/17 17:09:20:275 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+09/09/17 17:09:20:276 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+09/09/17 17:09:20:276 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+09/09/17 17:09:20:276 DEBUG [main] Objects.Property (Property.java:56) - Destination file path from settings file: G:\\copy\\
+09/09/17 17:09:20:419 DEBUG [main] Objects.Property (Property.java:59) - Begin work time from settings file: 22:00:00
+09/09/17 17:09:20:419 DEBUG [main] Objects.Property (Property.java:62) - End work time from settings file: 01:40:00
+09/09/17 17:09:20:420 DEBUG [main] Objects.Property (Property.java:65) - Interval time from settings file: 120
+09/09/17 17:09:20:420 DEBUG [main] Objects.Property (Property.java:68) - Zip archive name from settings file: G:\\copy\\test.zip
+09/09/17 17:09:20:420 DEBUG [main] Objects.Property (Property.java:71) - Enabling add file(s) to archive is true
+09/09/17 17:09:21:611 INFO  [main] Objects.SftpClient (SftpClient.java:117) - Exit code: 2
+09/09/17 17:10:46:588 INFO  [main] Objects.Property (Property.java:32) - Number of files: 3
+09/09/17 17:10:46:593 INFO  [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+09/09/17 17:10:46:594 INFO  [main] Objects.Property (Property.java:37) - Source filename2 : /MTA_trace.mta2
+09/09/17 17:10:46:594 INFO  [main] Objects.Property (Property.java:37) - Source filename3 : /MTA_trace.mta3
+09/09/17 17:10:46:597 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+09/09/17 17:10:46:599 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+09/09/17 17:10:46:599 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+09/09/17 17:10:46:600 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+09/09/17 17:10:46:600 DEBUG [main] Objects.Property (Property.java:56) - Destination file path from settings file: G:\\copy\\
+09/09/17 17:10:46:764 DEBUG [main] Objects.Property (Property.java:59) - Begin work time from settings file: 22:00:00
+09/09/17 17:10:46:765 DEBUG [main] Objects.Property (Property.java:62) - End work time from settings file: 01:40:00
+09/09/17 17:10:46:768 DEBUG [main] Objects.Property (Property.java:65) - Interval time from settings file: 120
+09/09/17 17:10:46:768 DEBUG [main] Objects.Property (Property.java:68) - Zip archive name from settings file: G:\\copy\\test.zip
+09/09/17 17:10:46:769 DEBUG [main] Objects.Property (Property.java:71) - Enabling add file(s) to archive is true
+09/09/17 17:10:48:129 INFO  [main] Objects.SftpClient (SftpClient.java:111) - MTA_trace.mta
+09/09/17 17:10:48:131 INFO  [main] Objects.SftpClient (SftpClient.java:111) - MTA_trace.mta2
+09/09/17 17:10:48:131 INFO  [main] Objects.SftpClient (SftpClient.java:111) - MTA_trace.mta3
+09/09/17 17:10:48:132 INFO  [main] Objects.SftpClient (SftpClient.java:111) - mtt.xlsx
+09/09/17 17:10:48:135 INFO  [main] Objects.SftpClient (SftpClient.java:111) - tmp
+09/09/17 17:10:48:137 INFO  [main] Objects.SftpClient (SftpClient.java:111) - video.avi
+09/09/17 17:10:48:137 INFO  [main] Objects.SftpClient (SftpClient.java:111) - zipfstest.zip
+09/09/17 17:10:48:139 INFO  [main] Objects.SftpClient (SftpClient.java:111) - Новая папка
+09/09/17 17:10:48:146 INFO  [main] Objects.SftpClient (SftpClient.java:117) - Exit code: 0
+10/09/17 21:48:25:751 DEBUG [main] Objects.Property (Property.java:32) - Number of files: 3
+10/09/17 21:48:25:765 DEBUG [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+10/09/17 21:48:25:765 DEBUG [main] Objects.Property (Property.java:37) - Source filename2 : /MTA_trace.mta2
+10/09/17 21:48:25:766 DEBUG [main] Objects.Property (Property.java:37) - Source filename3 : /MTA_trace.mta3
+10/09/17 21:48:25:767 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+10/09/17 21:48:25:767 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+10/09/17 21:48:25:768 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+10/09/17 21:48:25:768 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+10/09/17 21:48:25:768 DEBUG [main] Objects.Property (Property.java:56) - Destination file path from settings file: G:\\copy\\
+10/09/17 21:48:25:966 DEBUG [main] Objects.Property (Property.java:59) - Begin work time from settings file: 22:00:00
+10/09/17 21:48:25:966 DEBUG [main] Objects.Property (Property.java:62) - End work time from settings file: 01:40:00
+10/09/17 21:48:25:967 DEBUG [main] Objects.Property (Property.java:65) - Interval time from settings file: 120
+10/09/17 21:48:25:967 DEBUG [main] Objects.Property (Property.java:68) - Zip archive name from settings file: G:\\copy\\test.zip
+10/09/17 21:48:25:968 DEBUG [main] Objects.Property (Property.java:71) - Enabling add file(s) to archive is true
+10/09/17 21:48:25:968 DEBUG [main] Objects.SftpClient (SftpClient.java:35) - Start SFTP Client.
+10/09/17 21:48:27:015 ERROR [main] Objects.SftpClient (SftpClient.java:66) - Sftp server refused connection!
+10/09/17 21:48:27:019 ERROR [main] Objects.SftpClient (SftpClient.java:84) - Sftp server is not available.
+10/09/17 21:48:27:019 DEBUG [main] Objects.SftpClient (SftpClient.java:90) - Stop SFTP Client.
+10/09/17 21:48:27:225 DEBUG [main] Objects.Property (Property.java:32) - Number of files: 3
+10/09/17 21:48:27:226 DEBUG [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+10/09/17 21:48:27:226 DEBUG [main] Objects.Property (Property.java:37) - Source filename2 : /MTA_trace.mta2
+10/09/17 21:48:27:227 DEBUG [main] Objects.Property (Property.java:37) - Source filename3 : /MTA_trace.mta3
+10/09/17 21:48:27:227 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+10/09/17 21:48:27:227 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+10/09/17 21:48:27:228 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+10/09/17 21:48:27:228 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+10/09/17 21:48:27:228 DEBUG [main] Objects.Property (Property.java:56) - Destination file path from settings file: G:\\copy\\
+10/09/17 21:48:27:228 DEBUG [main] Objects.Property (Property.java:59) - Begin work time from settings file: 22:00:00
+10/09/17 21:48:27:229 DEBUG [main] Objects.Property (Property.java:62) - End work time from settings file: 01:40:00
+10/09/17 21:48:27:229 DEBUG [main] Objects.Property (Property.java:65) - Interval time from settings file: 120
+10/09/17 21:48:27:230 DEBUG [main] Objects.Property (Property.java:68) - Zip archive name from settings file: G:\\copy\\test.zip
+10/09/17 21:48:27:230 DEBUG [main] Objects.Property (Property.java:71) - Enabling add file(s) to archive is true
+10/09/17 21:48:28:241 ERROR [main] Objects.SftpClient (SftpClient.java:121) - Sftp server refused connection!
+10/09/17 21:48:28:242 ERROR [main] Objects.SftpClient (SftpClient.java:138) - Sftp server is not available.
+10/09/17 21:49:12:541 DEBUG [main] Objects.Property (Property.java:32) - Number of files: 3
+10/09/17 21:49:12:545 DEBUG [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+10/09/17 21:49:12:546 DEBUG [main] Objects.Property (Property.java:37) - Source filename2 : /MTA_trace.mta2
+10/09/17 21:49:12:546 DEBUG [main] Objects.Property (Property.java:37) - Source filename3 : /MTA_trace.mta3
+10/09/17 21:49:12:547 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+10/09/17 21:49:12:548 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+10/09/17 21:49:12:548 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+10/09/17 21:49:12:549 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+10/09/17 21:49:12:549 DEBUG [main] Objects.Property (Property.java:56) - Destination file path from settings file: G:\\copy\\
+10/09/17 21:49:12:680 DEBUG [main] Objects.Property (Property.java:59) - Begin work time from settings file: 22:00:00
+10/09/17 21:49:12:681 DEBUG [main] Objects.Property (Property.java:62) - End work time from settings file: 01:40:00
+10/09/17 21:49:12:681 DEBUG [main] Objects.Property (Property.java:65) - Interval time from settings file: 120
+10/09/17 21:49:12:681 DEBUG [main] Objects.Property (Property.java:68) - Zip archive name from settings file: G:\\copy\\test.zip
+10/09/17 21:49:12:682 DEBUG [main] Objects.Property (Property.java:71) - Enabling add file(s) to archive is true
+10/09/17 21:49:13:719 ERROR [main] Objects.SftpClient (SftpClient.java:121) - Sftp server refused connection!
+10/09/17 21:49:13:724 ERROR [main] Objects.SftpClient (SftpClient.java:138) - Sftp server is not available.
+10/09/17 21:49:42:762 DEBUG [main] Objects.Property (Property.java:32) - Number of files: 3
+10/09/17 21:49:42:766 DEBUG [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+10/09/17 21:49:42:766 DEBUG [main] Objects.Property (Property.java:37) - Source filename2 : /MTA_trace.mta2
+10/09/17 21:49:42:767 DEBUG [main] Objects.Property (Property.java:37) - Source filename3 : /MTA_trace.mta3
+10/09/17 21:49:42:768 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+10/09/17 21:49:42:768 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+10/09/17 21:49:42:769 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+10/09/17 21:49:42:769 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+10/09/17 21:49:42:770 DEBUG [main] Objects.Property (Property.java:56) - Destination file path from settings file: G:\\copy\\
+10/09/17 21:49:42:896 DEBUG [main] Objects.Property (Property.java:59) - Begin work time from settings file: 22:00:00
+10/09/17 21:49:42:896 DEBUG [main] Objects.Property (Property.java:62) - End work time from settings file: 01:40:00
+10/09/17 21:49:42:897 DEBUG [main] Objects.Property (Property.java:65) - Interval time from settings file: 120
+10/09/17 21:49:42:897 DEBUG [main] Objects.Property (Property.java:68) - Zip archive name from settings file: G:\\copy\\test.zip
+10/09/17 21:49:42:897 DEBUG [main] Objects.Property (Property.java:71) - Enabling add file(s) to archive is true
+10/09/17 21:49:47:286 INFO  [main] Objects.SftpClient (SftpClient.java:113) - MTA_trace.mta
+10/09/17 21:49:47:287 INFO  [main] Objects.SftpClient (SftpClient.java:113) - MTA_trace.mta2
+10/09/17 21:49:47:288 INFO  [main] Objects.SftpClient (SftpClient.java:113) - MTA_trace.mta3
+10/09/17 21:49:47:288 INFO  [main] Objects.SftpClient (SftpClient.java:113) - mtt.xlsx
+10/09/17 21:49:47:289 INFO  [main] Objects.SftpClient (SftpClient.java:113) - tmp
+10/09/17 21:49:47:289 INFO  [main] Objects.SftpClient (SftpClient.java:113) - video.avi
+10/09/17 21:49:47:290 INFO  [main] Objects.SftpClient (SftpClient.java:113) - zipfstest.zip
+10/09/17 21:49:47:290 INFO  [main] Objects.SftpClient (SftpClient.java:113) - Новая папка
+10/09/17 21:49:47:373 INFO  [main] Objects.SftpClient (SftpClient.java:118) - Exit code: 0
+10/09/17 21:49:47:374 ERROR [main] Objects.SftpClient (SftpClient.java:138) - Sftp server is not available.
+11/09/17 22:58:15:313 INFO  [main] runner.run (run.java:23) - Programm is started.
+11/09/17 22:58:15:334 DEBUG [main] Objects.Property (Property.java:32) - Number of files: 3
+11/09/17 22:58:15:334 DEBUG [main] Objects.Property (Property.java:37) - Source filename1 : /MTA_trace.mta
+11/09/17 22:58:15:335 DEBUG [main] Objects.Property (Property.java:37) - Source filename2 : /MTA_trace.mta2
+11/09/17 22:58:15:335 DEBUG [main] Objects.Property (Property.java:37) - Source filename3 : /MTA_trace.mta3
+11/09/17 22:58:15:336 DEBUG [main] Objects.Property (Property.java:42) - SFTP address from settings file: 127.0.0.1
+11/09/17 22:58:15:336 DEBUG [main] Objects.Property (Property.java:45) - SFTP port from settings file: 22
+11/09/17 22:58:15:337 DEBUG [main] Objects.Property (Property.java:48) - SFTP login from settings file: wawa
+11/09/17 22:58:15:337 DEBUG [main] Objects.Property (Property.java:51) - SFTP password from settings file: password
+11/09/17 22:58:15:337 DEBUG [main] Objects.Property (Property.java:56) - Destination file path from settings file: G:\\copy\\
+11/09/17 22:58:15:477 DEBUG [main] Objects.Property (Property.java:59) - Begin work time from settings file: 22:00:00
+11/09/17 22:58:15:478 DEBUG [main] Objects.Property (Property.java:62) - End work time from settings file: 01:40:00
+11/09/17 22:58:15:478 DEBUG [main] Objects.Property (Property.java:65) - Interval time from settings file: 120
+11/09/17 22:58:15:478 DEBUG [main] Objects.Property (Property.java:68) - Zip archive name from settings file: G:\\copy\\test.zip
+11/09/17 22:58:15:479 DEBUG [main] Objects.Property (Property.java:71) - Enabling add file(s) to archive is true
+11/09/17 22:58:15:483 INFO  [main] runner.run (run.java:36) - Checking time for work...
+11/09/17 22:58:15:520 INFO  [main] runner.run (run.java:39) - It's work time!
+11/09/17 22:58:15:520 DEBUG [main] Objects.SftpClient (SftpClient.java:35) - Start SFTP Client.
+11/09/17 22:58:17:151 DEBUG [main] Objects.SftpClient (SftpClient.java:45) - Connected to 127.0.0.1.
+11/09/17 22:58:18:893 INFO  [main] Objects.SftpClient (SftpClient.java:56) - Download file /MTA_trace.mta is successfully!
+11/09/17 22:58:19:652 INFO  [main] Objects.SftpClient (SftpClient.java:56) - Download file /MTA_trace.mta2 is successfully!
+11/09/17 22:58:20:455 INFO  [main] Objects.SftpClient (SftpClient.java:56) - Download file /MTA_trace.mta3 is successfully!
+11/09/17 22:58:20:476 DEBUG [main] Objects.SftpClient (SftpClient.java:90) - Stop SFTP Client.
+11/09/17 22:58:20:478 INFO  [main] Objects.ZipArchive (ZipArchive.java:48) - Archive file is not exist. File G:\\copy\\test_20170911.zip is created.
+11/09/17 22:58:20:479 DEBUG [main] Objects.ConvertNames (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170911.zip
+11/09/17 22:58:21:159 INFO  [main] Objects.ZipArchive (ZipArchive.java:86) - The file MTA_trace_20170911_225820.mta was added in archive G:\\copy\\test_20170911.zip
+11/09/17 22:58:21:384 INFO  [main] Objects.ZipArchive (ZipArchive.java:86) - The file MTA_trace_20170911_225821.mta2 was added in archive G:\\copy\\test_20170911.zip
+11/09/17 22:58:21:625 INFO  [main] Objects.ZipArchive (ZipArchive.java:86) - The file MTA_trace_20170911_225821.mta3 was added in archive G:\\copy\\test_20170911.zip
+11/09/17 22:58:21:667 INFO  [main] runner.run (run.java:43) - Waiting 02 min 00 sec

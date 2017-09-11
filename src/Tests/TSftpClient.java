@@ -23,18 +23,18 @@ public class TSftpClient {
 		 	client.setSftpPort(22);
 		 	client.setSftpLogin("wawa");
 		 	client.setSftpPass("password");
-		 	client.setSftpSrcFilePath("/");
-		 	client.setSftpSrcFileName("test.txt");
+		 	//client.setSftpSrcFilePath("/");
+		 	//client.setSftpSrcFileNamesList;
 		 	client.setSftpDstFilePath("G:\\copy\\");
-		 	client.setSftpDstFileName("test_copy.txt");
+		 	//client.setSftpDstFileName("test_copy.txt");
 		 	client.runConnect();
 	    }
 
 	 @After
 	 public void tearDown() throws Exception {
-		 File file = new File(client.getSftpDstFilePath() + client.getSftpDstFileName());
+		 /*File file = new File(client.getSftpDstFilePath() + client.getSftpDstFileName());
 		 if (file.exists())
-			 file.delete();
+			 file.delete();*/
 	 }
 	
 	 @Test

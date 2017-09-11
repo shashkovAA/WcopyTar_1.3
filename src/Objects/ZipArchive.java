@@ -8,12 +8,13 @@ import java.nio.file.Path;
 import java.nio.file.*;
 
 public class ZipArchive  {
-    private URI uri = null;
+    private volatile URI uri = null;
 	private Map<String, String> env = new HashMap<>();
 	private FileSystem zipfs;
 	private MyFile zipFile;
-	private MyFile copiedFile;
-	
+	private Property allPropers;
+	private String testCopiedFileName;
+
 	
 	public void addFileToArchive() {
 		
@@ -30,7 +31,7 @@ public class ZipArchive  {
 	
 	public void checkArchiveFileName(){
 		if (isArchiveFileNameCorrect())
-			moveFileToArchive();
+			moveFilesToArchive();
 		else 		
 			Debug.log.error("Check archive file name! It must be in <name>.zip format.");
 	}
@@ -40,7 +41,7 @@ public class ZipArchive  {
 		return (archivefShortFileName.contains(".zip") && (archivefShortFileName.indexOf('.') != 0));
 	}
 	
-	public boolean moveFileToArchive()	{
+	public boolean moveFilesToArchive()	{
 		
 		if (!isExistArchiveFile()) {
         	env.put("create", "true");
@@ -53,7 +54,11 @@ public class ZipArchive  {
 		try {
         	uri = URI.create(ConvertNames.createUriString(zipFile.getFullFileNameWithPathAndDate()));
         	zipfs = FileSystems.newFileSystem(uri, env);
-        	mvFileToArchive();
+        	
+        	for (int i=0; i<allPropers.getSftpSrcFileCount(); i++) {
+        	mvFilesToArchive(allPropers.getSftpSrcFullFileNamesList().get(i));
+        	}
+        	
         	zipfs.close();
         	return true;
         } catch (Exception except) {
@@ -68,11 +73,12 @@ public class ZipArchive  {
 	}
 
 
-	private void mvFileToArchive() {
+	private void mvFilesToArchive(String copiedFileName) {
 			
+		MyFile copiedFile = new MyFile(allPropers.getSftpDestFilePath() + copiedFileName);
 		Path extFile = Paths.get(copiedFile.getFullString());
-		String timeAppender = MyCalendar.getCurrentTimeNowCustomFormat("_HH_mm_ss");
-		String dateAppender = MyCalendar.getCurrentDateCustomFormat("_ddMMyyyy");
+		String timeAppender = MyCalendar.getCurrentTimeNowCustomFormat("_HHmmss");
+		String dateAppender = MyCalendar.getCurrentDateCustomFormat("_yyyyMMdd");
 		String copiedFileNameWithTimestamp =copiedFile.getName() + dateAppender + timeAppender + copiedFile.getExtension();
         Path pathInZipfile = zipfs.getPath("/" + copiedFileNameWithTimestamp);          
         try {
@@ -94,13 +100,14 @@ public class ZipArchive  {
 	public void setZipFile (String fileNameWithPath) {
 		this.zipFile = new MyFile(fileNameWithPath);
 	}
-	public void setCopiedFile(String copiedFile){
-		this.copiedFile = new MyFile(copiedFile);
+	public void testSetCopiedFile(String copiedFile){
+		this.testCopiedFileName = copiedFile;
 	}
 
 	public void setUserSettings(Property property){
 		this.zipFile = new MyFile(property.getZipFileFullName());
-		this.copiedFile = new MyFile(property.getSftpDestFilePath() + property.getSftpDestFileName());		
+		this.allPropers = property;
+		//this.copiedFile = new MyFile(property.getSftpDestFilePath() + property.getSftpDestFileName());		
 	}
 	
 	

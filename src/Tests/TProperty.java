@@ -48,6 +48,13 @@ public class TProperty
 		assertEquals(true, prop.isTimeStringCorrect("22:00:00"));	
 	}
 	
+	@Test
+	public void testBooleanString()
+	{	
+		prop.setEnableArchiving("true");
+		assertEquals(true, prop.getEnableArchiving());	
+	}
+	
 	
 
 }

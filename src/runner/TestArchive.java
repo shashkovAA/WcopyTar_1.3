@@ -14,10 +14,9 @@ public class TestArchive
 		Debug.initDebugLog();
 		ZipArchive zip = new ZipArchive();
 		zip.setZipFile("G:\\copy\\1.zip");
-		zip.setCopiedFile("C:\\temp\\MTA-20170526_vld_17_18.mta");
+		zip.testSetCopiedFile("C:\\temp\\MTA-20170526_vld_17_18.mta");
 		zip.addFileToArchive();
 		
-	//	zip.addFileToArchive();
 
 	}
 

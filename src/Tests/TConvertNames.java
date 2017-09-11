@@ -9,32 +9,41 @@ import Objects.ConvertNames;
 
 public class TConvertNames
 {
-	private String fullFileNameWithPath = "C:\\temp\\files\\MTA-20170526_vld_17_18.mta";
+	private String fullFileNameWithPathWinFormat = "C:\\temp\\files\\MTA-20170526_vld_17_18.mta";
+	private String fullFileNameWithPathWUnixFormat = ConvertNames.convertFilePathFromWinToUnix(fullFileNameWithPathWinFormat);
 	
 	
 	@Test
-	public void testFilePath()
+	public void testFilePathWin()
 	{
-		assertEquals("C:\\temp\\files\\", ConvertNames.getDirectoryPathString(fullFileNameWithPath));		
+		assertEquals("C:\\temp\\files\\", ConvertNames.getDirectoryPathStringWinFormat(fullFileNameWithPathWinFormat));
 	}
+	
+	@Test
+	public void testFilePathUnix()
+	{
+		assertEquals("C:/temp/files/", ConvertNames.getDirectoryPathStringUnixFormat(fullFileNameWithPathWUnixFormat));		
+	}
+	
 	
 	@Test
 	public void testGetFullFileName()
 	{
-		assertEquals("MTA-20170526_vld_17_18.mta", ConvertNames.getFileNameWithExt(fullFileNameWithPath));		
+		assertEquals("MTA-20170526_vld_17_18.mta", ConvertNames.getFileNameWithExt(fullFileNameWithPathWinFormat));
+		assertEquals("MTA-20170526_vld_17_18.mta", ConvertNames.getFileNameWithExt(fullFileNameWithPathWUnixFormat));
 	}
 	
 	@Test
 	public void testGetFileName()
 	{
-		assertEquals("MTA-20170526_vld_17_18", ConvertNames.getFileName(fullFileNameWithPath));		
+		assertEquals("MTA-20170526_vld_17_18", ConvertNames.getFileName(fullFileNameWithPathWinFormat));		
 	}
 	
 	
 	@Test
 	public void testGetFileExtension()
 	{
-		assertEquals(".mta", ConvertNames.getFileExensiont(fullFileNameWithPath));		
+		assertEquals(".mta", ConvertNames.getFileExension(fullFileNameWithPathWinFormat));		
 	}
 
 }

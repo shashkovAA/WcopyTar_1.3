@@ -1,6 +1,10 @@
 package Objects;
 
 import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.Properties;
+
+import runner.UserProperties;
 
 public  class Property
 {
@@ -8,15 +12,67 @@ public  class Property
 	private  int sftpPort ;
 	private  String sftpLogin = "admin";
 	private  String sftpPass = "password";
-	private  String sftpSourceFilePath = "";
-	private  String sftpSourceFileName = "test.txt";
+	private  int sftpSourceFileCount = 0;
+	private  ArrayList<String> sftpSrcFullFileNamesList = new ArrayList<String>();  
 	private  String sftpDestFilePath = "";
-	private  String sftpDestFileName = "test.txt";
 	private  LocalTime beginTimeSheduler;
 	private  LocalTime endTimeSheduler;
 	private  int intervalSheduler = 30 ;
 	private String zipFileFullName;
+	private boolean enableArchiving;
 	
+	
+	public Property() {};
+	
+	public Property(String settingsFileName) {
+		Properties userProperties = UserProperties.getPropertiesFromXML(settingsFileName);
+		
+		setSftpSrcFileCount(userProperties.getProperty("srcfilecount"));
+		int numOfFiles = getSftpSrcFileCount();
+		Debug.log.debug("Number of files: " + numOfFiles);
+		
+		ArrayList<String> srcFileNamesList = new ArrayList<String>();
+		for (int i=0;i<numOfFiles;i++) {
+		srcFileNamesList.add(userProperties.getProperty("srcfullfilename" + (i+1)));
+		Debug.log.debug("Source filename" + (i+1) + " : " + srcFileNamesList.get(i));
+		}
+		setSftpSrcFullFileNamesList(srcFileNamesList);
+			
+		setSftpIpAddr(userProperties.getProperty("ip"));
+        Debug.log.debug("SFTP address from settings file: " + userProperties.getProperty("ip"));
+        
+        setSftpPort(userProperties.getProperty("port"));
+        Debug.log.debug("SFTP port from settings file: " + userProperties.getProperty("port"));
+        
+        setSftpLogin(userProperties.getProperty("login"));
+        Debug.log.debug("SFTP login from settings file: " + userProperties.getProperty("login"));
+        
+        setSftpPass(userProperties.getProperty("password"));
+        Debug.log.debug("SFTP password from settings file: " + userProperties.getProperty("password"));
+        
+        setSftpSrcFullFileNamesList(srcFileNamesList);
+              
+        setSftpDestFilePath(userProperties.getProperty("dstfilepath"));
+        Debug.log.debug("Destination file path from settings file: " + userProperties.getProperty("dstfilepath"));
+ 		        
+        setBeginTimeSheduler(userProperties.getProperty("begintime"));
+        Debug.log.debug("Begin work time from settings file: " + userProperties.getProperty("begintime"));
+        
+        setEndTimeSheduler(userProperties.getProperty("endtime"));
+        Debug.log.debug("End work time from settings file: " + userProperties.getProperty("endtime"));
+        
+        setIntervalSheduler(userProperties.getProperty("workinterval"));
+        Debug.log.debug("Interval time from settings file: " + userProperties.getProperty("workinterval"));
+        
+        setZipFileFullName(userProperties.getProperty("zipfilefullname"));
+        Debug.log.debug("Zip archive name from settings file: " + userProperties.getProperty("zipfilefullname"));
+		
+        setEnableArchiving(userProperties.getProperty("enablearchiving"));
+        Debug.log.debug("Enabling add file(s) to archive is " + userProperties.getProperty("enablearchiving"));
+		
+	};
+	
+
 	public  String getSftpIpAddr()
 	{
 		return sftpIpAddr;
@@ -52,51 +108,50 @@ public  class Property
 		}		
 	}
 	
-	public  String getSftpLogin(){
+	public  String getSftpLogin() {
 		return sftpLogin;
 	}
-	public  void setSftpLogin(String sftpLogin){
+	public  void setSftpLogin(String sftpLogin) {
 		this.sftpLogin = sftpLogin;
 	}
-	public  String getSftpPass(){
+	
+	public  String getSftpPass() {
 		return sftpPass;
 	}
-	public  void setSftpPass(String sftpPass){
+	public  void setSftpPass(String sftpPass) {
 		this.sftpPass = sftpPass;
 	}
-	public  String getSftpSrcFilePath(){
-		return sftpSourceFilePath;
+	
+	public  int getSftpSrcFileCount(){
+		return sftpSourceFileCount;
 	}
-	public  void setSftpSrcFilePath(String sftpFilePath)
-	{
-		this.sftpSourceFilePath = sftpFilePath;
+	public  void setSftpSrcFileCount(String sftpSrcFileCount) {
+		try {
+			this.sftpSourceFileCount = Integer.valueOf(sftpSrcFileCount);
+			} 
+			catch (NumberFormatException except) {
+				Debug.log.error("Error format number of source files!");
+				System.exit(0);
+				this.intervalSheduler = 1;
+			}
 	}
-	public  String getSftpSrcFileName()
-	{
-		return sftpSourceFileName;
+	public  ArrayList<String> getSftpSrcFullFileNamesList() {
+		return sftpSrcFullFileNamesList;
 	}
-	public  void setSftpSrcFileName(String sftpFileName)
-	{
-		this.sftpSourceFileName = sftpFileName;
+	
+	public  void setSftpSrcFullFileNamesList(ArrayList<String> sftpFullFileNamesList) {
+		this.sftpSrcFullFileNamesList = sftpFullFileNamesList;
 	}
-	public  String getSftpDestFilePath()
-	{
+	
+	public  String getSftpDestFilePath() {
 		return sftpDestFilePath;
 	}
-	public  void setSftpDestFilePath(String sftpDestFilePath)
-	{
+	
+	public  void setSftpDestFilePath(String sftpDestFilePath) {
 		this.sftpDestFilePath = sftpDestFilePath;
 	}
-	public  String getSftpDestFileName()
-	{
-		return sftpDestFileName;
-	}
-	public  void setSftpDestFileName(String sftpDestFileName)
-	{
-		this.sftpDestFileName = sftpDestFileName;
-	}
-	public  LocalTime getBeginTimeSheduler()
-	{
+
+	public  LocalTime getBeginTimeSheduler() {
 		return beginTimeSheduler;
 	}
 	
@@ -107,29 +162,27 @@ public  class Property
 		else {
 			this.beginTimeSheduler = LocalTime.parse("00:00:00", MyCalendar.getTimeFormatWithSS());
 			Debug.log.error("Begin time have not correct format");
+			System.exit(0);
 		}
 	}
-	public  LocalTime getEndTimeSheduler()
-	{
+	public  LocalTime getEndTimeSheduler() {
 		return endTimeSheduler;
 	}
 	
-	public  void setEndTimeSheduler(String endTimeSheduler)
-	{
+	public  void setEndTimeSheduler(String endTimeSheduler) {
 		if (isTimeStringCorrect(endTimeSheduler))
 			this.endTimeSheduler = LocalTime.parse(endTimeSheduler, MyCalendar.getTimeFormatWithSS());
 		else {
 			this.endTimeSheduler = LocalTime.parse("23:59:59", MyCalendar.getTimeFormatWithSS());
 			Debug.log.error("End time have not correct format");
+			System.exit(0);
 		}
 	}
 	
-	public  int getIntervalSheduler()
-	{
+	public  int getIntervalSheduler() {
 		return intervalSheduler;
 	}
-	public  void setIntervalSheduler(String intervalSheduler)
-	{
+	public  void setIntervalSheduler(String intervalSheduler) {
 		try {
 		this.intervalSheduler = Integer.valueOf(intervalSheduler);
 		} 
@@ -143,17 +196,25 @@ public  class Property
 		
 		return (time.matches("(0[0-9]|1[0-9]|2[0-3])\\:[0-5]\\d\\:[0-5]\\d")) ;	
 	}
-	
-	
+		
 	public void setZipFileFullName(String zipFileFullName) {
-		this.zipFileFullName = zipFileFullName;
-		
-		
+		this.zipFileFullName = zipFileFullName;	
 	}
-	public String getZipFileFullName()
-	{
+	
+	public String getZipFileFullName() {
 		return zipFileFullName;
 	}
 
+	public void setEnableArchiving(String EnableArchiving) {
+		this.enableArchiving = Boolean.valueOf(EnableArchiving);
+		if (!EnableArchiving.equals("true"))
+			Debug.log.error("Not correct value for Enable Archiving!");
+	}
+	
+	public boolean getEnableArchiving() {
+		return enableArchiving;	
+	}
+	
+	
 	
 }

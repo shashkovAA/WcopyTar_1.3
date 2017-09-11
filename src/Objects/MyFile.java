@@ -6,16 +6,14 @@ public class MyFile
 	private String name;
 	private String extension;
 	private String fullString;
-	private String fullFileNameWithPathAndDate;
-	
-	
+
 
 	public MyFile(String fullFileNameString) {
-		this.path = ConvertNames.getDirectoryPathString(fullFileNameString);
+		this.path = ConvertNames.getDirectoryPathStringWinFormat(fullFileNameString);
 		this.name = ConvertNames.getFileName(fullFileNameString);
-		this.extension = ConvertNames.getFileExensiont(fullFileNameString);
+		this.extension = ConvertNames.getFileExension(fullFileNameString);
 		this.fullString = fullFileNameString;
-		this.fullFileNameWithPathAndDate = this.path + this.name + "_" + MyCalendar.getCurrentDateCustomFormat("yyyyMMdd") + this.extension;
+
 	}
 	
 	public String getPath(){
@@ -35,7 +33,7 @@ public class MyFile
 	}
 	
 	public String getFullFileNameWithPathAndDate() {
-		return fullFileNameWithPathAndDate;
+		return (this.path + this.name + "_" + MyCalendar.getCurrentDateCustomFormat("yyyyMMdd") + this.extension);
 	}
 	
 
