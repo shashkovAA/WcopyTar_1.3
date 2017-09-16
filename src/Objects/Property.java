@@ -20,6 +20,7 @@ public  class Property
 	private  int intervalSheduler = 30 ;
 	private String zipFileFullName;
 	private boolean enableArchiving;
+	private boolean enableNameMask;
 	
 	
 	public Property() {};
@@ -52,6 +53,9 @@ public  class Property
         
         setSftpSrcFullFileNamesList(srcFileNamesList);
               
+        setEnableCopyFilesByNameMask(userProperties.getProperty("findingfilesbymaskofname"));
+        Debug.log.debug("Enabling coping files by mask of name is :" + userProperties.getProperty("findingfilesbymaskofname"));
+        
         setSftpDestFilePath(userProperties.getProperty("dstfilepath"));
         Debug.log.debug("Destination file path from settings file: " + userProperties.getProperty("dstfilepath"));
  		        
@@ -207,14 +211,30 @@ public  class Property
 
 	public void setEnableArchiving(String EnableArchiving) {
 		this.enableArchiving = Boolean.valueOf(EnableArchiving);
-		if (!EnableArchiving.equals("true"))
+		if (!(EnableArchiving.equals("true") || EnableArchiving.equals("false"))) {
 			Debug.log.error("Not correct value for Enable Archiving!");
+			Debug.log.error("Will use default value TRUE");
+			this.enableArchiving = true;
+		}	
 	}
-	
 	public boolean getEnableArchiving() {
 		return enableArchiving;	
 	}
 	
+	public void setEnableCopyFilesByNameMask(String EnableNameMask) {
+		this.enableNameMask = Boolean.valueOf(EnableNameMask);
+		if (!(EnableNameMask.equals("true") || EnableNameMask.equals("false"))) {
+			Debug.log.error("Not correct value for Coping Files by Mask of Name");
+			Debug.log.error("Will use default value FALSE");
+			this.enableNameMask = false;
+		}	
+	}
+	public boolean getEnableCopyByMask() {
+		return enableNameMask;	
+	}
+	
+	
+
 	
 	
 }

@@ -46,20 +46,19 @@ public class TSftpClient2 {
 	
 	 @Test
 	 public void testServerAvailable() {
-		client.runConnect();
+		client.copyFiles();
 		assertEquals(true, client.isSftpServerAvailable);
 		assertEquals(true, client.isCredentialsCorrect);
 		assertEquals(true, client.isFileExist);	
 	}
 	 
-	 @Test
+	 /*@Test
 	 public void testSFTPServerCommandLS() {
 		
 		  ArrayList<String> filesList; 
-		  filesList = client.remoteLs();
+		  filesList = client.remoteLs("*.mta2");
 	
 		assertEquals(false, filesList.isEmpty());
-
-	}
+	}*/
 	 
 }

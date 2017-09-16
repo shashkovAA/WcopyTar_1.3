@@ -38,3 +38,6 @@
 09/09/17 16:55:55:110 INFO  [main] Objects.SftpClient (SftpClient.java:111) - -rw-rw----   1             Натуся@Kamchatka None@Kamchatka        461 2017-07-08  17:17 zipfstest.zip
 09/09/17 16:55:55:110 INFO  [main] Objects.SftpClient (SftpClient.java:111) - drwxrwx---   1             Натуся@Kamchatka None@Kamchatka          0 2017-07-08  16:40 Новая папка
 09/09/17 16:55:55:126 INFO  [main] Objects.SftpClient (SftpClient.java:117) - Exit code: 0
+16/09/17 17:00:09:244 ERROR [main] Objects.Property.setSftpIpAddr (Property.java:92) - IP address have not correct format!
+16/09/17 17:00:45:177 ERROR [main] Objects.Property.setSftpIpAddr (Property.java:92) - IP address have not correct format!
+16/09/17 17:00:45:312 ERROR [main] Objects.Property.setEnableCopyFilesByNameMask (Property.java:224) - Not correct value for Coping Files by Mask of Name

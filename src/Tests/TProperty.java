@@ -55,6 +55,13 @@ public class TProperty
 		assertEquals(true, prop.getEnableArchiving());	
 	}
 	
+	@Test
+	public void testBooleanString2()
+	{	
+		prop.setEnableCopyFilesByNameMask("true");
+		assertEquals(true, prop.getEnableCopyByMask());	
+	}
+	
 	
 
 }

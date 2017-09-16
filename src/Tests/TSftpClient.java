@@ -27,7 +27,7 @@ public class TSftpClient {
 		 	//client.setSftpSrcFileNamesList;
 		 	client.setSftpDstFilePath("G:\\copy\\");
 		 	//client.setSftpDstFileName("test_copy.txt");
-		 	client.runConnect();
+		 	client.copyFiles();
 	    }
 
 	 @After

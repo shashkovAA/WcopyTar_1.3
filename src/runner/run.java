@@ -37,7 +37,7 @@ public class run {
 		
 		while (sheduler.isWorkTime()) {
 			Debug.log.info("It's work time!");
-			sftpConnect.runConnect();
+			sftpConnect.copyFiles();
 			if (property.getEnableArchiving())
 				zipper.addFileToArchive();
 			Debug.log.info("Waiting " + MyCalendar.getTimeFromMills(property.getIntervalSheduler()*1000));

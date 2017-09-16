@@ -15,10 +15,10 @@ public class SftpClient {
 	public boolean isSftpServerAvailable = false;
 	public boolean isCredentialsCorrect = false;
 	public boolean isFileExist = false;
-
+	private boolean enableNameMask;
 	
 	private  Session session = null;
-	private  Channel channel = null;
+	private  ChannelExec channelExec = null;
 	private  ChannelSftp sftpChannel = null;
 	private  String sftpIp;
 	private  int sftpPort;
@@ -26,46 +26,61 @@ public class SftpClient {
 	private  String sftpPass;
 	private  int sftpSrcFileCount;
 	private  ArrayList<String> sftpSrcFullFileNamesList;
+	private  ArrayList<String> fullFileNameListbyMaskName;
 	private  String sftpDstFilePath;
 
 
 		
-    public void runConnect() {
+    public void copyFiles () {
+    	
+    	if (!enableNameMask) {
+    		for (int i=0; i<sftpSrcFileCount; i++) 
+    			copyFile(sftpSrcFullFileNamesList.get(i));
+        } else {
+        	for (int i=0; i<sftpSrcFileCount; i++) {
+        		fullFileNameListbyMaskName = getListFileNamesFromSftpByMask(sftpSrcFullFileNamesList.get(i));
+        		Debug.log.info("Mask name for coping file(s) :" + sftpSrcFullFileNamesList.get(i));
+        		for (int j=0; i<fullFileNameListbyMaskName.size(); j++)
+        			copyFile(fullFileNameListbyMaskName.get(j));
+        	}	
+        }
+    	
+    	
+    }
+	
+	
+	public void copyFile(String mFileName) {
     	
     	Debug.log.debug("Start SFTP Client.");
     	
     	JSch jsch = new JSch();
-  
+    	
         try {
             session = jsch.getSession(sftpLogin, sftpIp, sftpPort);
             session.setConfig("StrictHostKeyChecking", "no");
-            session.setPassword(sftpPass);
-            
+            session.setPassword(sftpPass);       
             session.connect();
             Debug.log.debug("Connected to "+ sftpIp + ".");
+            
             isSftpServerAvailable = true;
             isCredentialsCorrect = true;
-
-            channel = session.openChannel("sftp");
-            channel.connect();
+         
+            sftpChannel = (ChannelSftp) session.openChannel("sftp");
+            sftpChannel.connect();
             
-            sftpChannel = (ChannelSftp) channel;
-            
-            for (int i=0; i<sftpSrcFileCount; i++) {
-            	sftpChannel.get(sftpSrcFullFileNamesList.get(i), sftpDstFilePath + ConvertNames.getFileNameWithExt(sftpSrcFullFileNamesList.get(i)));
-            	Debug.log.info("Download file " + sftpSrcFullFileNamesList.get(i) + " is successfully!");
-            }
+           
+            sftpChannel.get(mFileName, sftpDstFilePath + ConvertNames.getFileNameWithExt(mFileName));
+            Debug.log.info("Download file " + mFileName + " is successfully!");
+          
             isFileExist = true;
             
-            sftpChannel.exit();
-            channel.disconnect();
-            session.disconnect();
-            
+            sftpChannel.disconnect();
+            session.disconnect();          
             
         } catch (JSchException except) {
             Debug.log.error("Sftp server refused connection!");
         } catch (SftpException except2) {
-        	Debug.log.error("File download failed!");
+        	Debug.log.error("File " + mFileName + " download failed!");
             Debug.log.error(except2.getMessage());
         } catch (Exception except3) {
             Debug.log.error(except3.getMessage());
@@ -74,12 +89,15 @@ public class SftpClient {
         	
         	try { 
         		if (sftpChannel.isConnected()) {
-        			sftpChannel.exit();
-        			channel.disconnect();
+        			sftpChannel.disconnect();
+        		}
+        		
+        		if (session.isConnected()) {
         			session.disconnect();
-        			Debug.log.info("Disconnected from " + sftpIp + ".");
+        		}	
+        			Debug.log.debug("Disconnected from " + sftpIp + ".");
         			
-        	}
+        	
         	} catch (NullPointerException except) {
         		Debug.log.error("Sftp server is not available.");
         		isSftpServerAvailable = false;
@@ -90,7 +108,7 @@ public class SftpClient {
         Debug.log.debug("Stop SFTP Client.");
     }
     
-    public ArrayList<String> remoteLs() {
+    public ArrayList<String> getListFileNamesFromSftpByMask(String filter) {
     	ArrayList<String> copyFilesList  = new ArrayList<String>();
     	JSch js = new JSch();
         try {
@@ -99,10 +117,8 @@ public class SftpClient {
 	        session.setConfig("StrictHostKeyChecking", "no");
 	        session.connect();
 	
-	        Channel channel = session.openChannel("exec");
-	        ChannelExec channelExec = (ChannelExec) channel;
-	
-	        channelExec.setCommand("ls");
+	        channelExec = (ChannelExec) session.openChannel("exec");
+	        channelExec.setCommand("ls " + filter );
 	        channelExec.setErrStream(System.err);
 	        channelExec.connect();
 	
@@ -115,7 +131,7 @@ public class SftpClient {
 	
 	        channelExec.disconnect();
 	        session.disconnect();
-	        Debug.log.info("Exit code: " + channelExec.getExitStatus());
+	        Debug.log.debug("Exit code: " + channelExec.getExitStatus());
 	        Debug.log.info("Number of files for copy :" + copyFilesList.size());
 	        return copyFilesList;
 	        
@@ -129,22 +145,20 @@ public class SftpClient {
         finally {
         	
         	try { 
-        		if (sftpChannel.isConnected()) {
-        			sftpChannel.exit();
-        			channel.disconnect();
+        		if (channelExec.isConnected()) {
+        			channelExec.disconnect();
+        		}	
+        		if (session.isConnected()) {
         			session.disconnect();
-        			Debug.log.info("Disconnected from " + sftpIp + ".");			
-        	}
+        		}	
+        		Debug.log.debug("Disconnected from " + sftpIp + ".");			
         		
         	} catch (NullPointerException except) {
         		Debug.log.error("Sftp server is not available.");
         		isSftpServerAvailable = false;
         	
-        	}
-        
-        }
-        
-
+        	}       
+        }     
       }
     
     public  void setSftpIp(String sftpIp){
@@ -194,6 +208,7 @@ public class SftpClient {
 		this.sftpSrcFileCount = prop.getSftpSrcFileCount();
 		this.sftpSrcFullFileNamesList = prop.getSftpSrcFullFileNamesList();
 		this.sftpDstFilePath = prop.getSftpDestFilePath();
+		this.enableNameMask = prop.getEnableCopyByMask();
 					
 	}
 
