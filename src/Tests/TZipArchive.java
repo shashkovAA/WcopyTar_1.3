@@ -20,7 +20,7 @@ public class TZipArchive
 
 		Debug.initDebugLog();
 		zip.setZipFile("G:\\copy\\1.zip");
-		zip.setCopiedFile("C:\\temp\\test.txt");
+		//zip.setCopiedFile("C:\\temp\\test.txt");
     }
 
     @After

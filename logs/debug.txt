@@ -2058,3 +2058,338 @@
 16/09/17 17:25:55:589 INFO  [main] Objects.SftpClient.copyFile (SftpClient.java:73) - Download file MTA_trace.mta is successfully!
 16/09/17 17:25:55:591 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:98) - Disconnected from 127.0.0.1.
 16/09/17 17:25:55:592 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:108) - Stop SFTP Client.
+21/09/17 22:42:28:580 INFO  [main] runner.run.main (run.java:23) - Programm is started.
+21/09/17 22:42:28:591 DEBUG [main] Objects.Property.<init> (Property.java:33) - Number of files: 1
+21/09/17 22:42:28:592 DEBUG [main] Objects.Property.<init> (Property.java:38) - Source filename1 : /MTA_trace*
+21/09/17 22:42:28:593 DEBUG [main] Objects.Property.<init> (Property.java:43) - SFTP address from settings file: 127.0.0.1
+21/09/17 22:42:28:593 DEBUG [main] Objects.Property.<init> (Property.java:46) - SFTP port from settings file: 22
+21/09/17 22:42:28:594 DEBUG [main] Objects.Property.<init> (Property.java:49) - SFTP login from settings file: wawa
+21/09/17 22:42:28:594 DEBUG [main] Objects.Property.<init> (Property.java:52) - SFTP password from settings file: password
+21/09/17 22:42:28:595 DEBUG [main] Objects.Property.<init> (Property.java:57) - Enabling coping files by mask of name is :true
+21/09/17 22:42:28:597 DEBUG [main] Objects.Property.<init> (Property.java:60) - Destination file path from settings file: G:\\copy\\
+21/09/17 22:42:28:774 DEBUG [main] Objects.Property.<init> (Property.java:63) - Begin work time from settings file: 12:00:00
+21/09/17 22:42:28:775 DEBUG [main] Objects.Property.<init> (Property.java:66) - End work time from settings file: 01:40:00
+21/09/17 22:42:28:775 DEBUG [main] Objects.Property.<init> (Property.java:69) - Interval time from settings file: 120
+21/09/17 22:42:28:775 DEBUG [main] Objects.Property.<init> (Property.java:72) - Zip archive name from settings file: G:\\copy\\test.zip
+21/09/17 22:42:28:776 DEBUG [main] Objects.Property.<init> (Property.java:75) - Enabling add file(s) to archive is true
+21/09/17 22:42:28:793 INFO  [main] runner.run.main (run.java:36) - Checking time for work...
+21/09/17 22:42:28:822 INFO  [main] runner.run.main (run.java:39) - It's work time!
+21/09/17 22:42:29:884 ERROR [main] Objects.SftpClient.getListFileNamesFromSftpByMask (SftpClient.java:139) - Sftp server refused connection!
+21/09/17 22:42:29:888 ERROR [main] Objects.SftpClient.getListFileNamesFromSftpByMask (SftpClient.java:157) - Sftp server is not available.
+21/09/17 22:42:29:888 INFO  [main] Objects.SftpClient.copyFiles (SftpClient.java:42) - Mask name for coping file(s) :/MTA_trace*
+21/09/17 22:42:29:890 INFO  [main] Objects.ZipArchive.moveFilesToArchive (ZipArchive.java:48) - Archive file is not exist. File G:\\copy\\test_20170921.zip is created.
+21/09/17 22:42:29:891 DEBUG [main] Objects.ConvertNames.createUriString (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170921.zip
+21/09/17 22:42:30:011 ERROR [main] Objects.ZipArchive.moveFilesToArchive (ZipArchive.java:65) - java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+21/09/17 22:42:30:013 INFO  [main] runner.run.main (run.java:43) - Waiting 02 min 00 sec
+21/09/17 22:44:30:013 INFO  [main] runner.run.main (run.java:39) - It's work time!
+21/09/17 22:44:31:015 ERROR [main] Objects.SftpClient.getListFileNamesFromSftpByMask (SftpClient.java:139) - Sftp server refused connection!
+21/09/17 22:44:31:015 ERROR [main] Objects.SftpClient.getListFileNamesFromSftpByMask (SftpClient.java:157) - Sftp server is not available.
+21/09/17 22:44:31:016 INFO  [main] Objects.SftpClient.copyFiles (SftpClient.java:42) - Mask name for coping file(s) :/MTA_trace*
+21/09/17 22:44:31:016 DEBUG [main] Objects.ZipArchive.moveFilesToArchive (ZipArchive.java:51) - Archive file G:\\copy\\test_20170921.zip is already exist!
+21/09/17 22:44:31:017 DEBUG [main] Objects.ConvertNames.createUriString (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170921.zip
+21/09/17 22:44:31:019 ERROR [main] Objects.ZipArchive.moveFilesToArchive (ZipArchive.java:65) - java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+21/09/17 22:44:31:020 INFO  [main] runner.run.main (run.java:43) - Waiting 02 min 00 sec
+21/09/17 22:46:36:871 INFO  [main] runner.run.main (run.java:23) - Programm is started.
+21/09/17 22:46:36:889 DEBUG [main] Objects.Property.<init> (Property.java:33) - Number of files: 1
+21/09/17 22:46:36:890 DEBUG [main] Objects.Property.<init> (Property.java:38) - Source filename1 : /MTA_trace*
+21/09/17 22:46:36:891 DEBUG [main] Objects.Property.<init> (Property.java:43) - SFTP address from settings file: 127.0.0.1
+21/09/17 22:46:36:891 DEBUG [main] Objects.Property.<init> (Property.java:46) - SFTP port from settings file: 22
+21/09/17 22:46:36:892 DEBUG [main] Objects.Property.<init> (Property.java:49) - SFTP login from settings file: wawa
+21/09/17 22:46:36:892 DEBUG [main] Objects.Property.<init> (Property.java:52) - SFTP password from settings file: password
+21/09/17 22:46:36:892 DEBUG [main] Objects.Property.<init> (Property.java:57) - Enabling coping files by mask of name is :false
+21/09/17 22:46:36:893 DEBUG [main] Objects.Property.<init> (Property.java:60) - Destination file path from settings file: G:\\copy\\
+21/09/17 22:46:37:056 DEBUG [main] Objects.Property.<init> (Property.java:63) - Begin work time from settings file: 12:00:00
+21/09/17 22:46:37:057 DEBUG [main] Objects.Property.<init> (Property.java:66) - End work time from settings file: 01:40:00
+21/09/17 22:46:37:057 DEBUG [main] Objects.Property.<init> (Property.java:69) - Interval time from settings file: 120
+21/09/17 22:46:37:058 DEBUG [main] Objects.Property.<init> (Property.java:72) - Zip archive name from settings file: G:\\copy\\test.zip
+21/09/17 22:46:37:058 DEBUG [main] Objects.Property.<init> (Property.java:75) - Enabling add file(s) to archive is true
+21/09/17 22:46:37:062 INFO  [main] runner.run.main (run.java:36) - Checking time for work...
+21/09/17 22:46:37:068 INFO  [main] runner.run.main (run.java:39) - It's work time!
+21/09/17 22:46:37:069 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:54) - Start SFTP Client.
+21/09/17 22:46:38:140 ERROR [main] Objects.SftpClient.copyFile (SftpClient.java:81) - Sftp server refused connection!
+21/09/17 22:46:38:145 ERROR [main] Objects.SftpClient.copyFile (SftpClient.java:102) - Sftp server is not available.
+21/09/17 22:46:38:146 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:108) - Stop SFTP Client.
+21/09/17 22:46:38:147 DEBUG [main] Objects.ZipArchive.moveFilesToArchive (ZipArchive.java:51) - Archive file G:\\copy\\test_20170921.zip is already exist!
+21/09/17 22:46:38:148 DEBUG [main] Objects.ConvertNames.createUriString (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170921.zip
+21/09/17 22:46:38:190 ERROR [main] Objects.ZipArchive.moveFilesToArchive (ZipArchive.java:65) - java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+21/09/17 22:46:38:191 INFO  [main] runner.run.main (run.java:43) - Waiting 02 min 00 sec
+21/09/17 22:48:05:042 INFO  [main] runner.run.main (run.java:23) - Programm is started.
+21/09/17 22:48:05:053 DEBUG [main] Objects.Property.<init> (Property.java:33) - Number of files: 1
+21/09/17 22:48:05:054 DEBUG [main] Objects.Property.<init> (Property.java:38) - Source filename1 : /MTA_trace.mta
+21/09/17 22:48:05:055 DEBUG [main] Objects.Property.<init> (Property.java:43) - SFTP address from settings file: 127.0.0.1
+21/09/17 22:48:05:055 DEBUG [main] Objects.Property.<init> (Property.java:46) - SFTP port from settings file: 22
+21/09/17 22:48:05:056 DEBUG [main] Objects.Property.<init> (Property.java:49) - SFTP login from settings file: wawa
+21/09/17 22:48:05:056 DEBUG [main] Objects.Property.<init> (Property.java:52) - SFTP password from settings file: password
+21/09/17 22:48:05:056 DEBUG [main] Objects.Property.<init> (Property.java:57) - Enabling coping files by mask of name is :false
+21/09/17 22:48:05:057 DEBUG [main] Objects.Property.<init> (Property.java:60) - Destination file path from settings file: G:\\copy\\
+21/09/17 22:48:05:184 DEBUG [main] Objects.Property.<init> (Property.java:63) - Begin work time from settings file: 12:00:00
+21/09/17 22:48:05:185 DEBUG [main] Objects.Property.<init> (Property.java:66) - End work time from settings file: 01:40:00
+21/09/17 22:48:05:186 DEBUG [main] Objects.Property.<init> (Property.java:69) - Interval time from settings file: 120
+21/09/17 22:48:05:186 DEBUG [main] Objects.Property.<init> (Property.java:72) - Zip archive name from settings file: G:\\copy\\test.zip
+21/09/17 22:48:05:186 DEBUG [main] Objects.Property.<init> (Property.java:75) - Enabling add file(s) to archive is true
+21/09/17 22:48:05:190 INFO  [main] runner.run.main (run.java:36) - Checking time for work...
+21/09/17 22:48:05:196 INFO  [main] runner.run.main (run.java:39) - It's work time!
+21/09/17 22:48:05:196 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:54) - Start SFTP Client.
+21/09/17 22:48:06:241 ERROR [main] Objects.SftpClient.copyFile (SftpClient.java:81) - Sftp server refused connection!
+21/09/17 22:48:06:245 ERROR [main] Objects.SftpClient.copyFile (SftpClient.java:102) - Sftp server is not available.
+21/09/17 22:48:06:246 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:108) - Stop SFTP Client.
+21/09/17 22:48:06:247 DEBUG [main] Objects.ZipArchive.moveFilesToArchive (ZipArchive.java:51) - Archive file G:\\copy\\test_20170921.zip is already exist!
+21/09/17 22:48:06:248 DEBUG [main] Objects.ConvertNames.createUriString (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170921.zip
+21/09/17 22:48:06:918 INFO  [main] Objects.ZipArchive.mvFilesToArchive (ZipArchive.java:86) - The file MTA_trace_20170921_224806.mta was added in archive G:\\copy\\test_20170921.zip
+21/09/17 22:48:07:126 INFO  [main] runner.run.main (run.java:43) - Waiting 02 min 00 sec
+21/09/17 22:50:07:127 INFO  [main] runner.run.main (run.java:39) - It's work time!
+21/09/17 22:50:07:128 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:54) - Start SFTP Client.
+21/09/17 22:50:08:133 ERROR [main] Objects.SftpClient.copyFile (SftpClient.java:81) - Sftp server refused connection!
+21/09/17 22:50:08:133 ERROR [main] Objects.SftpClient.copyFile (SftpClient.java:102) - Sftp server is not available.
+21/09/17 22:50:08:134 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:108) - Stop SFTP Client.
+21/09/17 22:50:08:134 DEBUG [main] Objects.ZipArchive.moveFilesToArchive (ZipArchive.java:51) - Archive file G:\\copy\\test_20170921.zip is already exist!
+21/09/17 22:50:08:135 DEBUG [main] Objects.ConvertNames.createUriString (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170921.zip
+21/09/17 22:50:08:137 ERROR [main] Objects.ZipArchive.mvFilesToArchive (ZipArchive.java:90) - Файл G:\copy\MTA_trace.mta не найден по указанному пути.
+21/09/17 22:50:08:138 INFO  [main] runner.run.main (run.java:43) - Waiting 02 min 00 sec
+21/09/17 22:52:08:140 INFO  [main] runner.run.main (run.java:39) - It's work time!
+21/09/17 22:52:08:141 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:54) - Start SFTP Client.
+21/09/17 22:52:09:141 ERROR [main] Objects.SftpClient.copyFile (SftpClient.java:81) - Sftp server refused connection!
+21/09/17 22:52:09:141 ERROR [main] Objects.SftpClient.copyFile (SftpClient.java:102) - Sftp server is not available.
+21/09/17 22:52:09:142 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:108) - Stop SFTP Client.
+21/09/17 22:52:09:142 DEBUG [main] Objects.ZipArchive.moveFilesToArchive (ZipArchive.java:51) - Archive file G:\\copy\\test_20170921.zip is already exist!
+21/09/17 22:52:09:143 DEBUG [main] Objects.ConvertNames.createUriString (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170921.zip
+21/09/17 22:52:09:145 ERROR [main] Objects.ZipArchive.mvFilesToArchive (ZipArchive.java:90) - Файл G:\copy\MTA_trace.mta не найден по указанному пути.
+21/09/17 22:52:09:146 INFO  [main] runner.run.main (run.java:43) - Waiting 02 min 00 sec
+23/09/17 23:21:16:429 DEBUG [main] Objects.Property.<init> (Property.java:34) - Number of files: 1
+23/09/17 23:21:16:443 DEBUG [main] Objects.Property.<init> (Property.java:39) - Source filename1 : /MTA_trace.mta
+23/09/17 23:21:16:445 DEBUG [main] Objects.Property.<init> (Property.java:44) - SFTP address from settings file: 127.0.0.1
+23/09/17 23:21:16:446 DEBUG [main] Objects.Property.<init> (Property.java:47) - SFTP port from settings file: 22
+23/09/17 23:21:16:446 DEBUG [main] Objects.Property.<init> (Property.java:50) - SFTP login from settings file: wawa
+23/09/17 23:21:16:447 DEBUG [main] Objects.Property.<init> (Property.java:53) - SFTP password from settings file: password
+23/09/17 23:21:16:447 DEBUG [main] Objects.Property.<init> (Property.java:58) - Enabling coping files by mask of name is :false
+23/09/17 23:21:16:448 DEBUG [main] Objects.Property.<init> (Property.java:61) - Destination file path from settings file: G:\\copy\\
+23/09/17 23:21:16:608 DEBUG [main] Objects.Property.<init> (Property.java:64) - Begin work time from settings file: 12:00:00
+23/09/17 23:21:16:609 DEBUG [main] Objects.Property.<init> (Property.java:67) - End work time from settings file: 01:40:00
+23/09/17 23:21:16:609 DEBUG [main] Objects.Property.<init> (Property.java:70) - Interval time from settings file: 120
+23/09/17 23:21:16:610 DEBUG [main] Objects.Property.<init> (Property.java:73) - Zip archive name from settings file: G:\\copy\\test.zip
+23/09/17 23:21:16:610 DEBUG [main] Objects.Property.<init> (Property.java:76) - Enabling add file(s) to archive is true
+23/09/17 23:21:16:610 DEBUG [main] Objects.Property.<init> (Property.java:79) - Min free disk space from settings file :5000
+23/09/17 23:21:16:611 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:54) - Start SFTP Client.
+23/09/17 23:21:17:649 ERROR [main] Objects.SftpClient.copyFile (SftpClient.java:81) - Sftp server refused connection!
+23/09/17 23:21:17:653 ERROR [main] Objects.SftpClient.copyFile (SftpClient.java:102) - Sftp server is not available.
+23/09/17 23:21:17:654 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:108) - Stop SFTP Client.
+23/09/17 23:21:44:274 DEBUG [main] Objects.Property.<init> (Property.java:34) - Number of files: 1
+23/09/17 23:21:44:278 DEBUG [main] Objects.Property.<init> (Property.java:39) - Source filename1 : /MTA_trace.mta
+23/09/17 23:21:44:279 DEBUG [main] Objects.Property.<init> (Property.java:44) - SFTP address from settings file: 127.0.0.1
+23/09/17 23:21:44:280 DEBUG [main] Objects.Property.<init> (Property.java:47) - SFTP port from settings file: 22
+23/09/17 23:21:44:280 DEBUG [main] Objects.Property.<init> (Property.java:50) - SFTP login from settings file: wawa
+23/09/17 23:21:44:281 DEBUG [main] Objects.Property.<init> (Property.java:53) - SFTP password from settings file: password
+23/09/17 23:21:44:281 DEBUG [main] Objects.Property.<init> (Property.java:58) - Enabling coping files by mask of name is :false
+23/09/17 23:21:44:282 DEBUG [main] Objects.Property.<init> (Property.java:61) - Destination file path from settings file: G:\\copy\\
+23/09/17 23:21:44:435 DEBUG [main] Objects.Property.<init> (Property.java:64) - Begin work time from settings file: 12:00:00
+23/09/17 23:21:44:436 DEBUG [main] Objects.Property.<init> (Property.java:67) - End work time from settings file: 01:40:00
+23/09/17 23:21:44:436 DEBUG [main] Objects.Property.<init> (Property.java:70) - Interval time from settings file: 120
+23/09/17 23:21:44:437 DEBUG [main] Objects.Property.<init> (Property.java:73) - Zip archive name from settings file: G:\\copy\\test.zip
+23/09/17 23:21:44:437 DEBUG [main] Objects.Property.<init> (Property.java:76) - Enabling add file(s) to archive is true
+23/09/17 23:21:44:438 DEBUG [main] Objects.Property.<init> (Property.java:79) - Min free disk space from settings file :5000
+23/09/17 23:21:44:438 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:54) - Start SFTP Client.
+23/09/17 23:21:46:031 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:63) - Connected to 127.0.0.1.
+23/09/17 23:21:47:444 INFO  [main] Objects.SftpClient.copyFile (SftpClient.java:73) - Download file /MTA_trace.mta is successfully!
+23/09/17 23:21:47:451 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:98) - Disconnected from 127.0.0.1.
+23/09/17 23:21:47:451 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:108) - Stop SFTP Client.
+23/09/17 23:24:30:634 DEBUG [main] Objects.Property.<init> (Property.java:34) - Number of files: 1
+23/09/17 23:24:30:639 DEBUG [main] Objects.Property.<init> (Property.java:39) - Source filename1 : /MTA_trace.mta
+23/09/17 23:24:30:642 DEBUG [main] Objects.Property.<init> (Property.java:44) - SFTP address from settings file: 127.0.0.1
+23/09/17 23:24:30:643 DEBUG [main] Objects.Property.<init> (Property.java:47) - SFTP port from settings file: 22
+23/09/17 23:24:30:643 DEBUG [main] Objects.Property.<init> (Property.java:50) - SFTP login from settings file: wawa
+23/09/17 23:24:30:644 DEBUG [main] Objects.Property.<init> (Property.java:53) - SFTP password from settings file: password
+23/09/17 23:24:30:644 DEBUG [main] Objects.Property.<init> (Property.java:58) - Enabling coping files by mask of name is :false
+23/09/17 23:24:30:645 DEBUG [main] Objects.Property.<init> (Property.java:61) - Destination file path from settings file: G:\\copy\\
+23/09/17 23:24:30:774 DEBUG [main] Objects.Property.<init> (Property.java:64) - Begin work time from settings file: 12:00:00
+23/09/17 23:24:30:775 DEBUG [main] Objects.Property.<init> (Property.java:67) - End work time from settings file: 01:40:00
+23/09/17 23:24:30:775 DEBUG [main] Objects.Property.<init> (Property.java:70) - Interval time from settings file: 120
+23/09/17 23:24:30:775 DEBUG [main] Objects.Property.<init> (Property.java:73) - Zip archive name from settings file: G:\\copy\\test.zip
+23/09/17 23:24:30:776 DEBUG [main] Objects.Property.<init> (Property.java:76) - Enabling add file(s) to archive is true
+23/09/17 23:24:30:776 DEBUG [main] Objects.Property.<init> (Property.java:79) - Min free disk space from settings file :5000
+23/09/17 23:24:30:777 DEBUG [main] Objects.Disk.checkAvaliableSpace (Disk.java:14) - Free space on disk :g:MB.
+23/09/17 23:26:40:223 DEBUG [main] Objects.Property.<init> (Property.java:34) - Number of files: 1
+23/09/17 23:26:40:227 DEBUG [main] Objects.Property.<init> (Property.java:39) - Source filename1 : /MTA_trace.mta
+23/09/17 23:26:40:231 DEBUG [main] Objects.Property.<init> (Property.java:44) - SFTP address from settings file: 127.0.0.1
+23/09/17 23:26:40:231 DEBUG [main] Objects.Property.<init> (Property.java:47) - SFTP port from settings file: 22
+23/09/17 23:26:40:231 DEBUG [main] Objects.Property.<init> (Property.java:50) - SFTP login from settings file: wawa
+23/09/17 23:26:40:232 DEBUG [main] Objects.Property.<init> (Property.java:53) - SFTP password from settings file: password
+23/09/17 23:26:40:233 DEBUG [main] Objects.Property.<init> (Property.java:58) - Enabling coping files by mask of name is :false
+23/09/17 23:26:40:233 DEBUG [main] Objects.Property.<init> (Property.java:61) - Destination file path from settings file: G:\\copy\\
+23/09/17 23:26:40:369 DEBUG [main] Objects.Property.<init> (Property.java:64) - Begin work time from settings file: 12:00:00
+23/09/17 23:26:40:369 DEBUG [main] Objects.Property.<init> (Property.java:67) - End work time from settings file: 01:40:00
+23/09/17 23:26:40:370 DEBUG [main] Objects.Property.<init> (Property.java:70) - Interval time from settings file: 120
+23/09/17 23:26:40:370 DEBUG [main] Objects.Property.<init> (Property.java:73) - Zip archive name from settings file: G:\\copy\\test.zip
+23/09/17 23:26:40:370 DEBUG [main] Objects.Property.<init> (Property.java:76) - Enabling add file(s) to archive is true
+23/09/17 23:26:40:371 DEBUG [main] Objects.Property.<init> (Property.java:79) - Min free disk space from settings file :5000
+23/09/17 23:26:40:372 DEBUG [main] Objects.Disk.checkAvaliableSpace (Disk.java:14) - Free space on disk G: 1505382129664 = MB.
+23/09/17 23:28:21:927 DEBUG [main] Objects.Property.<init> (Property.java:34) - Number of files: 1
+23/09/17 23:28:21:932 DEBUG [main] Objects.Property.<init> (Property.java:39) - Source filename1 : /MTA_trace.mta
+23/09/17 23:28:21:935 DEBUG [main] Objects.Property.<init> (Property.java:44) - SFTP address from settings file: 127.0.0.1
+23/09/17 23:28:21:935 DEBUG [main] Objects.Property.<init> (Property.java:47) - SFTP port from settings file: 22
+23/09/17 23:28:21:935 DEBUG [main] Objects.Property.<init> (Property.java:50) - SFTP login from settings file: wawa
+23/09/17 23:28:21:936 DEBUG [main] Objects.Property.<init> (Property.java:53) - SFTP password from settings file: password
+23/09/17 23:28:21:937 DEBUG [main] Objects.Property.<init> (Property.java:58) - Enabling coping files by mask of name is :false
+23/09/17 23:28:21:937 DEBUG [main] Objects.Property.<init> (Property.java:61) - Destination file path from settings file: G:\\copy\\
+23/09/17 23:28:22:075 DEBUG [main] Objects.Property.<init> (Property.java:64) - Begin work time from settings file: 12:00:00
+23/09/17 23:28:22:076 DEBUG [main] Objects.Property.<init> (Property.java:67) - End work time from settings file: 01:40:00
+23/09/17 23:28:22:076 DEBUG [main] Objects.Property.<init> (Property.java:70) - Interval time from settings file: 120
+23/09/17 23:28:22:077 DEBUG [main] Objects.Property.<init> (Property.java:73) - Zip archive name from settings file: G:\\copy\\test.zip
+23/09/17 23:28:22:077 DEBUG [main] Objects.Property.<init> (Property.java:76) - Enabling add file(s) to archive is true
+23/09/17 23:28:22:077 DEBUG [main] Objects.Property.<init> (Property.java:79) - Min free disk space from settings file (MB):5000
+23/09/17 23:28:22:079 DEBUG [main] Objects.Disk.checkAvaliableSpace (Disk.java:14) - Free space on disk G: 1435644 = MB.
+23/09/17 23:34:03:437 DEBUG [main] Objects.Property.<init> (Property.java:34) - Number of files: 1
+23/09/17 23:34:03:441 DEBUG [main] Objects.Property.<init> (Property.java:39) - Source filename1 : /MTA_trace.mta
+23/09/17 23:34:03:442 DEBUG [main] Objects.Property.<init> (Property.java:44) - SFTP address from settings file: 127.0.0.1
+23/09/17 23:34:03:443 DEBUG [main] Objects.Property.<init> (Property.java:47) - SFTP port from settings file: 22
+23/09/17 23:34:03:443 DEBUG [main] Objects.Property.<init> (Property.java:50) - SFTP login from settings file: wawa
+23/09/17 23:34:03:444 DEBUG [main] Objects.Property.<init> (Property.java:53) - SFTP password from settings file: password
+23/09/17 23:34:03:444 DEBUG [main] Objects.Property.<init> (Property.java:58) - Enabling coping files by mask of name is :false
+23/09/17 23:34:03:445 DEBUG [main] Objects.Property.<init> (Property.java:61) - Destination file path from settings file: G:\\copy\\
+23/09/17 23:34:03:576 DEBUG [main] Objects.Property.<init> (Property.java:64) - Begin work time from settings file: 12:00:00
+23/09/17 23:34:03:577 DEBUG [main] Objects.Property.<init> (Property.java:67) - End work time from settings file: 01:40:00
+23/09/17 23:34:03:577 DEBUG [main] Objects.Property.<init> (Property.java:70) - Interval time from settings file: 120
+23/09/17 23:34:03:577 DEBUG [main] Objects.Property.<init> (Property.java:73) - Zip archive name from settings file: G:\\copy\\test.zip
+23/09/17 23:34:03:578 DEBUG [main] Objects.Property.<init> (Property.java:76) - Enabling add file(s) to archive is true
+23/09/17 23:34:03:578 DEBUG [main] Objects.Property.<init> (Property.java:79) - Min free disk space from settings file (MB):5000
+23/09/17 23:34:03:580 DEBUG [main] Objects.Disk.checkAvaliableSpace (Disk.java:13) - Free space on disk G: 1435644MB.
+23/09/17 23:34:41:162 DEBUG [main] Objects.Property.<init> (Property.java:34) - Number of files: 1
+23/09/17 23:34:41:166 DEBUG [main] Objects.Property.<init> (Property.java:39) - Source filename1 : /MTA_trace.mta
+23/09/17 23:34:41:169 DEBUG [main] Objects.Property.<init> (Property.java:44) - SFTP address from settings file: 127.0.0.1
+23/09/17 23:34:41:169 DEBUG [main] Objects.Property.<init> (Property.java:47) - SFTP port from settings file: 22
+23/09/17 23:34:41:170 DEBUG [main] Objects.Property.<init> (Property.java:50) - SFTP login from settings file: wawa
+23/09/17 23:34:41:171 DEBUG [main] Objects.Property.<init> (Property.java:53) - SFTP password from settings file: password
+23/09/17 23:34:41:171 DEBUG [main] Objects.Property.<init> (Property.java:58) - Enabling coping files by mask of name is :false
+23/09/17 23:34:41:171 DEBUG [main] Objects.Property.<init> (Property.java:61) - Destination file path from settings file: G:\\copy\\
+23/09/17 23:34:41:300 DEBUG [main] Objects.Property.<init> (Property.java:64) - Begin work time from settings file: 12:00:00
+23/09/17 23:34:41:301 DEBUG [main] Objects.Property.<init> (Property.java:67) - End work time from settings file: 01:40:00
+23/09/17 23:34:41:301 DEBUG [main] Objects.Property.<init> (Property.java:70) - Interval time from settings file: 120
+23/09/17 23:34:41:302 DEBUG [main] Objects.Property.<init> (Property.java:73) - Zip archive name from settings file: G:\\copy\\test.zip
+23/09/17 23:34:41:302 DEBUG [main] Objects.Property.<init> (Property.java:76) - Enabling add file(s) to archive is true
+23/09/17 23:34:41:302 DEBUG [main] Objects.Property.<init> (Property.java:79) - Min free disk space from settings file (MB):5000000
+23/09/17 23:34:41:304 DEBUG [main] Objects.Disk.checkAvaliableSpace (Disk.java:13) - Free space on disk G: 1435644 MB.
+23/09/17 23:36:02:267 INFO  [main] runner.run.main (run.java:27) - Programm is started.
+23/09/17 23:36:02:278 DEBUG [main] Objects.Property.<init> (Property.java:34) - Number of files: 1
+23/09/17 23:36:02:278 DEBUG [main] Objects.Property.<init> (Property.java:39) - Source filename1 : /MTA_trace.mta
+23/09/17 23:36:02:279 DEBUG [main] Objects.Property.<init> (Property.java:44) - SFTP address from settings file: 127.0.0.1
+23/09/17 23:36:02:279 DEBUG [main] Objects.Property.<init> (Property.java:47) - SFTP port from settings file: 22
+23/09/17 23:36:02:280 DEBUG [main] Objects.Property.<init> (Property.java:50) - SFTP login from settings file: wawa
+23/09/17 23:36:02:280 DEBUG [main] Objects.Property.<init> (Property.java:53) - SFTP password from settings file: password
+23/09/17 23:36:02:280 DEBUG [main] Objects.Property.<init> (Property.java:58) - Enabling coping files by mask of name is :false
+23/09/17 23:36:02:280 DEBUG [main] Objects.Property.<init> (Property.java:61) - Destination file path from settings file: G:\\copy\\
+23/09/17 23:36:02:407 DEBUG [main] Objects.Property.<init> (Property.java:64) - Begin work time from settings file: 12:00:00
+23/09/17 23:36:02:408 DEBUG [main] Objects.Property.<init> (Property.java:67) - End work time from settings file: 01:40:00
+23/09/17 23:36:02:408 DEBUG [main] Objects.Property.<init> (Property.java:70) - Interval time from settings file: 120
+23/09/17 23:36:02:409 DEBUG [main] Objects.Property.<init> (Property.java:73) - Zip archive name from settings file: G:\\copy\\test.zip
+23/09/17 23:36:02:409 DEBUG [main] Objects.Property.<init> (Property.java:76) - Enabling add file(s) to archive is true
+23/09/17 23:36:02:409 DEBUG [main] Objects.Property.<init> (Property.java:79) - Min free disk space from settings file (MB):5000000
+23/09/17 23:36:02:413 INFO  [main] runner.run.main (run.java:40) - Checking time for work...
+23/09/17 23:36:02:440 INFO  [main] runner.run.main (run.java:43) - It's work time!
+23/09/17 23:36:02:442 DEBUG [main] Objects.Disk.checkAvaliableSpace (Disk.java:13) - Free space on disk G: 1435644 MB.
+23/09/17 23:36:02:443 INFO  [main] Objects.ZipArchive.moveFilesToArchive (ZipArchive.java:48) - Archive file is not exist. File G:\\copy\\test_20170923.zip is created.
+23/09/17 23:36:02:444 DEBUG [main] Objects.ConvertNames.createUriString (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170923.zip
+23/09/17 23:36:02:670 INFO  [main] Objects.ZipArchive.mvFilesToArchive (ZipArchive.java:86) - The file MTA_trace_20170923_233602.mta was added in archive G:\\copy\\test_20170923.zip
+23/09/17 23:36:02:862 INFO  [main] runner.run.main (run.java:48) - Waiting 02 min 00 sec
+23/09/17 23:39:38:493 INFO  [main] runner.run.main (run.java:27) - Programm is started.
+23/09/17 23:39:38:503 DEBUG [main] Objects.Property.<init> (Property.java:34) - Number of files: 1
+23/09/17 23:39:38:504 DEBUG [main] Objects.Property.<init> (Property.java:39) - Source filename1 : /MTA_trace.mta
+23/09/17 23:39:38:505 DEBUG [main] Objects.Property.<init> (Property.java:44) - SFTP address from settings file: 127.0.0.1
+23/09/17 23:39:38:505 DEBUG [main] Objects.Property.<init> (Property.java:47) - SFTP port from settings file: 22
+23/09/17 23:39:38:506 DEBUG [main] Objects.Property.<init> (Property.java:50) - SFTP login from settings file: wawa
+23/09/17 23:39:38:506 DEBUG [main] Objects.Property.<init> (Property.java:53) - SFTP password from settings file: password
+23/09/17 23:39:38:506 DEBUG [main] Objects.Property.<init> (Property.java:58) - Enabling coping files by mask of name is :false
+23/09/17 23:39:38:506 DEBUG [main] Objects.Property.<init> (Property.java:61) - Destination file path from settings file: G:\\copy\\
+23/09/17 23:39:38:637 DEBUG [main] Objects.Property.<init> (Property.java:64) - Begin work time from settings file: 12:00:00
+23/09/17 23:39:38:638 DEBUG [main] Objects.Property.<init> (Property.java:67) - End work time from settings file: 01:40:00
+23/09/17 23:39:38:639 DEBUG [main] Objects.Property.<init> (Property.java:70) - Interval time from settings file: 120
+23/09/17 23:39:38:639 DEBUG [main] Objects.Property.<init> (Property.java:73) - [zipfilefullname] = G:\\copy\\test.zip
+23/09/17 23:39:38:639 DEBUG [main] Objects.Property.<init> (Property.java:76) - [enablearchiving] = true
+23/09/17 23:39:38:639 DEBUG [main] Objects.Property.<init> (Property.java:79) - [minfreediskspaceMB] = 5000000
+23/09/17 23:39:38:643 INFO  [main] runner.run.main (run.java:40) - Checking time for work...
+23/09/17 23:39:38:649 INFO  [main] runner.run.main (run.java:43) - It's work time!
+23/09/17 23:39:38:650 DEBUG [main] Objects.Disk.checkAvaliableSpace (Disk.java:13) - Free space on disk G: 1435649 MB.
+23/09/17 23:39:38:652 DEBUG [main] Objects.ZipArchive.moveFilesToArchive (ZipArchive.java:51) - Archive file G:\\copy\\test_20170923.zip is already exist!
+23/09/17 23:39:38:652 DEBUG [main] Objects.ConvertNames.createUriString (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170923.zip
+23/09/17 23:39:38:692 ERROR [main] Objects.ZipArchive.mvFilesToArchive (ZipArchive.java:90) - Файл G:\copy\MTA_trace.mta не найден по указанному пути.
+23/09/17 23:39:38:694 INFO  [main] runner.run.main (run.java:48) - Waiting 02 min 00 sec
+24/09/17 00:11:11:022 INFO  [main] runner.run.main (run.java:27) - Programm is started.
+24/09/17 00:11:11:046 DEBUG [main] Objects.Property.<init> (Property.java:34) - [srcfilecount] = 1
+24/09/17 00:11:11:047 DEBUG [main] Objects.Property.<init> (Property.java:39) - [srcfullfilename1 1]  = /MTA_trace.mta
+24/09/17 00:11:11:049 DEBUG [main] Objects.Property.<init> (Property.java:44) - SFTP [ip] = 127.0.0.1
+24/09/17 00:11:11:050 DEBUG [main] Objects.Property.<init> (Property.java:47) - SFTP [port] = 22
+24/09/17 00:11:11:052 DEBUG [main] Objects.Property.<init> (Property.java:50) - SFTP [login] = wawa
+24/09/17 00:11:11:052 DEBUG [main] Objects.Property.<init> (Property.java:53) - SFTP [password] = password
+24/09/17 00:11:11:052 DEBUG [main] Objects.Property.<init> (Property.java:58) - [findingfilesbymaskofname] = false
+24/09/17 00:11:11:053 DEBUG [main] Objects.Property.<init> (Property.java:61) - [dstfilepath] = G:\\copy\\
+24/09/17 00:11:11:177 DEBUG [main] Objects.Property.<init> (Property.java:64) - [begintime] = 12:00:00
+24/09/17 00:11:11:178 DEBUG [main] Objects.Property.<init> (Property.java:67) - [endtime] = 01:40:00
+24/09/17 00:11:11:179 DEBUG [main] Objects.Property.<init> (Property.java:70) - [workinterval] = 120
+24/09/17 00:11:11:179 DEBUG [main] Objects.Property.<init> (Property.java:73) - [zipfilefullname] = G:\\copy\\test.zip
+24/09/17 00:11:11:179 DEBUG [main] Objects.Property.<init> (Property.java:76) - [enablearchiving] = true
+24/09/17 00:11:11:180 DEBUG [main] Objects.Property.<init> (Property.java:79) - [minfreediskspaceMB] = 5000000
+24/09/17 00:11:11:184 INFO  [main] runner.run.main (run.java:40) - Checking time for work...
+24/09/17 00:11:11:189 INFO  [main] runner.run.main (run.java:43) - It's work time!
+24/09/17 00:11:11:190 INFO  [main] Objects.Disk.checkAvaliableSpace (Disk.java:10) - Checking free space on disk ...
+24/09/17 00:11:11:191 WARN  [main] Objects.Disk.checkAvaliableSpace (Disk.java:19) - Free space on disk G: 1435649 MB. It's LESS than [minfreediskspaceMB]. Abort copy file(s)!
+24/09/17 00:11:11:192 INFO  [main] Objects.ZipArchive.moveFilesToArchive (ZipArchive.java:48) - Archive file is not exist. File G:\\copy\\test_20170924.zip is created.
+24/09/17 00:11:11:193 DEBUG [main] Objects.ConvertNames.createUriString (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170924.zip
+24/09/17 00:11:11:236 ERROR [main] Objects.ZipArchive.mvFilesToArchive (ZipArchive.java:90) - Файл G:\copy\MTA_trace.mta не найден по указанному пути.
+24/09/17 00:11:11:238 INFO  [main] runner.run.main (run.java:48) - Waiting 02 min 00 sec
+24/09/17 00:14:15:728 INFO  [main] runner.run.main (run.java:27) - Programm is started.
+24/09/17 00:14:15:742 DEBUG [main] Objects.Property.<init> (Property.java:34) - [srcfilecount] = 1
+24/09/17 00:14:15:742 DEBUG [main] Objects.Property.<init> (Property.java:39) - [srcfullfilename1]  = /MTA_trace.mta
+24/09/17 00:14:15:743 DEBUG [main] Objects.Property.<init> (Property.java:44) - [ip] = 127.0.0.1
+24/09/17 00:14:15:744 DEBUG [main] Objects.Property.<init> (Property.java:47) - [port] = 22
+24/09/17 00:14:15:744 DEBUG [main] Objects.Property.<init> (Property.java:50) - [login] = wawa
+24/09/17 00:14:15:744 DEBUG [main] Objects.Property.<init> (Property.java:53) - [password] = password
+24/09/17 00:14:15:745 DEBUG [main] Objects.Property.<init> (Property.java:58) - [findingfilesbymaskofname] = false
+24/09/17 00:14:15:745 DEBUG [main] Objects.Property.<init> (Property.java:61) - [dstfilepath] = G:\\copy\\
+24/09/17 00:14:15:869 DEBUG [main] Objects.Property.<init> (Property.java:64) - [begintime] = 12:00:00
+24/09/17 00:14:15:870 DEBUG [main] Objects.Property.<init> (Property.java:67) - [endtime] = 01:40:00
+24/09/17 00:14:15:870 DEBUG [main] Objects.Property.<init> (Property.java:70) - [workinterval] = 120 sec
+24/09/17 00:14:15:871 DEBUG [main] Objects.Property.<init> (Property.java:73) - [zipfilefullname] = G:\\copy\\test.zip
+24/09/17 00:14:15:871 DEBUG [main] Objects.Property.<init> (Property.java:76) - [enablearchiving] = true
+24/09/17 00:14:15:871 DEBUG [main] Objects.Property.<init> (Property.java:79) - [minfreediskspaceMB] = 500000
+24/09/17 00:14:15:876 INFO  [main] runner.run.main (run.java:40) - Checking time for work...
+24/09/17 00:14:15:881 INFO  [main] runner.run.main (run.java:43) - It's work time!
+24/09/17 00:14:15:881 INFO  [main] Objects.Disk.checkAvaliableSpace (Disk.java:10) - Checking free space on disk ...
+24/09/17 00:14:15:882 DEBUG [main] Objects.Disk.checkAvaliableSpace (Disk.java:16) - Free space on disk G: 1435649 MB.
+24/09/17 00:14:15:883 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:54) - Start SFTP Client.
+24/09/17 00:14:17:062 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:63) - Connected to 127.0.0.1.
+24/09/17 00:14:18:112 INFO  [main] Objects.SftpClient.copyFile (SftpClient.java:73) - Download file /MTA_trace.mta is successfully!
+24/09/17 00:14:18:122 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:98) - Disconnected from 127.0.0.1.
+24/09/17 00:14:18:124 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:108) - Stop SFTP Client.
+24/09/17 00:14:18:130 DEBUG [main] Objects.ZipArchive.moveFilesToArchive (ZipArchive.java:51) - Archive file G:\\copy\\test_20170924.zip is already exist!
+24/09/17 00:14:18:131 DEBUG [main] Objects.ConvertNames.createUriString (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170924.zip
+24/09/17 00:14:18:405 INFO  [main] Objects.ZipArchive.mvFilesToArchive (ZipArchive.java:86) - The file MTA_trace_20170924_001418.mta was added in archive G:\\copy\\test_20170924.zip
+24/09/17 00:14:18:435 INFO  [main] runner.run.main (run.java:48) - Waiting 02 min 00 sec
+24/09/17 22:02:58:915 INFO  [main] runner.run.main (run.java:27) - Programm is started.
+24/09/17 22:02:58:968 ERROR [main] Objects.Property.setSftpSrcFileCount (Property.java:141) - Error format for [srcfilecount]. Correct value and start programm again!
+24/09/17 22:04:51:213 INFO  [main] runner.run.main (run.java:27) - Programm is started.
+24/09/17 22:04:51:230 ERROR [main] Objects.Property.setSftpSrcFileCount (Property.java:141) - Error format for [srcfilecount]. Correct value and start programm again!
+24/09/17 22:05:09:766 INFO  [main] runner.run.main (run.java:27) - Programm is started.
+24/09/17 22:05:09:777 DEBUG [main] Objects.Property.<init> (Property.java:34) - [srcfilecount] = 1
+24/09/17 22:05:09:777 DEBUG [main] Objects.Property.<init> (Property.java:39) - [srcfullfilename1]  = /MTA_trace.mta
+24/09/17 22:05:09:778 DEBUG [main] Objects.Property.<init> (Property.java:44) - [ip] = 127.0.0.1
+24/09/17 22:05:09:779 DEBUG [main] Objects.Property.<init> (Property.java:47) - [port] = 22
+24/09/17 22:05:09:779 DEBUG [main] Objects.Property.<init> (Property.java:50) - [login] = wawa
+24/09/17 22:05:09:779 DEBUG [main] Objects.Property.<init> (Property.java:53) - [password] = password
+24/09/17 22:05:09:780 DEBUG [main] Objects.Property.<init> (Property.java:58) - [findingfilesbymaskofname] = false
+24/09/17 22:05:09:780 DEBUG [main] Objects.Property.<init> (Property.java:61) - [dstfilepath] = G:\\copy\\
+24/09/17 22:05:09:914 DEBUG [main] Objects.Property.<init> (Property.java:64) - [begintime] = 12:00:00
+24/09/17 22:05:09:915 DEBUG [main] Objects.Property.<init> (Property.java:67) - [endtime] = 01:40:00
+24/09/17 22:05:09:915 DEBUG [main] Objects.Property.<init> (Property.java:70) - [workinterval] = 120 sec
+24/09/17 22:05:09:915 DEBUG [main] Objects.Property.<init> (Property.java:73) - [zipfilefullname] = G:\\copy\\test.zip
+24/09/17 22:05:09:916 DEBUG [main] Objects.Property.<init> (Property.java:76) - [enablearchiving] = true
+24/09/17 22:05:09:916 DEBUG [main] Objects.Property.<init> (Property.java:79) - [minfreediskspaceMB] = 5000
+24/09/17 22:05:09:920 INFO  [main] runner.run.main (run.java:40) - Checking time for work...
+24/09/17 22:05:09:952 INFO  [main] runner.run.main (run.java:43) - It's work time!
+24/09/17 22:05:09:953 INFO  [main] Objects.Disk.checkAvaliableSpace (Disk.java:10) - Checking free space on disk ...
+24/09/17 22:05:09:954 DEBUG [main] Objects.Disk.checkAvaliableSpace (Disk.java:16) - Free space on disk G: 1435648 MB.
+24/09/17 22:05:09:954 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:54) - Start SFTP Client.
+24/09/17 22:05:11:018 ERROR [main] Objects.SftpClient.copyFile (SftpClient.java:81) - Sftp server refused connection!
+24/09/17 22:05:11:022 ERROR [main] Objects.SftpClient.copyFile (SftpClient.java:102) - Sftp server is not available.
+24/09/17 22:05:11:023 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:108) - Stop SFTP Client.
+24/09/17 22:05:11:024 DEBUG [main] Objects.ZipArchive.moveFilesToArchive (ZipArchive.java:51) - Archive file G:\\copy\\test_20170924.zip is already exist!
+24/09/17 22:05:11:025 DEBUG [main] Objects.ConvertNames.createUriString (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170924.zip
+24/09/17 22:05:11:584 ERROR [main] Objects.ZipArchive.mvFilesToArchive (ZipArchive.java:90) - Файл G:\copy\MTA_trace.mta не найден по указанному пути.
+24/09/17 22:05:11:586 INFO  [main] runner.run.main (run.java:48) - Waiting 02 min 00 sec

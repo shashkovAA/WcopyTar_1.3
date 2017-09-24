@@ -11,13 +11,14 @@ public  class Property
 	private  String sftpIpAddr ;
 	private  int sftpPort ;
 	private  String sftpLogin = "admin";
-	private  String sftpPass = "password";
-	private  int sftpSourceFileCount = 0;
+	private  String sftpPass = "password";	
 	private  ArrayList<String> sftpSrcFullFileNamesList = new ArrayList<String>();  
 	private  String sftpDestFilePath = "";
 	private  LocalTime beginTimeSheduler;
 	private  LocalTime endTimeSheduler;
+	private  int sftpSourceFileCount = 0;
 	private  int intervalSheduler = 30 ;
+	private long minfreediskspaceMB;	
 	private String zipFileFullName;
 	private boolean enableArchiving;
 	private boolean enableNameMask;
@@ -30,53 +31,55 @@ public  class Property
 		
 		setSftpSrcFileCount(userProperties.getProperty("srcfilecount"));
 		int numOfFiles = getSftpSrcFileCount();
-		Debug.log.debug("Number of files: " + numOfFiles);
+		Debug.log.debug("[srcfilecount] = " + numOfFiles);
 		
 		ArrayList<String> srcFileNamesList = new ArrayList<String>();
 		for (int i=0;i<numOfFiles;i++) {
 		srcFileNamesList.add(userProperties.getProperty("srcfullfilename" + (i+1)));
-		Debug.log.debug("Source filename" + (i+1) + " : " + srcFileNamesList.get(i));
+		Debug.log.debug("[srcfullfilename" + (i+1) + "]  = " + srcFileNamesList.get(i));
 		}
 		setSftpSrcFullFileNamesList(srcFileNamesList);
 			
 		setSftpIpAddr(userProperties.getProperty("ip"));
-        Debug.log.debug("SFTP address from settings file: " + userProperties.getProperty("ip"));
+        Debug.log.debug("[ip] = " + userProperties.getProperty("ip"));
         
         setSftpPort(userProperties.getProperty("port"));
-        Debug.log.debug("SFTP port from settings file: " + userProperties.getProperty("port"));
+        Debug.log.debug("[port] = " + userProperties.getProperty("port"));
         
         setSftpLogin(userProperties.getProperty("login"));
-        Debug.log.debug("SFTP login from settings file: " + userProperties.getProperty("login"));
+        Debug.log.debug("[login] = " + userProperties.getProperty("login"));
         
         setSftpPass(userProperties.getProperty("password"));
-        Debug.log.debug("SFTP password from settings file: " + userProperties.getProperty("password"));
+        Debug.log.debug("[password] = " + userProperties.getProperty("password"));
         
         setSftpSrcFullFileNamesList(srcFileNamesList);
               
         setEnableCopyFilesByNameMask(userProperties.getProperty("findingfilesbymaskofname"));
-        Debug.log.debug("Enabling coping files by mask of name is :" + userProperties.getProperty("findingfilesbymaskofname"));
+        Debug.log.debug("[findingfilesbymaskofname] = " + userProperties.getProperty("findingfilesbymaskofname"));
         
         setSftpDestFilePath(userProperties.getProperty("dstfilepath"));
-        Debug.log.debug("Destination file path from settings file: " + userProperties.getProperty("dstfilepath"));
+        Debug.log.debug("[dstfilepath] = " + userProperties.getProperty("dstfilepath"));
  		        
         setBeginTimeSheduler(userProperties.getProperty("begintime"));
-        Debug.log.debug("Begin work time from settings file: " + userProperties.getProperty("begintime"));
+        Debug.log.debug("[begintime] = " + userProperties.getProperty("begintime"));
         
         setEndTimeSheduler(userProperties.getProperty("endtime"));
-        Debug.log.debug("End work time from settings file: " + userProperties.getProperty("endtime"));
+        Debug.log.debug("[endtime] = " + userProperties.getProperty("endtime"));
         
         setIntervalSheduler(userProperties.getProperty("workinterval"));
-        Debug.log.debug("Interval time from settings file: " + userProperties.getProperty("workinterval"));
+        Debug.log.debug("[workinterval] = " + userProperties.getProperty("workinterval") + " sec");
         
         setZipFileFullName(userProperties.getProperty("zipfilefullname"));
-        Debug.log.debug("Zip archive name from settings file: " + userProperties.getProperty("zipfilefullname"));
+        Debug.log.debug("[zipfilefullname] = " + userProperties.getProperty("zipfilefullname"));
 		
         setEnableArchiving(userProperties.getProperty("enablearchiving"));
-        Debug.log.debug("Enabling add file(s) to archive is " + userProperties.getProperty("enablearchiving"));
-		
+        Debug.log.debug("[enablearchiving] = " + userProperties.getProperty("enablearchiving"));
+        
+        setMinFreeDiskSpace(userProperties.getProperty("minfreediskspaceMB"));
+        Debug.log.debug("[minfreediskspaceMB] = " + userProperties.getProperty("minfreediskspaceMB"));
+        		
 	};
 	
-
 	public  String getSftpIpAddr()
 	{
 		return sftpIpAddr;
@@ -89,7 +92,8 @@ public  class Property
 		}
 			
 		else {
-			Debug.log.error("IP address have not correct format!");
+			Debug.log.error("Error format for [ip]. Correct value and start programm again!");
+			System.exit(0);
 			return false;
 			
 		}
@@ -106,7 +110,7 @@ public  class Property
 			return true;
 		}	
 		catch (NumberFormatException except) {
-			Debug.log.error("Error format of port. Set port 22 by default.");
+			Debug.log.error("Error format for [port] = " + sftpPort + ". Set default value = [22]");
 			this.sftpPort = 22;
 			return false;
 		}		
@@ -134,7 +138,7 @@ public  class Property
 			this.sftpSourceFileCount = Integer.valueOf(sftpSrcFileCount);
 			} 
 			catch (NumberFormatException except) {
-				Debug.log.error("Error format number of source files!");
+				Debug.log.error("Error format for [srcfilecount]. Correct value and start programm again!");
 				System.exit(0);
 				this.intervalSheduler = 1;
 			}
@@ -154,7 +158,7 @@ public  class Property
 	public  void setSftpDestFilePath(String sftpDestFilePath) {
 		this.sftpDestFilePath = sftpDestFilePath;
 	}
-
+	
 	public  LocalTime getBeginTimeSheduler() {
 		return beginTimeSheduler;
 	}
@@ -165,8 +169,8 @@ public  class Property
 			this.beginTimeSheduler = LocalTime.parse(beginTimeSheduler, MyCalendar.getTimeFormatWithSS());
 		else {
 			this.beginTimeSheduler = LocalTime.parse("00:00:00", MyCalendar.getTimeFormatWithSS());
-			Debug.log.error("Begin time have not correct format");
-			System.exit(0);
+			Debug.log.error("Error format for [begintime]. Set default value = [00:00:00]");
+			//System.exit(0);
 		}
 	}
 	public  LocalTime getEndTimeSheduler() {
@@ -178,8 +182,8 @@ public  class Property
 			this.endTimeSheduler = LocalTime.parse(endTimeSheduler, MyCalendar.getTimeFormatWithSS());
 		else {
 			this.endTimeSheduler = LocalTime.parse("23:59:59", MyCalendar.getTimeFormatWithSS());
-			Debug.log.error("End time have not correct format");
-			System.exit(0);
+			Debug.log.error("Error format for [endtime]. Set default value = [23:59:59]");
+			//System.exit(0);
 		}
 	}
 	
@@ -191,7 +195,7 @@ public  class Property
 		this.intervalSheduler = Integer.valueOf(intervalSheduler);
 		} 
 		catch (NumberFormatException except) {
-			Debug.log.error("Error format of interval. Set 300 seconds by default.");
+			Debug.log.error("Error format for [interval]. Set default value = [300]");
 			this.intervalSheduler = 300;
 		}
 	}
@@ -212,8 +216,7 @@ public  class Property
 	public void setEnableArchiving(String EnableArchiving) {
 		this.enableArchiving = Boolean.valueOf(EnableArchiving);
 		if (!(EnableArchiving.equals("true") || EnableArchiving.equals("false"))) {
-			Debug.log.error("Not correct value for Enable Archiving!");
-			Debug.log.error("Will use default value TRUE");
+			Debug.log.error("Error format for [enablearchiving]. Set default value = [true]");
 			this.enableArchiving = true;
 		}	
 	}
@@ -224,8 +227,7 @@ public  class Property
 	public void setEnableCopyFilesByNameMask(String EnableNameMask) {
 		this.enableNameMask = Boolean.valueOf(EnableNameMask);
 		if (!(EnableNameMask.equals("true") || EnableNameMask.equals("false"))) {
-			Debug.log.error("Not correct value for Coping Files by Mask of Name");
-			Debug.log.error("Will use default value FALSE");
+			Debug.log.error("Error format for [findingfilesbymaskofname]. Set default value = [false]");
 			this.enableNameMask = false;
 		}	
 	}
@@ -233,7 +235,20 @@ public  class Property
 		return enableNameMask;	
 	}
 	
+	public void setMinFreeDiskSpace(String spaceString)
+	{
+		try {
+			this.minfreediskspaceMB = Long.valueOf(spaceString);
+			} 
+			catch (NumberFormatException except) {
+				Debug.log.error("Error format of [minFreeDiskSpace]. Correct value and start programm again!");
+				System.exit(0);
+			}
+	}
 	
+	public long getMinFreeDiskSpace() {
+		return minfreediskspaceMB;
+	}
 
 	
 	

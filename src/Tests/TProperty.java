@@ -62,6 +62,6 @@ public class TProperty
 		assertEquals(true, prop.getEnableCopyByMask());	
 	}
 	
-	
+
 
 }

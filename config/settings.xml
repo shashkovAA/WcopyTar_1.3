@@ -6,12 +6,13 @@
 <entry key="port">22</entry>
 <entry key="login">wawa</entry>
 <entry key="password">password</entry>
+
 <!-- Опция для копирования файлов по маске имени. False - точное совпадение указанного имени файла.  --> 
-<entry key="findingfilesbymaskofname">true</entry>
+<entry key="findingfilesbymaskofname">false</entry>
 
 <!-- Заданное число файлов для копирования и их полные пути-->
 <entry key="srcfilecount">1</entry>
-<entry key="srcfullfilename1">/MTA_trace*</entry>
+<entry key="srcfullfilename1">/MTA_trace.mta</entry>
 <entry key="srcfullfilename2">/MTA_trace.mta2</entry>
 <entry key="srcfullfilename3">/MTA_trace.mta3</entry>
 <entry key="srcfullfilename5"></entry>
@@ -33,5 +34,8 @@
 
 <!-- Включение/отключение архивирования файлов  -->
 <entry key="enablearchiving">true</entry>
+
+<!-- Размер минимально доступного свободно места на диске. Значение 0 = не проверять.-->
+<entry key="minfreediskspaceMB">5000</entry>
 
 </properties>

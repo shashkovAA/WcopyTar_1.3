@@ -3,7 +3,9 @@ package runner;
 
 import java.io.File;
 
+import Objects.ConvertNames;
 import Objects.Debug;
+import Objects.Disk;
 import Objects.MyCalendar;
 import Objects.Property;
 import Objects.SftpClient;
@@ -11,6 +13,8 @@ import Objects.Sheduler;
 import Objects.ZipArchive;;
 
 public class run {
+	
+	
 			
 	@SuppressWarnings("static-access")
 	public static void main(String[] args) throws InterruptedException {
@@ -37,7 +41,8 @@ public class run {
 		
 		while (sheduler.isWorkTime()) {
 			Debug.log.info("It's work time!");
-			sftpConnect.copyFiles();
+			if (Disk.checkAvaliableSpace(property))
+				sftpConnect.copyFiles();
 			if (property.getEnableArchiving())
 				zipper.addFileToArchive();
 			Debug.log.info("Waiting " + MyCalendar.getTimeFromMills(property.getIntervalSheduler()*1000));
@@ -52,6 +57,7 @@ public class run {
 	}
 	while (true);
 	
-	}		
+	}
+	
 
 }

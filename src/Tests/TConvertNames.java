@@ -45,5 +45,11 @@ public class TConvertNames
 	{
 		assertEquals(".mta", ConvertNames.getFileExension(fullFileNameWithPathWinFormat));		
 	}
+	
+	@Test
+	public void testGetDriveLetter()
+	{
+		assertEquals("c:", ConvertNames.getDriveLetterFromFullFileName(fullFileNameWithPathWinFormat));		
+	}
 
 }

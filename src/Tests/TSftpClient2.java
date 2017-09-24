@@ -25,7 +25,6 @@ public class TSftpClient2 {
 
 	 @Before
 	    public void setUp() throws Exception {
-		 	Debug.initDebugLog();
 		 	client = new SftpClient();
 		 	String settingsFileName = "config\\settings.xml";
 			String logSettingsFileName = "config\\logging.xml";

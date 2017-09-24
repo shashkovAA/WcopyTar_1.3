@@ -39,5 +39,14 @@ public class ConvertNames
 		return fileNameFull.substring(fileNameFull.indexOf('.'));
 	}
 	
+	public static String getDriveLetterFromFullFileName(String fileNameWithPath) {
+		
+		String DriveLetter = fileNameWithPath.substring(0, 1);
+		if (DriveLetter.matches("[a-z]|[A-Z]"))
+			return DriveLetter.toLowerCase() + ":";
+		else return "";
+		
+	}
+	
 	
 }
