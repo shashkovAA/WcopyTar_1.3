@@ -3,19 +3,11 @@ package runner;
 
 import java.io.File;
 
-import Objects.ConvertNames;
-import Objects.Debug;
-import Objects.Disk;
-import Objects.MyCalendar;
-import Objects.Property;
-import Objects.SftpClient;
-import Objects.Sheduler;
-import Objects.ZipArchive;;
+import Objects.*;
 
 public class run {
-	
-	
-			
+
+		
 	@SuppressWarnings("static-access")
 	public static void main(String[] args) throws InterruptedException {
 				
