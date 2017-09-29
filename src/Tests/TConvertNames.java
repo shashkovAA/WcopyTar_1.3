@@ -10,6 +10,7 @@ import Objects.ConvertNames;
 public class TConvertNames
 {
 	private String fullFileNameWithPathWinFormat = "C:\\temp\\files\\MTA-20170526_vld_17_18.mta";
+	private String fullFileNameWithPathUnixFormat = "/var/log/avaya/aes/TSAPI/g3trace-cm5s8400-1.trace.out";
 	private String fullFileNameWithPathWUnixFormat = ConvertNames.convertFilePathFromWinToUnix(fullFileNameWithPathWinFormat);
 	
 	
@@ -31,6 +32,7 @@ public class TConvertNames
 	{
 		assertEquals("MTA-20170526_vld_17_18.mta", ConvertNames.getFileNameWithExt(fullFileNameWithPathWinFormat));
 		assertEquals("MTA-20170526_vld_17_18.mta", ConvertNames.getFileNameWithExt(fullFileNameWithPathWUnixFormat));
+		assertEquals("g3trace-cm5s8400-1.trace.old", ConvertNames.getFileNameWithExt(fullFileNameWithPathUnixFormat));
 	}
 	
 	@Test

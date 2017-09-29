@@ -75,7 +75,7 @@ public class ZipArchive  {
 
 	private void mvFilesToArchive(String copiedFileName) {
 			
-		MyFile copiedFile = new MyFile(allPropers.getSftpDestFilePath() + copiedFileName);
+		MyFile copiedFile = new MyFile(allPropers.getSftpDestFilePath() + ConvertNames.getFileNameWithExt(copiedFileName));
 		Path extFile = Paths.get(copiedFile.getFullString());
 		String timeAppender = MyCalendar.getCurrentTimeNowCustomFormat("_HHmmss");
 		String dateAppender = MyCalendar.getCurrentDateCustomFormat("_yyyyMMdd");
@@ -87,7 +87,7 @@ public class ZipArchive  {
 			
 			
 		} catch (NoSuchFileException except){
-			Debug.log.error("Файл " + extFile + " не найден по указанному пути.");
+			Debug.log.error("The file " + extFile + " not found on that path!");
 			
 		} 
         catch (IOException except){

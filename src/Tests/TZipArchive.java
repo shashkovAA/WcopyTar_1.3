@@ -19,7 +19,7 @@ public class TZipArchive
     public void setUp() throws Exception {
 
 		Debug.initDebugLog();
-		zip.setZipFile("G:\\copy\\1.zip");
+		zip.setZipFile("C:\\aestsapi\\test.zip");
 		//zip.setCopiedFile("C:\\temp\\test.txt");
     }
 

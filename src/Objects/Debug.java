@@ -1,7 +1,6 @@
 package Objects;
 
 import java.io.File;
-import java.util.Iterator;
 import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
