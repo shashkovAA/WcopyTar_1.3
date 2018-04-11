@@ -2393,3 +2393,110 @@
 24/09/17 22:05:11:025 DEBUG [main] Objects.ConvertNames.createUriString (ConvertNames.java:9) - URI for archive file: jar:file:///G://copy//test_20170924.zip
 24/09/17 22:05:11:584 ERROR [main] Objects.ZipArchive.mvFilesToArchive (ZipArchive.java:90) - Файл G:\copy\MTA_trace.mta не найден по указанному пути.
 24/09/17 22:05:11:586 INFO  [main] runner.run.main (run.java:48) - Waiting 02 min 00 sec
+29/09/17 11:06:08:379 INFO  [main] runner.run.main (run.java:19) - Programm is started.
+29/09/17 11:06:08:385 DEBUG [main] Objects.Property.<init> (Property.java:34) - [srcfilecount] = 1
+29/09/17 11:06:08:385 DEBUG [main] Objects.Property.<init> (Property.java:39) - [srcfullfilename1]  = /var/log/avaya/aes/TSAPI/g3trace-cm5s8400-1.trace.out
+29/09/17 11:06:08:386 DEBUG [main] Objects.Property.<init> (Property.java:44) - [ip] = 192.168.219.230
+29/09/17 11:06:08:386 DEBUG [main] Objects.Property.<init> (Property.java:47) - [port] = 22
+29/09/17 11:06:08:386 DEBUG [main] Objects.Property.<init> (Property.java:50) - [login] = cust
+29/09/17 11:06:08:387 DEBUG [main] Objects.Property.<init> (Property.java:53) - [password] = custpw
+29/09/17 11:06:08:387 DEBUG [main] Objects.Property.<init> (Property.java:58) - [findingfilesbymaskofname] = false
+29/09/17 11:06:08:387 DEBUG [main] Objects.Property.<init> (Property.java:61) - [dstfilepath] = G:\\copy\\
+29/09/17 11:06:08:487 DEBUG [main] Objects.Property.<init> (Property.java:64) - [begintime] = 10:00:00
+29/09/17 11:06:08:488 DEBUG [main] Objects.Property.<init> (Property.java:67) - [endtime] = 18:00:00
+29/09/17 11:06:08:488 DEBUG [main] Objects.Property.<init> (Property.java:70) - [workinterval] = 600 sec
+29/09/17 11:06:08:488 DEBUG [main] Objects.Property.<init> (Property.java:73) - [zipfilefullname] = C:\\aestsapi\\test.zip
+29/09/17 11:06:08:488 DEBUG [main] Objects.Property.<init> (Property.java:76) - [enablearchiving] = true
+29/09/17 11:06:08:488 DEBUG [main] Objects.Property.<init> (Property.java:79) - [minfreediskspaceMB] = 37000
+29/09/17 11:06:08:491 INFO  [main] runner.run.main (run.java:32) - Checking time for work...
+29/09/17 11:06:08:501 INFO  [main] runner.run.main (run.java:35) - It's work time!
+29/09/17 11:06:08:501 INFO  [main] Objects.Disk.checkAvaliableSpace (Disk.java:10) - Checking free space on disk ...
+29/09/17 11:06:08:502 WARN  [main] Objects.Disk.checkAvaliableSpace (Disk.java:19) - Free space on disk G: 0 MB. It's LESS than [minfreediskspaceMB]. Abort copy file(s)!
+29/09/17 11:06:08:502 INFO  [main] Objects.ZipArchive.moveFilesToArchive (ZipArchive.java:48) - Archive file is not exist. File C:\\aestsapi\\test_20170929.zip is created.
+29/09/17 11:06:08:503 DEBUG [main] Objects.ConvertNames.createUriString (ConvertNames.java:9) - URI for archive file: jar:file:///C://aestsapi//test_20170929.zip
+29/09/17 11:06:08:558 ERROR [main] Objects.ZipArchive.mvFilesToArchive (ZipArchive.java:90) - Файл G:\copy\var\log\avaya\aes\TSAPI\g3trace-cm5s8400-1.trace.out не найден по указанному пути.
+29/09/17 11:06:08:559 INFO  [main] runner.run.main (run.java:40) - Waiting 10 min 00 sec
+29/09/17 11:12:11:748 INFO  [main] runner.run.main (run.java:19) - Programm is started.
+29/09/17 11:12:11:754 DEBUG [main] Objects.Property.<init> (Property.java:34) - [srcfilecount] = 1
+29/09/17 11:12:11:755 DEBUG [main] Objects.Property.<init> (Property.java:39) - [srcfullfilename1]  = /var/log/avaya/aes/TSAPI/g3trace-cm5s8400-1.trace.out
+29/09/17 11:12:11:755 DEBUG [main] Objects.Property.<init> (Property.java:44) - [ip] = 192.168.219.230
+29/09/17 11:12:11:755 DEBUG [main] Objects.Property.<init> (Property.java:47) - [port] = 22
+29/09/17 11:12:11:756 DEBUG [main] Objects.Property.<init> (Property.java:50) - [login] = cust
+29/09/17 11:12:11:756 DEBUG [main] Objects.Property.<init> (Property.java:53) - [password] = custpw
+29/09/17 11:12:11:756 DEBUG [main] Objects.Property.<init> (Property.java:58) - [findingfilesbymaskofname] = false
+29/09/17 11:12:11:756 DEBUG [main] Objects.Property.<init> (Property.java:61) - [dstfilepath] = C:\\aestsapi\\
+29/09/17 11:12:11:823 DEBUG [main] Objects.Property.<init> (Property.java:64) - [begintime] = 10:00:00
+29/09/17 11:12:11:823 DEBUG [main] Objects.Property.<init> (Property.java:67) - [endtime] = 18:00:00
+29/09/17 11:12:11:824 DEBUG [main] Objects.Property.<init> (Property.java:70) - [workinterval] = 600 sec
+29/09/17 11:12:11:824 DEBUG [main] Objects.Property.<init> (Property.java:73) - [zipfilefullname] = C:\\aestsapi\\test.zip
+29/09/17 11:12:11:824 DEBUG [main] Objects.Property.<init> (Property.java:76) - [enablearchiving] = true
+29/09/17 11:12:11:824 DEBUG [main] Objects.Property.<init> (Property.java:79) - [minfreediskspaceMB] = 37000
+29/09/17 11:12:11:827 INFO  [main] runner.run.main (run.java:32) - Checking time for work...
+29/09/17 11:12:11:833 INFO  [main] runner.run.main (run.java:35) - It's work time!
+29/09/17 11:12:11:833 INFO  [main] Objects.Disk.checkAvaliableSpace (Disk.java:10) - Checking free space on disk ...
+29/09/17 11:12:11:834 DEBUG [main] Objects.Disk.checkAvaliableSpace (Disk.java:16) - Free space on disk C: 40316 MB.
+29/09/17 11:12:11:834 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:54) - Start SFTP Client.
+29/09/17 11:12:20:165 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:63) - Connected to 192.168.219.230.
+29/09/17 11:12:25:686 INFO  [main] Objects.SftpClient.copyFile (SftpClient.java:73) - Download file /var/log/avaya/aes/TSAPI/g3trace-cm5s8400-1.trace.out is successfully!
+29/09/17 11:12:25:690 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:98) - Disconnected from 192.168.219.230.
+29/09/17 11:12:25:691 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:108) - Stop SFTP Client.
+29/09/17 11:12:25:692 DEBUG [main] Objects.ZipArchive.moveFilesToArchive (ZipArchive.java:51) - Archive file C:\\aestsapi\\test_20170929.zip is already exist!
+29/09/17 11:12:25:692 DEBUG [main] Objects.ConvertNames.createUriString (ConvertNames.java:9) - URI for archive file: jar:file:///C://aestsapi//test_20170929.zip
+29/09/17 11:12:25:711 ERROR [main] Objects.ZipArchive.mvFilesToArchive (ZipArchive.java:90) - Файл C:\aestsapi\var\log\avaya\aes\TSAPI\g3trace-cm5s8400-1.trace.out не найден по указанному пути.
+29/09/17 11:12:25:713 INFO  [main] runner.run.main (run.java:40) - Waiting 10 min 00 sec
+29/09/17 11:23:06:753 INFO  [main] runner.run.main (run.java:19) - Programm is started.
+29/09/17 11:23:06:759 DEBUG [main] Objects.Property.<init> (Property.java:34) - [srcfilecount] = 1
+29/09/17 11:23:06:759 DEBUG [main] Objects.Property.<init> (Property.java:39) - [srcfullfilename1]  = /var/log/avaya/aes/TSAPI/g3trace-cm5s8400-1.trace.out
+29/09/17 11:23:06:760 DEBUG [main] Objects.Property.<init> (Property.java:44) - [ip] = 192.168.219.230
+29/09/17 11:23:06:760 DEBUG [main] Objects.Property.<init> (Property.java:47) - [port] = 22
+29/09/17 11:23:06:760 DEBUG [main] Objects.Property.<init> (Property.java:50) - [login] = cust
+29/09/17 11:23:06:760 DEBUG [main] Objects.Property.<init> (Property.java:53) - [password] = custpw
+29/09/17 11:23:06:761 DEBUG [main] Objects.Property.<init> (Property.java:58) - [findingfilesbymaskofname] = false
+29/09/17 11:23:06:761 DEBUG [main] Objects.Property.<init> (Property.java:61) - [dstfilepath] = C:\\aestsapi\\
+29/09/17 11:23:06:828 DEBUG [main] Objects.Property.<init> (Property.java:64) - [begintime] = 10:00:00
+29/09/17 11:23:06:828 DEBUG [main] Objects.Property.<init> (Property.java:67) - [endtime] = 18:00:00
+29/09/17 11:23:06:828 DEBUG [main] Objects.Property.<init> (Property.java:70) - [workinterval] = 600 sec
+29/09/17 11:23:06:828 DEBUG [main] Objects.Property.<init> (Property.java:73) - [zipfilefullname] = C:\\aestsapi\\test.zip
+29/09/17 11:23:06:829 DEBUG [main] Objects.Property.<init> (Property.java:76) - [enablearchiving] = true
+29/09/17 11:23:06:829 DEBUG [main] Objects.Property.<init> (Property.java:79) - [minfreediskspaceMB] = 37000
+29/09/17 11:23:06:831 INFO  [main] runner.run.main (run.java:32) - Checking time for work...
+29/09/17 11:23:06:838 INFO  [main] runner.run.main (run.java:35) - It's work time!
+29/09/17 11:23:06:838 INFO  [main] Objects.Disk.checkAvaliableSpace (Disk.java:10) - Checking free space on disk ...
+29/09/17 11:23:06:839 DEBUG [main] Objects.Disk.checkAvaliableSpace (Disk.java:16) - Free space on disk C: 40271 MB.
+29/09/17 11:23:06:839 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:54) - Start SFTP Client.
+29/09/17 11:23:07:441 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:63) - Connected to 192.168.219.230.
+29/09/17 11:23:12:326 INFO  [main] Objects.SftpClient.copyFile (SftpClient.java:73) - Download file /var/log/avaya/aes/TSAPI/g3trace-cm5s8400-1.trace.out is successfully!
+29/09/17 11:23:12:330 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:98) - Disconnected from 192.168.219.230.
+29/09/17 11:23:12:330 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:108) - Stop SFTP Client.
+29/09/17 11:23:12:331 INFO  [main] Objects.ZipArchive.moveFilesToArchive (ZipArchive.java:48) - Archive file is not exist. File C:\\aestsapi\\test_20170929.zip is created.
+29/09/17 11:23:12:332 DEBUG [main] Objects.ConvertNames.createUriString (ConvertNames.java:9) - URI for archive file: jar:file:///C://aestsapi//test_20170929.zip
+29/09/17 11:23:12:353 ERROR [main] Objects.ZipArchive.mvFilesToArchive (ZipArchive.java:90) - The file C:\aestsapi\var\log\avaya\aes\TSAPI\g3trace-cm5s8400-1.trace.out not found on that path!
+29/09/17 11:23:12:355 INFO  [main] runner.run.main (run.java:40) - Waiting 10 min 00 sec
+29/09/17 11:46:20:162 INFO  [main] runner.run.main (run.java:19) - Programm is started.
+29/09/17 11:46:20:168 DEBUG [main] Objects.Property.<init> (Property.java:34) - [srcfilecount] = 1
+29/09/17 11:46:20:169 DEBUG [main] Objects.Property.<init> (Property.java:39) - [srcfullfilename1]  = /var/log/avaya/aes/TSAPI/g3trace-cm5s8400-1.trace.out
+29/09/17 11:46:20:169 DEBUG [main] Objects.Property.<init> (Property.java:44) - [ip] = 192.168.219.230
+29/09/17 11:46:20:169 DEBUG [main] Objects.Property.<init> (Property.java:47) - [port] = 22
+29/09/17 11:46:20:170 DEBUG [main] Objects.Property.<init> (Property.java:50) - [login] = cust
+29/09/17 11:46:20:170 DEBUG [main] Objects.Property.<init> (Property.java:53) - [password] = custpw
+29/09/17 11:46:20:170 DEBUG [main] Objects.Property.<init> (Property.java:58) - [findingfilesbymaskofname] = false
+29/09/17 11:46:20:170 DEBUG [main] Objects.Property.<init> (Property.java:61) - [dstfilepath] = C:\\aestsapi\\
+29/09/17 11:46:20:239 DEBUG [main] Objects.Property.<init> (Property.java:64) - [begintime] = 10:00:00
+29/09/17 11:46:20:239 DEBUG [main] Objects.Property.<init> (Property.java:67) - [endtime] = 18:00:00
+29/09/17 11:46:20:239 DEBUG [main] Objects.Property.<init> (Property.java:70) - [workinterval] = 600 sec
+29/09/17 11:46:20:239 DEBUG [main] Objects.Property.<init> (Property.java:73) - [zipfilefullname] = C:\\aestsapi\\test.zip
+29/09/17 11:46:20:240 DEBUG [main] Objects.Property.<init> (Property.java:76) - [enablearchiving] = true
+29/09/17 11:46:20:240 DEBUG [main] Objects.Property.<init> (Property.java:79) - [minfreediskspaceMB] = 37000
+29/09/17 11:46:20:242 INFO  [main] runner.run.main (run.java:32) - Checking time for work...
+29/09/17 11:46:20:249 INFO  [main] runner.run.main (run.java:35) - It's work time!
+29/09/17 11:46:20:250 INFO  [main] Objects.Disk.checkAvaliableSpace (Disk.java:10) - Checking free space on disk ...
+29/09/17 11:46:20:250 DEBUG [main] Objects.Disk.checkAvaliableSpace (Disk.java:16) - Free space on disk C: 40270 MB.
+29/09/17 11:46:20:250 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:54) - Start SFTP Client.
+29/09/17 11:46:24:194 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:63) - Connected to 192.168.219.230.
+29/09/17 11:46:29:812 INFO  [main] Objects.SftpClient.copyFile (SftpClient.java:73) - Download file /var/log/avaya/aes/TSAPI/g3trace-cm5s8400-1.trace.out is successfully!
+29/09/17 11:46:29:816 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:98) - Disconnected from 192.168.219.230.
+29/09/17 11:46:29:816 DEBUG [main] Objects.SftpClient.copyFile (SftpClient.java:108) - Stop SFTP Client.
+29/09/17 11:46:29:817 DEBUG [main] Objects.ZipArchive.moveFilesToArchive (ZipArchive.java:51) - Archive file C:\\aestsapi\\test_20170929.zip is already exist!
+29/09/17 11:46:29:817 DEBUG [main] Objects.ConvertNames.createUriString (ConvertNames.java:9) - URI for archive file: jar:file:///C://aestsapi//test_20170929.zip
+29/09/17 11:46:30:571 INFO  [main] Objects.ZipArchive.mvFilesToArchive (ZipArchive.java:86) - The file g3trace-cm5s8400-1_20170929_114629.trace.out was added in archive C:\\aestsapi\\test_20170929.zip
+29/09/17 11:46:30:579 INFO  [main] runner.run.main (run.java:40) - Waiting 10 min 00 sec

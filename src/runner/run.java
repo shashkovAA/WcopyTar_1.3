@@ -11,8 +11,9 @@ public class run {
 	@SuppressWarnings("static-access")
 	public static void main(String[] args) throws InterruptedException {
 				
+		
 		String currentPath =  new File("").getAbsolutePath();	
-		String settingsFileName = currentPath + "\\config\\settings.xml";
+		String settingsFileName = currentPath + "\\config\\ "+ args[0];
 		String logSettingsFileName = currentPath + "\\config\\logging.xml";
 		
 		Debug.initDebugLog(logSettingsFileName);
