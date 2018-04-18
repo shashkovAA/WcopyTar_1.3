@@ -13,8 +13,11 @@ public class ZipArchive  {
 	private FileSystem zipfs;
 	private MyFile zipFile;
 	private Property allPropers;
-	private String testCopiedFileName;
 
+	private FilesComparer comparer;
+
+
+	//private SizeFilesMap filesMD5HashMap;
 	
 	public void addFileToArchive() {
 		
@@ -43,6 +46,7 @@ public class ZipArchive  {
 	
 	public boolean moveFilesToArchive()	{
 		
+		
 		if (!isExistArchiveFile()) {
         	env.put("create", "true");
         	Debug.log.info("Archive file is not exist. File " + zipFile.getFullFileNameWithPathAndDate() + " is created.");	  	
@@ -56,7 +60,13 @@ public class ZipArchive  {
         	zipfs = FileSystems.newFileSystem(uri, env);
         	
         	for (int i=0; i<allPropers.getSftpSrcFileCount(); i++) {
-        	mvFilesToArchive(allPropers.getSftpSrcFullFileNamesList().get(i));
+        		
+        		if (comparer.getNewFileFlag(ConvertNames.getFileNameWithExt(allPropers.getSftpSrcFullFileNamesList().get(i))))
+        			mvFilesToArchive(allPropers.getSftpSrcFullFileNamesList().get(i));
+        		else {
+        			new File(allPropers.getSftpDestFilePath() + ConvertNames.getFileNameWithExt(allPropers.getSftpSrcFullFileNamesList().get(i))).delete();
+        			Debug.log.info("The file " + ConvertNames.getFileNameWithExt(allPropers.getSftpSrcFullFileNamesList().get(i)) + " was NOT added to archive. It has same size!");
+        		}
         	}
         	
         	zipfs.close();
@@ -67,6 +77,7 @@ public class ZipArchive  {
         }		
 	}
 
+	
 	private boolean isExistArchiveFile(){
 		File archiveFile = new File(zipFile.getFullFileNameWithPathAndDate());
 		return archiveFile.isFile();		
@@ -82,8 +93,8 @@ public class ZipArchive  {
 		String copiedFileNameWithTimestamp =copiedFile.getName() + dateAppender + timeAppender + copiedFile.getExtension();
         Path pathInZipfile = zipfs.getPath("/" + copiedFileNameWithTimestamp);          
         try {
-	        Files.move( extFile,pathInZipfile, StandardCopyOption.REPLACE_EXISTING );
-			Debug.log.info("The file "+ copiedFileNameWithTimestamp +" was added in archive " + zipFile.getFullFileNameWithPathAndDate());
+	        Files.move(extFile,pathInZipfile, StandardCopyOption.REPLACE_EXISTING );
+			Debug.log.info("The file "+ copiedFileNameWithTimestamp +" was added to archive " + zipFile.getFullFileNameWithPathAndDate());
 			
 			
 		} catch (NoSuchFileException except){
@@ -100,14 +111,17 @@ public class ZipArchive  {
 	public void setZipFile (String fileNameWithPath) {
 		this.zipFile = new MyFile(fileNameWithPath);
 	}
-	public void testSetCopiedFile(String copiedFile){
-		this.testCopiedFileName = copiedFile;
+
+
+	public void setUserSettings(Property prop){
+		this.zipFile = new MyFile(prop.getZipFileFullName());
+		this.allPropers = prop;
+		//this.filesMD5HashMap = prop.getMD5HashMap();
+		//this.copiedFile = new MyFile(property.getSftpDestFilePath() + property.getSftpDestFileName());		
 	}
 
-	public void setUserSettings(Property property){
-		this.zipFile = new MyFile(property.getZipFileFullName());
-		this.allPropers = property;
-		//this.copiedFile = new MyFile(property.getSftpDestFilePath() + property.getSftpDestFileName());		
+	public void setFilesComparerLink(FilesComparer comparer) {	
+		this.comparer = comparer;
 	}
 	
 	

@@ -26,10 +26,11 @@ public class SftpClient {
 	private  String sftpPass;
 	private  int sftpSrcFileCount;
 	private  ArrayList<String> sftpSrcFullFileNamesList;
+	private  FilesComparer comparer;
 	private  ArrayList<String> fullFileNameListbyMaskName;
 	private  String sftpDstFilePath;
 
-
+	
 		
     public void copyFiles () {
     	
@@ -71,7 +72,10 @@ public class SftpClient {
            
             sftpChannel.get(mFileName, sftpDstFilePath + ConvertNames.getFileNameWithExt(mFileName));
             Debug.log.info("Download file " + mFileName + " is successfully!");
-          
+                                
+            
+            comparer.insertSizeForCopiedFile(sftpDstFilePath,ConvertNames.getFileNameWithExt(mFileName));           
+            
             isFileExist = true;
             
             sftpChannel.disconnect();
@@ -108,10 +112,12 @@ public class SftpClient {
         Debug.log.debug("Stop SFTP Client.");
     }
     
-    public ArrayList<String> getListFileNamesFromSftpByMask(String filter) {
+
+	public ArrayList<String> getListFileNamesFromSftpByMask(String filter) {
     	ArrayList<String> copyFilesList  = new ArrayList<String>();
     	JSch js = new JSch();
-        try {
+    	
+    	try {
 	        session = js.getSession(sftpLogin, sftpIp, sftpPort);
 	        session.setPassword(sftpPass);
 	        session.setConfig("StrictHostKeyChecking", "no");
@@ -126,6 +132,7 @@ public class SftpClient {
 	        String line;
 	        while ((line = reader.readLine()) != null) {
 	        	copyFilesList.add(line);
+	        	
 	        	Debug.log.info(line);
 	        }
 	
@@ -207,9 +214,15 @@ public class SftpClient {
 		this.sftpPass = prop.getSftpPass();
 		this.sftpSrcFileCount = prop.getSftpSrcFileCount();
 		this.sftpSrcFullFileNamesList = prop.getSftpSrcFullFileNamesList();
+		//this.filesMD5HashMap = prop.getMD5HashMap();
 		this.sftpDstFilePath = prop.getSftpDestFilePath();
 		this.enableNameMask = prop.getEnableCopyByMask();
 					
+	}
+
+
+	public void setFilesComparerLink(FilesComparer comparer) {
+		this.comparer = comparer;
 	}
 
 	

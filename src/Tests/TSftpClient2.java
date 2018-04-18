@@ -17,7 +17,7 @@ import Objects.ConvertNames;
 import Objects.Debug;
 import Objects.Property;
 import Objects.SftpClient;
-import runner.run;
+import runner.Run;
 
 public class TSftpClient2 {
 	private SftpClient client;

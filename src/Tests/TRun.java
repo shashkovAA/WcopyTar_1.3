@@ -12,7 +12,7 @@ import org.junit.Test;
 
 import Objects.MyCalendar;
 import Objects.Debug;
-import runner.run;
+import runner.Run;
 
 
 public class TRun

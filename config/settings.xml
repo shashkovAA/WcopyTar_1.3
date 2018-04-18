@@ -11,10 +11,10 @@
 <entry key="findingfilesbymaskofname">false</entry>
 
 <!-- Заданное число файлов для копирования и их полные пути -->
-<entry key="srcfilecount">1</entry>
+<entry key="srcfilecount">3</entry>
 <entry key="srcfullfilename1">/var/log/avaya/aes/TSAPI/g3trace-cm5s8400-1.trace.out</entry>
-<entry key="srcfullfilename2">/MTA_trace.mta2</entry>
-<entry key="srcfullfilename3">/MTA_trace.mta3</entry>
+<entry key="srcfullfilename2">/tmp/testfile.txt</entry>
+<entry key="srcfullfilename3">/var/log/avaya/aes/TSAPI/audit_trace-130.trace.out</entry>
 <entry key="srcfullfilename5"></entry>
 <entry key="srcfullfilename6"></entry>
 <entry key="srcfullfilename7"></entry>
@@ -25,9 +25,9 @@
 <!-- Путь (папка) назначения копирования файла(ов). Формат для Windows: "<Disk>:\\<folder_name>\\"  -->
 <entry key="dstfilepath">C:\\aestsapi\\</entry>
 
-<entry key="begintime">10:00:00</entry>
-<entry key="endtime">18:00:00</entry>
-<entry key="workinterval">600</entry>
+<entry key="begintime">00:01:00</entry>
+<entry key="endtime">23:59:00</entry>
+<entry key="workinterval">120</entry>
 
 <!-- Имя файла архива, включая путь расположения. Формат для Windows: "<Disk>:\\<folder_name>\\<archive_name>.zip"  --> 
 <entry key="zipfilefullname">C:\\aestsapi\\test.zip</entry>
@@ -36,6 +36,6 @@
 <entry key="enablearchiving">true</entry>
 
 <!-- Размер минимально доступного свободно места на диске. Значение 0 = не проверять.-->
-<entry key="minfreediskspaceMB">37000</entry>
+<entry key="minfreediskspaceMB">0</entry>
 
 </properties>

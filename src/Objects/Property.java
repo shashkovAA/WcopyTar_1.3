@@ -12,7 +12,7 @@ public  class Property
 	private  int sftpPort ;
 	private  String sftpLogin = "admin";
 	private  String sftpPass = "password";	
-	private  ArrayList<String> sftpSrcFullFileNamesList = new ArrayList<String>();  
+	private  ArrayList<String> sftpSrcFullFileNamesList = new ArrayList<String>();
 	private  String sftpDestFilePath = "";
 	private  LocalTime beginTimeSheduler;
 	private  LocalTime endTimeSheduler;
@@ -32,14 +32,16 @@ public  class Property
 		setSftpSrcFileCount(userProperties.getProperty("srcfilecount"));
 		int numOfFiles = getSftpSrcFileCount();
 		Debug.log.debug("[srcfilecount] = " + numOfFiles);
-		
+		String filename;
 		ArrayList<String> srcFileNamesList = new ArrayList<String>();
 		for (int i=0;i<numOfFiles;i++) {
-		srcFileNamesList.add(userProperties.getProperty("srcfullfilename" + (i+1)));
-		Debug.log.debug("[srcfullfilename" + (i+1) + "]  = " + srcFileNamesList.get(i));
+			filename = userProperties.getProperty("srcfullfilename" + (i+1));
+			srcFileNamesList.add(filename);
+			Debug.log.debug("[srcfullfilename" + (i+1) + "]  = " + srcFileNamesList.get(i));
 		}
+		
 		setSftpSrcFullFileNamesList(srcFileNamesList);
-			
+				
 		setSftpIpAddr(userProperties.getProperty("ip"));
         Debug.log.debug("[ip] = " + userProperties.getProperty("ip"));
         
@@ -52,7 +54,7 @@ public  class Property
         setSftpPass(userProperties.getProperty("password"));
         Debug.log.debug("[password] = " + userProperties.getProperty("password"));
         
-        setSftpSrcFullFileNamesList(srcFileNamesList);
+        //setSftpSrcFullFileNamesList(srcFileNamesList);
               
         setEnableCopyFilesByNameMask(userProperties.getProperty("findingfilesbymaskofname"));
         Debug.log.debug("[findingfilesbymaskofname] = " + userProperties.getProperty("findingfilesbymaskofname"));
@@ -150,6 +152,11 @@ public  class Property
 	public  void setSftpSrcFullFileNamesList(ArrayList<String> sftpFullFileNamesList) {
 		this.sftpSrcFullFileNamesList = sftpFullFileNamesList;
 	}
+	
+	
+	/*public SizeFilesMap getMD5HashMap() {
+		return filesMD5HashMap;
+	}*/
 	
 	public  String getSftpDestFilePath() {
 		return sftpDestFilePath;
